@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "pesctranscriptconverter": {
+      "commandName": "Project",
+      "commandLineArgs": "tohtml \"C:\\dev\\git\\canpesc-common-digital-layout\\samples\\Canada\\Ontario\\College\\CollegeTranscript.xml\" \"C:\\dev\\git\\canpesc-common-digital-layout\\samples\\Canada\\Ontario\\College\\CollegeTranscript.html\" \"C:\\dev\\git\\canpesc-common-digital-layout\\xslt\\CollegeTranscript.xsl\""
+    }
+  }
+}

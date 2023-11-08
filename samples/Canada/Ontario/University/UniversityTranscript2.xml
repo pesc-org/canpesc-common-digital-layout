@@ -1,0 +1,864 @@
+<?xml version="1.0"?>
+    <ColTrn:CollegeTranscript xmlns:AcRec="urn:org:pesc:sector:AcademicRecord:v1.7.0" xmlns:ColTrn="urn:org:pesc:message:CollegeTranscript:v1.4.0" xmlns:core="urn:org:pesc:core:CoreMain:v1.12.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:org:pesc:message:CollegeTranscript:v1.4.0 CollegeTranscript_v1.4.0.xsd">
+      <TransmissionData>
+        <DocumentID>O2241161</DocumentID>
+        <CreatedDateTime>2021-01-25T11:32:32-05:00</CreatedDateTime>
+        <DocumentTypeCode>RequestedRecord</DocumentTypeCode>
+        <TransmissionType>Original</TransmissionType>
+        <Source>
+          <Organization>
+            <USIS>350711</USIS>
+            <OrganizationName>University of Ottawa</OrganizationName>
+          </Organization>
+        </Source>
+        <Destination>
+          <Organization>
+            <MutuallyDefined>OUAC</MutuallyDefined>
+            <OrganizationName>OUAC</OrganizationName>
+          </Organization>
+        </Destination>
+        <DocumentProcessCode>TEST</DocumentProcessCode>
+        <RequestTrackingID>2021012264726</RequestTrackingID>
+        <NoteMessage>LEGEND          http://www.registraire.uottawa.ca/Default.aspx?tabid=3387</NoteMessage>
+      </TransmissionData>
+      <Student>
+        <Person>
+          <SchoolAssignedPersonID>999999999</SchoolAssignedPersonID>
+          <AgencyIdentifier>
+            <AgencyAssignedID>20218453870</AgencyAssignedID>
+            <AgencyCode>MutuallyDefined</AgencyCode>
+            <AgencyName>OUAC</AgencyName>
+          </AgencyIdentifier>
+          <AgencyIdentifier>
+            <AgencyAssignedID>999999999</AgencyAssignedID>
+            <AgencyCode>State</AgencyCode>
+            <StateProvinceCode>ON</StateProvinceCode>
+          </AgencyIdentifier>
+          <Birth>
+            <Birthday>--03-09</Birthday>
+          </Birth>
+          <Name>
+            <NameCode>Formal</NameCode>
+            <FirstName>Hermione</FirstName>
+            <LastName>Granger</LastName>
+          </Name>
+        </Person>
+        <AcademicRecord>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2017-09</SessionDesignator>
+              <SessionName>2017 Fall</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>C</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>ANP</CourseSubjectAbbreviation>
+              <CourseNumber>1505</CourseNumber>
+              <CourseTitle>Anatomie humaine et physiologie I</CourseTitle>
+              <NoteMessage>CLASS SIZE      222</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   5.31</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>CHM</CourseSubjectAbbreviation>
+              <CourseNumber>1711</CourseNumber>
+              <CourseTitle>Principes de chimie</CourseTitle>
+              <NoteMessage>CLASS SIZE      266</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   7.02</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A-</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>1501</CourseNumber>
+              <CourseTitle>Déterminants de la santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      88</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.94</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>SOC</CourseSubjectAbbreviation>
+              <CourseNumber>1501</CourseNumber>
+              <CourseTitle>Éléments de sociologie</CourseTitle>
+              <NoteMessage>CLASS SIZE      218</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.23</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A-</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>FRA</CourseSubjectAbbreviation>
+              <CourseNumber>1710</CourseNumber>
+              <CourseTitle>Analyse, écriture et argumentation I</CourseTitle>
+              <NoteMessage>CLASS SIZE      114</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   8.07</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>15</CreditHoursAttempted>
+                <CreditHoursEarned>15</CreditHoursEarned>
+                <GradePointAverage>6.4</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>15</CreditHoursAttempted>
+                <CreditHoursEarned>15</CreditHoursEarned>
+                <GradePointAverage>6.4</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <NoteMessage>HONOURS LIST    Admissions Scholarship $2000</NoteMessage>
+          </AcademicSession>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2018-01</SessionDesignator>
+              <SessionName>2018Winter</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>ANP</CourseSubjectAbbreviation>
+              <CourseNumber>1506</CourseNumber>
+              <CourseTitle>Anatomie humaine et physiologie II</CourseTitle>
+              <NoteMessage>CLASS SIZE      249</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   5.52</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>BIO</CourseSubjectAbbreviation>
+              <CourseNumber>1540</CourseNumber>
+              <CourseTitle>Introduction à la biologie cellulaire</CourseTitle>
+              <NoteMessage>CLASS SIZE      225</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   4.97</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>1500</CourseNumber>
+              <CourseTitle>Microbiologie et immunologie</CourseTitle>
+              <NoteMessage>CLASS SIZE      75</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.64</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>PSY</CourseSubjectAbbreviation>
+              <CourseNumber>1501</CourseNumber>
+              <CourseTitle>Introduction à la psychologie : fondements</CourseTitle>
+              <NoteMessage>CLASS SIZE      207</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   4.89</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>FRA</CourseSubjectAbbreviation>
+              <CourseNumber>1720</CourseNumber>
+              <CourseTitle>Analyse, écriture et argumentation II</CourseTitle>
+              <NoteMessage>CLASS SIZE      104</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   7.29</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>15</CreditHoursAttempted>
+                <CreditHoursEarned>15</CreditHoursEarned>
+                <GradePointAverage>7.6</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>30</CreditHoursAttempted>
+                <CreditHoursEarned>30</CreditHoursEarned>
+                <GradePointAverage>7</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+          </AcademicSession>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2018-09</SessionDesignator>
+              <SessionName>2018Fall</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A-</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>2502</CourseNumber>
+              <CourseTitle>Communication et santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      83</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   7.14</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>2504</CourseNumber>
+              <CourseTitle>Activité humaine, travail et santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      43</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   9.47</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>2705</CourseNumber>
+              <CourseTitle>Mécanismes moléculaires des maladies</CourseTitle>
+              <NoteMessage>CLASS SIZE      81</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   7.72</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>2781</CourseNumber>
+              <CourseTitle>Analyse quantitative des données en sciences de la santé I</CourseTitle>
+              <NoteMessage>CLASS SIZE      66</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   5.36</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>PHI</CourseSubjectAbbreviation>
+              <CourseNumber>2796</CourseNumber>
+              <CourseTitle>Bioéthique</CourseTitle>
+              <NoteMessage>CLASS SIZE      86</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   8.43</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>15</CreditHoursAttempted>
+                <CreditHoursEarned>15</CreditHoursEarned>
+                <GradePointAverage>8.8</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>45</CreditHoursAttempted>
+                <CreditHoursEarned>45</CreditHoursEarned>
+                <GradePointAverage>7.6</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <NoteMessage>HONOURS LIST    Dean's Honour List</NoteMessage>
+          </AcademicSession>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2019-01</SessionDesignator>
+              <SessionName>2019Winter</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>GEO</CourseSubjectAbbreviation>
+              <CourseNumber>1701</CourseNumber>
+              <CourseTitle>Comment percer les secrets de la terre</CourseTitle>
+              <NoteMessage>CLASS SIZE      34</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   5.49</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>2521</CourseNumber>
+              <CourseTitle>Histoire des soins de santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      66</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.79</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>2721</CourseNumber>
+              <CourseTitle>Perspectives sociopolitiques et économiques de la santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      95</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   7.32</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>2742</CourseNumber>
+              <CourseTitle>Déterminants nutritionnels de la santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      106</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   5.69</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>PHY</CourseSubjectAbbreviation>
+              <CourseNumber>1700</CourseNumber>
+              <CourseTitle>Au-delà du Big Bang</CourseTitle>
+              <NoteMessage>CLASS SIZE      24</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.74</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>15</CreditHoursAttempted>
+                <CreditHoursEarned>15</CreditHoursEarned>
+                <GradePointAverage>8.8</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>60</CreditHoursAttempted>
+                <CreditHoursEarned>60</CreditHoursEarned>
+                <GradePointAverage>7.9</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <NoteMessage>HONOURS LIST    Dean's Honour List</NoteMessage>
+          </AcademicSession>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2019-09</SessionDesignator>
+              <SessionName>2019Fall</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A-</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>3501</CourseNumber>
+              <CourseTitle>Recherche en santé : approches qualitative et quantitative</CourseTitle>
+              <NoteMessage>CLASS SIZE      54</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   5.82</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>B+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>3503</CourseNumber>
+              <CourseTitle>Expérience de la maladie, de la déficience et du handicap</CourseTitle>
+              <NoteMessage>CLASS SIZE      69</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.28</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A-</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>3705</CourseNumber>
+              <CourseTitle>Pathophysiologie des problèmes de santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      75</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.64</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>LIN</CourseSubjectAbbreviation>
+              <CourseNumber>1720</CourseNumber>
+              <CourseTitle>Introduction à la linguistique : Les sons du langage</CourseTitle>
+              <NoteMessage>CLASS SIZE      73</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.52</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>3732</CourseNumber>
+              <CourseTitle>Technologie et santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      70</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   7.77</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>15</CreditHoursAttempted>
+                <CreditHoursEarned>15</CreditHoursEarned>
+                <GradePointAverage>8.4</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>75</CreditHoursAttempted>
+                <CreditHoursEarned>75</CreditHoursEarned>
+                <GradePointAverage>8</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+          </AcademicSession>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2020-01</SessionDesignator>
+              <SessionName>2020Winter</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>3506</CourseNumber>
+              <CourseTitle>Pharmacologie : Mécanismes d'action et observance de la pris</CourseTitle>
+              <NoteMessage>TITLE CONTINUED e des médicaments</NoteMessage>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>3703</CourseNumber>
+              <CourseTitle>Environnement et santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>PSY</CourseSubjectAbbreviation>
+              <CourseNumber>1502</CourseNumber>
+              <CourseTitle>Introduction à la psychologie : applications</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>FRA</CourseSubjectAbbreviation>
+              <CourseNumber>2789</CourseNumber>
+              <CourseTitle>Comprendre les rouages de la grammaire</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>3505</CourseNumber>
+              <CourseTitle>Citoyenneté mondiale et santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>15</CreditHoursAttempted>
+                <CreditHoursEarned>15</CreditHoursEarned>
+                <GradePointAverage>9.8</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>90</CreditHoursAttempted>
+                <CreditHoursEarned>90</CreditHoursEarned>
+                <GradePointAverage>8.3</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <NoteMessage>HONOURS LIST    Dean's Honour List</NoteMessage>
+            <NoteMessage>AFTER SESS COM  The Winter 2020 course average is unavailable due to a qualita</NoteMessage>
+            <NoteMessage>AFTER SESS COM  tive grading option.</NoteMessage>
+          </AcademicSession>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2020-05</SessionDesignator>
+              <SessionName>2020SprSum</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A-</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>2525</CourseNumber>
+              <CourseTitle>Introduction à l'analyse du son pour les sciences de la paro</CourseTitle>
+              <NoteMessage>TITLE CONTINUED le et l'ouïe</NoteMessage>
+              <NoteMessage>CLASS SIZE      41</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   6.81</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>3</CreditHoursAttempted>
+                <CreditHoursEarned>3</CreditHoursEarned>
+                <GradePointAverage>8</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>93</CreditHoursAttempted>
+                <CreditHoursEarned>93</CreditHoursEarned>
+                <GradePointAverage>8.29</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+          </AcademicSession>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2020-09</SessionDesignator>
+              <SessionName>2020Fall</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>4303</CourseNumber>
+              <CourseTitle>Epidemiology</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>FRA</CourseSubjectAbbreviation>
+              <CourseNumber>2520</CourseNumber>
+              <CourseTitle>Éviter les pièges de la langue</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>PSY</CourseSubjectAbbreviation>
+              <CourseNumber>2510</CourseNumber>
+              <CourseTitle>Psychologie sociale</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>3</CourseCreditEarned>
+              <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+              <CourseAcademicGrade>A+</CourseAcademicGrade>
+              <CourseSubjectAbbreviation>LSR</CourseSubjectAbbreviation>
+              <CourseNumber>3505</CourseNumber>
+              <CourseTitle>Parcs et zones protégées</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>12</CreditHoursAttempted>
+                <CreditHoursEarned>12</CreditHoursEarned>
+                <GradePointAverage>10</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>105</CreditHoursAttempted>
+                <CreditHoursEarned>105</CreditHoursEarned>
+                <GradePointAverage>8.49</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+          </AcademicSession>
+          <AcademicSession>
+            <AcademicSessionDetail>
+              <SessionDesignator>2021-01</SessionDesignator>
+              <SessionName>2021Winter</SessionName>
+              <SessionType>Semester</SessionType>
+            </AcademicSessionDetail>
+            <AcademicProgram>
+              <AcademicProgramName>Honours Bachelor of Health Sciences</AcademicProgramName>
+            </AcademicProgram>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>0</CourseCreditEarned>
+              <CourseAcademicGradeStatusCode>InProgress</CourseAcademicGradeStatusCode>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>4501</CourseNumber>
+              <CourseTitle>Élaboration et évaluation de programmes en santé</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>0</CourseCreditEarned>
+              <CourseAcademicGradeStatusCode>InProgress</CourseAcademicGradeStatusCode>
+              <CourseSubjectAbbreviation>PED</CourseSubjectAbbreviation>
+              <CourseNumber>2507</CourseNumber>
+              <CourseTitle>Réalités scolaires actuelles</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>0</CourseCreditEarned>
+              <CourseAcademicGradeStatusCode>InProgress</CourseAcademicGradeStatusCode>
+              <CourseSubjectAbbreviation>PSY</CourseSubjectAbbreviation>
+              <CourseNumber>2505</CourseNumber>
+              <CourseTitle>Développement de l'enfant</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>0</CourseCreditEarned>
+              <CourseAcademicGradeStatusCode>InProgress</CourseAcademicGradeStatusCode>
+              <CourseSubjectAbbreviation>GEG</CourseSubjectAbbreviation>
+              <CourseNumber>3704</CourseNumber>
+              <CourseTitle>Villes du monde</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <Course>
+              <CourseCreditBasis>Regular</CourseCreditBasis>
+              <CourseCreditUnits>Semester</CourseCreditUnits>
+              <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+              <CourseCreditValue>3</CourseCreditValue>
+              <CourseCreditEarned>0</CourseCreditEarned>
+              <CourseAcademicGradeStatusCode>InProgress</CourseAcademicGradeStatusCode>
+              <CourseSubjectAbbreviation>HSS</CourseSubjectAbbreviation>
+              <CourseNumber>4502</CourseNumber>
+              <CourseTitle>Origines développementales de la santé et des maladies</CourseTitle>
+              <NoteMessage>CLASS SIZE      N/A</NoteMessage>
+              <NoteMessage>CLASS AVERAGE   N/A</NoteMessage>
+            </Course>
+            <AcademicSummary>
+              <AcademicSummaryType>All</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>15</CreditHoursAttempted>
+                <CreditHoursEarned>0</CreditHoursEarned>
+                <GradePointAverage>0</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+            <AcademicSummary>
+              <AcademicSummaryType>Cumulative</AcademicSummaryType>
+              <AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+              <GPA>
+                <CreditHoursAttempted>120</CreditHoursAttempted>
+                <CreditHoursEarned>105</CreditHoursEarned>
+                <GradePointAverage>8.49</GradePointAverage>
+              </GPA>
+            </AcademicSummary>
+          </AcademicSession>
+        </AcademicRecord>
+      </Student>
+    </ColTrn:CollegeTranscript>

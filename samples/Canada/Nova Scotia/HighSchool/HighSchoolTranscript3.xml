@@ -1,0 +1,736 @@
+<q1:HighSchoolTranscript xmlns:q1="urn:org:pesc:message:HighSchoolTranscript:v1.5.0">
+	<TransmissionData>
+		<DocumentID>TNSEECD2018060600006</DocumentID>
+		<CreatedDateTime>2018-06-06T14:30:01.1707917-03:00</CreatedDateTime>
+		<DocumentTypeCode>RequestedRecord</DocumentTypeCode>
+		<TransmissionType>Original</TransmissionType>
+		<Source>
+			<Organization>
+				<PSIS>EECD</PSIS>
+				<LocalOrganizationID />
+				<OrganizationName>EECDOrgName</OrganizationName>
+				<Contacts>
+					<Email>
+						<EmailAddress>EECDEmail</EmailAddress>
+					</Email>
+				</Contacts>
+				<Accreditation />
+			</Organization>
+		</Source>
+		<Destination>
+			<Organization>
+				<PSIS>12022000</PSIS>
+				<LocalOrganizationID />
+				<OrganizationName>Nova Scotia Community College</OrganizationName>
+				<Contacts>
+					<Email>
+						<EmailAddress>admissions@nscc.ca</EmailAddress>
+					</Email>
+				</Contacts>
+				<Accreditation />
+			</Organization>
+		</Destination>
+		<RequestTrackingID>RNS120040002018031600028</RequestTrackingID>
+	</TransmissionData>
+	<Student>
+		<Person>
+			<SchoolAssignedPersonID>NA</SchoolAssignedPersonID>
+			<AgencyIdentifier>
+				<AgencyAssignedID>5029699814501</AgencyAssignedID>
+				<AgencyCode>Province</AgencyCode>
+				<StateProvinceCode>NS</StateProvinceCode>
+			</AgencyIdentifier>
+			<RecipientAssignedID>5029699814501</RecipientAssignedID>
+			<Birth>
+				<BirthDate>1999-05-11</BirthDate>
+			</Birth>
+			<Name>
+				<FirstName>James</FirstName>
+				<LastName>Ackles</LastName>
+			</Name>
+			<ParentGuardianName />
+			<ParentGuardian>
+				<Name />
+			</ParentGuardian>
+			<Gender>
+				<GenderCode>Male</GenderCode>
+			</Gender>
+			<Deceased>
+				<DeceasedIndicator>false</DeceasedIndicator>
+			</Deceased>
+		</Person>
+		<AcademicRecord>
+			<School>
+				<OrganizationName>Amherst Regional High</OrganizationName>
+				<LocalOrganizationID>
+					<LocalOrganizationIDQualifier>NS</LocalOrganizationIDQualifier>
+				</LocalOrganizationID>
+				<Contacts>
+					<Address>
+						<AddressLine>127 Fake Street</AddressLine>
+						<City>Enfield</City>
+						<PostalCode>B5L 1L7</PostalCode>
+						<StateProvince>NS</StateProvince>
+						<ItemsElementName xmlns="urn:org:pesc:core:CoreMain:v1.14.0">:PostalCode</ItemsElementName>
+						<ItemsElementName xmlns="urn:org:pesc:core:CoreMain:v1.14.0">:StateProvince</ItemsElementName>
+						<EffectiveDate>0001-01-01</EffectiveDate>
+						<ExpirationDate>0001-01-01</ExpirationDate>
+					</Address>
+					<Phone>
+						<PhoneNumber>902 555 1234</PhoneNumber>
+						<EffectiveDate>0001-01-01</EffectiveDate>
+						<ExpirationDate>0001-01-01</ExpirationDate>
+					</Phone>
+					<FaxPhone>
+						<PhoneNumber>902 555 6666</PhoneNumber>
+						<EffectiveDate>0001-01-01</EffectiveDate>
+						<ExpirationDate>0001-01-01</ExpirationDate>
+					</FaxPhone>
+				</Contacts>
+			</School>
+			<StudentLevel />
+			<AcademicAward>
+				<AcademicAwardLevel>B18</AcademicAwardLevel>
+				<AcademicAwardDate>2016-06-30</AcademicAwardDate>
+				<AcademicAwardTitle>Standard High School Diploma which may or may not include an exit test</AcademicAwardTitle>
+				<AcademicCompletionIndicator>false</AcademicCompletionIndicator>
+				<AcademicCompletionDate>0001-01-01</AcademicCompletionDate>
+				<NoteMessage>This student has successfully met the graduation requirements for the Prov of NS</NoteMessage>
+			</AcademicAward>
+			<AcademicSession>
+				<AcademicSessionDetail>
+					<SessionDesignator>2010-09</SessionDesignator>
+					<SessionSchoolYear>2010-2011</SessionSchoolYear>
+					<SessionBeginDate>0001-01-01</SessionBeginDate>
+					<SessionEndDate>0001-01-01</SessionEndDate>
+				</AcademicSessionDetail>
+				<School>
+					<LocalOrganizationID />
+				</School>
+				<StudentLevel />
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>0</CourseCreditEarned>
+					<CourseAcademicGrade>43</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>CMT11</CourseNumber>
+					<AgencyCourseID>COM3OS</AgencyCourseID>
+					<CourseTitle>COMMUNICATIONS TECHNOLOGY 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>OPEN;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TenthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>64</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>VISART10</CourseNumber>
+					<AgencyCourseID>VAR2AS</AgencyCourseID>
+					<CourseTitle>VISUAL ARTS 10</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>0</CourseCreditEarned>
+					<CourseAcademicGrade>20</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>GEOG11</CourseNumber>
+					<AgencyCourseID>GEG3AS</AgencyCourseID>
+					<CourseTitle>GEOGRAPHY 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TenthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>0</CourseCreditEarned>
+					<CourseAcademicGrade>40</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>ENG10</CourseNumber>
+					<AgencyCourseID>ENG2AS</AgencyCourseID>
+					<CourseTitle>ENGLISH 10</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>62</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>ACS11</CourseNumber>
+					<AgencyCourseID>ACS3AS</AgencyCourseID>
+					<CourseTitle>AFRICAN CANADIAN STUDIES 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TenthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>0</CourseCreditEarned>
+					<CourseAcademicGrade>36</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>SCI10</CourseNumber>
+					<AgencyCourseID>SCI2AS</AgencyCourseID>
+					<CourseTitle>SCIENCE 10</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TenthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>56</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>MTHE10</CourseNumber>
+					<AgencyCourseID>MTH2GS</AgencyCourseID>
+					<CourseTitle>MATH ESSENTIALS 10</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>GRAD;PSP</NoteMessage>
+				</Course>
+				<AttendanceCount>
+					<DaysPresent>0</DaysPresent>
+					<DaysAbsent>0</DaysAbsent>
+				</AttendanceCount>
+			</AcademicSession>
+			<AcademicSession>
+				<AcademicSessionDetail>
+					<SessionDesignator>2011-09</SessionDesignator>
+					<SessionSchoolYear>2011-2012</SessionSchoolYear>
+					<SessionBeginDate>0001-01-01</SessionBeginDate>
+					<SessionEndDate>0001-01-01</SessionEndDate>
+				</AcademicSessionDetail>
+				<School>
+					<LocalOrganizationID />
+				</School>
+				<StudentLevel />
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TenthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>55</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>SCI10</CourseNumber>
+					<AgencyCourseID>SCI2AS</AgencyCourseID>
+					<CourseTitle>SCIENCE 10</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>74</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>VISART11</CourseNumber>
+					<AgencyCourseID>VAR3AS</AgencyCourseID>
+					<CourseTitle>VISUAL ARTS 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>81</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>MTHE11</CourseNumber>
+					<AgencyCourseID>MTH3GS</AgencyCourseID>
+					<CourseTitle>MATH ESSENTIALS 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>GRAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TenthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>79</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>ENG10</CourseNumber>
+					<AgencyCourseID>ENG2AS</AgencyCourseID>
+					<CourseTitle>ENGLISH 10</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<AttendanceCount>
+					<DaysPresent>0</DaysPresent>
+					<DaysAbsent>0</DaysAbsent>
+				</AttendanceCount>
+			</AcademicSession>
+			<AcademicSession>
+				<AcademicSessionDetail>
+					<SessionDesignator>2012-02</SessionDesignator>
+					<SessionSchoolYear>2011-2012</SessionSchoolYear>
+					<SessionBeginDate>0001-01-01</SessionBeginDate>
+					<SessionEndDate>0001-01-01</SessionEndDate>
+				</AcademicSessionDetail>
+				<School>
+					<LocalOrganizationID />
+				</School>
+				<StudentLevel />
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>51</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>OCNS11</CourseNumber>
+					<AgencyCourseID>OCE3AS</AgencyCourseID>
+					<CourseTitle>OCEANS 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>67</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>BTEC11</CourseNumber>
+					<AgencyCourseID>BUS3AS</AgencyCourseID>
+					<CourseTitle>BUSINESS TECHNOLOGY 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>78</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>CHLDST11</CourseNumber>
+					<AgencyCourseID>CST3OS</AgencyCourseID>
+					<CourseTitle>CHILD STUDIES 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>OPEN;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>80</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>ECM11</CourseNumber>
+					<AgencyCourseID>ENG3GS</AgencyCourseID>
+					<CourseTitle>ENGLISH_COMMUNICATIONS 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>GRAD;PSP</NoteMessage>
+				</Course>
+				<AttendanceCount>
+					<DaysPresent>0</DaysPresent>
+					<DaysAbsent>0</DaysAbsent>
+				</AttendanceCount>
+			</AcademicSession>
+			<AcademicSession>
+				<AcademicSessionDetail>
+					<SessionDesignator>2012-09</SessionDesignator>
+					<SessionSchoolYear>2012-2013</SessionSchoolYear>
+					<SessionBeginDate>0001-01-01</SessionBeginDate>
+					<SessionEndDate>0001-01-01</SessionEndDate>
+				</AcademicSessionDetail>
+				<School>
+					<LocalOrganizationID />
+				</School>
+				<StudentLevel />
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TwelfthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>60</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>SOC12AC</CourseNumber>
+					<AgencyCourseID>SOC4AS</AgencyCourseID>
+					<CourseTitle>SOCIOLOGY 12 ACADEMIC</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>EleventhGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>67</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>YOGA11</CourseNumber>
+					<AgencyCourseID>YOG3AS</AgencyCourseID>
+					<CourseTitle>YOGA 11</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TwelfthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>57</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>HSDS12</CourseNumber>
+					<AgencyCourseID>HOU4AS</AgencyCourseID>
+					<CourseTitle>HOUSING AND DESIGN 12</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<AttendanceCount>
+					<DaysPresent>0</DaysPresent>
+					<DaysAbsent>0</DaysAbsent>
+				</AttendanceCount>
+			</AcademicSession>
+			<AcademicSession>
+				<AcademicSessionDetail>
+					<SessionDesignator>2013-02</SessionDesignator>
+					<SessionSchoolYear>2012-2013</SessionSchoolYear>
+					<SessionBeginDate>0001-01-01</SessionBeginDate>
+					<SessionEndDate>0001-01-01</SessionEndDate>
+				</AcademicSessionDetail>
+				<School>
+					<LocalOrganizationID />
+				</School>
+				<StudentLevel />
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TwelfthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>59</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>GEOL12</CourseNumber>
+					<AgencyCourseID>GEL4AS</AgencyCourseID>
+					<CourseTitle>GEOLOGY 12</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TwelfthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>74</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>ECM12</CourseNumber>
+					<AgencyCourseID>ENG4GS</AgencyCourseID>
+					<CourseTitle>ENGLISH_COMMUNICATIONS 12</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>GRAD;PSP</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TwelfthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>94</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>COOPAC12</CourseNumber>
+					<AgencyCourseID>COP4AL</AgencyCourseID>
+					<CourseTitle>CO_OPERATIVE EDUCATION 12</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;ALC</NoteMessage>
+				</Course>
+				<Course>
+					<CourseCreditBasis>Regular</CourseCreditBasis>
+					<CourseCreditUnits>Other</CourseCreditUnits>
+					<CourseCreditLevel>TwelfthGrade</CourseCreditLevel>
+					<CourseCreditValue>0</CourseCreditValue>
+					<CourseCreditEarned>1</CourseCreditEarned>
+					<CourseAcademicGrade>69</CourseAcademicGrade>
+					<CourseSupplementalAcademicGrade />
+					<CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+					<CourseQualityPointsEarned>0</CourseQualityPointsEarned>
+					<CourseNumber>GGS12</CourseNumber>
+					<AgencyCourseID>GGY4AI</AgencyCourseID>
+					<CourseTitle>GLOBAL GEOGRAPHY 12</CourseTitle>
+					<CourseAddDate>0001-01-01</CourseAddDate>
+					<CourseDropDate>0001-01-01</CourseDropDate>
+					<CourseOverrideSchool>
+						<LocalOrganizationID />
+					</CourseOverrideSchool>
+					<CourseBeginDate>0001-01-01</CourseBeginDate>
+					<CourseEndDate>0001-01-01</CourseEndDate>
+					<LanguageOfInstruction>
+						<LanguageCode>ENG</LanguageCode>
+					</LanguageOfInstruction>
+					<NoteMessage>ACAD;PSP</NoteMessage>
+				</Course>
+				<AttendanceCount>
+					<DaysPresent>0</DaysPresent>
+					<DaysAbsent>0</DaysAbsent>
+				</AttendanceCount>
+			</AcademicSession>
+			<NoteMessage>Chignecto Central Regional School Board</NoteMessage>
+		</AcademicRecord>
+		<Health />
+		<NoteMessage>18.00</NoteMessage>
+	</Student>
+</q1:HighSchoolTranscript>
+	

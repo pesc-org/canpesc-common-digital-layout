@@ -1,0 +1,392 @@
+<CollegeTranscript>
+  <TransmissionData>
+    <DocumentID>CNS120020002018091100001</DocumentID>
+    <CreatedDateTime>2019-10-11T14:49:27.7530000</CreatedDateTime>
+    <DocumentTypeCode>StudentRequest</DocumentTypeCode>
+    <TransmissionType>Original</TransmissionType>
+    <Source>
+      <Organization>
+        <GeoCode>CS1200</GeoCode>
+        <PSID>12002000</PSID>
+        <OrganizationName>Atlantic School of Theology</OrganizationName>
+        <Contacts>
+          <Address>
+            <AddressLine>640 Franklyn St</AddressLine>
+            <City>Halifax</City>
+            <StateProvinceCode>NS</StateProvinceCode>
+            <PostalCode>B3H4K3</PostalCode>
+          </Address>
+          <Email>
+            <EmailAddress>cthomson@astheology.ns.ca</EmailAddress>
+          </Email>
+        </Contacts>
+      </Organization>
+    </Source>
+    <Destination>
+      <Organization>
+        <OrganizationName>Acadia University</OrganizationName>
+        <Contacts>
+          <Address>
+            <AddressLine>15 University Avenue</AddressLine>
+            <City>Wolfville</City>
+            <StateProvinceCode>NS</StateProvinceCode>
+            <PostalCode>B4P 2R6</PostalCode>
+          </Address>
+        </Contacts>
+      </Organization>
+    </Destination>
+    <DocumentProcessCode>TEST</DocumentProcessCode>
+    <DocumentOfficialCode>Official</DocumentOfficialCode>
+    <DocumentCompleteCode>Complete</DocumentCompleteCode>
+  </TransmissionData>
+  <Student>
+    <Person>
+      <SchoolAssignedPersonID>20080039</SchoolAssignedPersonID>
+      <Birth>
+        <Birthdate>1978-08-31</Birthdate>
+        <Birthday>08-31</Birthday>
+      </Birth>
+      <Name>
+        <FirstName>Sarah</FirstName>
+        <MiddleName>Emma</MiddleName>
+        <LastName>Abman</LastName>
+      </Name>
+      <Gender>
+        <Gender>Female</Gender>
+      </Gender>
+      <Deceased>
+        <DeceasedIndicator>False</DeceasedIndicator>
+      </Deceased>
+    </Person>
+    <AcademicRecord>
+      <AcademicAward>
+        <AcademicAwardLevel>4.2</AcademicAwardLevel>
+        <AcademicAwardDate>2012-05-05</AcademicAwardDate>
+        <AcademicAwardTitle>MA (Theology and Religious Studies)</AcademicAwardTitle>
+        <AcademicCompletionIndicator>True</AcademicCompletionIndicator>
+        <AcademicCompletionDate>2012-05-05</AcademicCompletionDate>
+      </AcademicAward>
+      <AcademicSummary>
+        <AcademicProgram>
+          <AcademicProgramName>MA (Theology and Religious Studies)</AcademicProgramName>
+          <NoteMessage>Admitted to the Graduate Certificate in Theological Studies Program on August 29, 2008.</NoteMessage>
+        </AcademicProgram>
+      </AcademicSummary>
+    </AcademicRecord>
+    <AcademicRecord>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2011-09</SessionDesignator>
+          <SessionName>2011FALL</SessionName>
+          <SessionSchoolYear>2011-2012</SessionSchoolYear>
+          <SessionBeginDate>2011-09-06</SessionBeginDate>
+          <SessionEndDate>2011-12-16</SessionEndDate>
+        </AcademicSessionDetail>
+        <School>
+          <OrganizationName>Concordia University</OrganizationName>
+        </School>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <Course>
+          <CourseCreditBasis>Equivalence</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeStatusCode>TransferNoGrade</CourseAcademicGradeStatusCode>
+          <CourseTitle>Religion 327 Mediev. Jewish Thgt and Instit.</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Equivalence</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeStatusCode>TransferNoGrade</CourseAcademicGradeStatusCode>
+          <CourseTitle>Religion 697N Modern Jewish History I ...</CourseTitle>
+        </Course>
+      </AcademicSession>
+    </AcademicRecord>
+    <AcademicRecord>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2008-09</SessionDesignator>
+          <SessionName>2008FALL</SessionName>
+          <SessionSchoolYear>2008-2009</SessionSchoolYear>
+          <SessionBeginDate>2008-09-08</SessionBeginDate>
+          <SessionEndDate>2008-12-16</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <AcademicProgram>
+          <AcademicProgramName>Graduate Certificate in Theological Studies</AcademicProgramName>
+        </AcademicProgram>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A-</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>BF 1001</CourseNumber>
+          <CourseTitle>Biblical Foundations: Hebrew Bible</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>PF 1000</CourseNumber>
+          <CourseTitle>Pastoral Foundations</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>TF 1000</CourseNumber>
+          <CourseTitle>Theological Foundations</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A-</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>WF 1000</CourseNumber>
+          <CourseTitle>Worship Foundations</CourseTitle>
+        </Course>
+      </AcademicSession>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2009-01</SessionDesignator>
+          <SessionName>2009WIN</SessionName>
+          <SessionSchoolYear>2008-2009</SessionSchoolYear>
+          <SessionBeginDate>2009-01-05</SessionBeginDate>
+          <SessionEndDate>2009-04-15</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <AcademicProgram>
+          <AcademicProgramName>Graduate Certificate in Theological Studies</AcademicProgramName>
+        </AcademicProgram>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A-</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>BF 1002</CourseNumber>
+          <CourseTitle>Biblical Foundations: New Testament</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>ET 2102</CourseNumber>
+          <CourseTitle>Sexual Ethics</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>SFE 1000</CourseNumber>
+          <CourseTitle>Supervised Field Education</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>ST 2111</CourseNumber>
+          <CourseTitle>Postmodern Theologies</CourseTitle>
+        </Course>
+      </AcademicSession>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2009-05</SessionDesignator>
+          <SessionName>2009SUM</SessionName>
+          <SessionSchoolYear>2009-2010</SessionSchoolYear>
+          <SessionBeginDate>2009-05-01</SessionBeginDate>
+          <SessionEndDate>2009-07-31</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <AcademicProgram>
+          <AcademicProgramName>Graduate Certificate in Theological Studies</AcademicProgramName>
+        </AcademicProgram>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>2.0</CourseCreditValue>
+          <CourseCreditEarned>2.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>PT 3901</CourseNumber>
+          <CourseTitle>Supervised Pastoral Education</CourseTitle>
+        </Course>
+      </AcademicSession>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2010-09</SessionDesignator>
+          <SessionName>2010FALL</SessionName>
+          <SessionSchoolYear>2010-2011</SessionSchoolYear>
+          <SessionBeginDate>2010-09-07</SessionBeginDate>
+          <SessionEndDate>2010-12-17</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <AcademicProgram>
+          <AcademicProgramName>MA (Theology and Religious Studies)</AcademicProgramName>
+        </AcademicProgram>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>0.0</CourseCreditValue>
+          <CourseCreditEarned>0.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGradeStatusCode>Other</CourseAcademicGradeStatusCode>
+          <CourseNumber>Thesis 2</CourseNumber>
+          <CourseTitle>Registration for 2 thesis credits</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>DSt 6001</CourseNumber>
+          <CourseTitle>MA Directed Study:  Judaism and Idolatry:  Past and Present</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>2.0</CourseCreditValue>
+          <CourseCreditEarned>2.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>CONT</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>InProgress</CourseAcademicGradeStatusCode>
+          <CourseNumber>GTRS 6000</CourseNumber>
+          <CourseTitle>Theory and Methods in Theology and Religious Studies</CourseTitle>
+        </Course>
+      </AcademicSession>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2011-01</SessionDesignator>
+          <SessionName>2011WIN</SessionName>
+          <SessionSchoolYear>2010-2011</SessionSchoolYear>
+          <SessionBeginDate>2011-01-04</SessionBeginDate>
+          <SessionEndDate>2011-04-15</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <AcademicProgram>
+          <AcademicProgramName>MA (Theology and Religious Studies)</AcademicProgramName>
+        </AcademicProgram>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>DSt 6002</CourseNumber>
+          <CourseTitle>Directed Study:  Qualitative Field Research on Religion</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>2.0</CourseCreditValue>
+          <CourseCreditEarned>2.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>GTRS 6000</CourseNumber>
+          <CourseTitle>Theory and Methods in Theology and Religious Studies</CourseTitle>
+        </Course>
+      </AcademicSession>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2011-09</SessionDesignator>
+          <SessionName>2011FALL</SessionName>
+          <SessionSchoolYear>2011-2012</SessionSchoolYear>
+          <SessionBeginDate>2011-09-06</SessionBeginDate>
+          <SessionEndDate>2011-12-16</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <AcademicProgram>
+          <AcademicProgramName>MA (Theology and Religious Studies)</AcademicProgramName>
+        </AcademicProgram>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>DSt 6003</CourseNumber>
+          <CourseTitle>Directed Study:  Pastoral Theology and the Experience of...</CourseTitle>
+        </Course>
+      </AcademicSession>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2012-01</SessionDesignator>
+          <SessionName>2012WIN</SessionName>
+          <SessionSchoolYear>2011-2012</SessionSchoolYear>
+          <SessionBeginDate>2012-01-03</SessionBeginDate>
+          <SessionEndDate>2012-04-16</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <AcademicProgram>
+          <AcademicProgramName>MA (Theology and Religious Studies)</AcademicProgramName>
+        </AcademicProgram>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Graduate</CourseCreditLevel>
+          <CourseCreditValue>1.0</CourseCreditValue>
+          <CourseCreditEarned>1.0</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>Completed</CourseAcademicGradeStatusCode>
+          <CourseNumber>PT 3410(Int)</CourseNumber>
+          <CourseTitle>Relational Practices with Families in Oncology and Palli...</CourseTitle>
+        </Course>
+      </AcademicSession>
+    </AcademicRecord>
+  </Student>
+</CollegeTranscript>

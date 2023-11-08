@@ -1,0 +1,1671 @@
+<?xml version="1.0"?>
+<AcRecBat:AcademicRecordBatch xmlns:core="urn:org:pesc:core:CoreMain:v1.5.0" xmlns:AcRec="urn:org:pesc:sector:AcademicRecord:v1.4.0" xmlns:AcRecBat="urn:org:pesc:message:AcademicRecordBatch:v2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:org:pesc:message:AcademicRecordBatch:v2.0.0 AcademicRecordBatch_v2.0.0.xsd">
+	<BatchEnvelope>
+		<BatchID>2020-08-06-361186-PSFT</BatchID>
+		<BatchDateTime>2020-08-06T15:08:37-05:00</BatchDateTime>
+		<BatchDeliveryMethod>ParseBatch</BatchDeliveryMethod>
+		<SourceAgency>
+			<Organization>
+				<MutuallyDefined>10000000003</MutuallyDefined>
+				<OrganizationName>TrustedLink</OrganizationName>
+			</Organization>
+		</SourceAgency>
+		<DestinationAgency>
+			<Organization>
+				<MutuallyDefined>10000000000</MutuallyDefined>
+				<OrganizationName>Ontario Univ. Applic. Centre</OrganizationName>
+			</Organization>
+		</DestinationAgency>
+	</BatchEnvelope>
+	<BatchContent>
+		<ColTrn:CollegeTranscript xmlns:core="urn:org:pesc:core:CoreMain:v1.12.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:org:pesc:message:CollegeTranscript:v1.4.0 CollegeTranscript_v1.4.0.xsd" xmlns:AcRec="urn:org:pesc:sector:AcademicRecord:v1.7.0" xmlns:ColTrn="urn:org:pesc:message:CollegeTranscript:v1.4.0">
+			<TransmissionData>
+				<DocumentID>T4712626</DocumentID>
+				<CreatedDateTime>2020-08-06T13:15:17-05:00</CreatedDateTime>
+				<DocumentTypeCode>RequestedRecord</DocumentTypeCode>
+				<TransmissionType>Original</TransmissionType>
+				<Source>
+					<Organization>
+						<PSIS>35015000</PSIS>
+						<OrganizationName>University of Toronto</OrganizationName>
+					</Organization>
+				</Source>
+				<Destination>
+					<Organization>
+						<MutuallyDefined>10000000000</MutuallyDefined>
+						<OrganizationName>OUAC</OrganizationName>
+					</Organization>
+				</Destination>
+				<DocumentProcessCode>TEST</DocumentProcessCode>
+				<RequestTrackingID>2020080597199</RequestTrackingID>
+				<NoteMessage>LEGEND          https://www.transcripts.utoronto.ca/transcriptguide/</NoteMessage>
+			</TransmissionData>
+			<Student>
+				<Person>
+					<SchoolAssignedPersonID>123456789</SchoolAssignedPersonID>
+					<AgencyIdentifier>
+						<AgencyAssignedID>20211401260</AgencyAssignedID>
+						<AgencyCode>MutuallyDefined</AgencyCode>
+						<AgencyName>OUAC</AgencyName>
+					</AgencyIdentifier>
+					<AgencyIdentifier>
+						<AgencyAssignedID>999999999</AgencyAssignedID>
+						<AgencyCode>State</AgencyCode>
+						<StateProvinceCode>ON</StateProvinceCode>
+					</AgencyIdentifier>
+					<Birth>
+						<Birthday>--11-12</Birthday>
+					</Birth>
+					<Name>
+						<NameCode>Formal</NameCode>
+						<FirstName>Harry</FirstName>
+						<LastName>Potter</LastName>
+					</Name>
+				</Person>
+				<AcademicRecord>
+					<AcademicAward>
+						<AcademicAwardLevel>2.5</AcademicAwardLevel>
+						<AcademicAwardDate>2011-06-01</AcademicAwardDate>
+						<AcademicAwardTitle>Honours Bachelor of Arts</AcademicAwardTitle>
+						<AcademicAwardProgram>
+							<AcademicProgramType>Major</AcademicProgramType>
+							<AcademicProgramName>Anthropology</AcademicProgramName>
+						</AcademicAwardProgram>
+						<AcademicAwardProgram>
+							<AcademicProgramType>SecondMajor</AcademicProgramType>
+							<AcademicProgramName>Urban Studies</AcademicProgramName>
+						</AcademicAwardProgram>
+					</AcademicAward>
+					<AcademicAward>
+						<AcademicAwardLevel>4.2</AcademicAwardLevel>
+						<AcademicAwardDate>2018-11-01</AcademicAwardDate>
+						<AcademicAwardTitle>Master of Education</AcademicAwardTitle>
+					</AcademicAward>
+					<AcademicSummary>
+						<NoteMessage>REG HISTORY     2005 Fall-2011 Winter: Faculty of Arts and Science</NoteMessage>
+						<NoteMessage>REG HISTORY     2015 Fall-2018 Summer: School of Graduate Studies</NoteMessage>
+					</AcademicSummary>
+					<AcademicSummary>
+						<AcademicSummaryType>UserDefined</AcademicSummaryType>
+						<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+						<GPA>
+							<CreditHoursEarned>1.50</CreditHoursEarned>
+							<CreditUnit>Other</CreditUnit>
+							<GradePointAverage>3.50</GradePointAverage>
+							<NoteMessage>SESSIONAL GPA</NoteMessage>
+						</GPA>
+					</AcademicSummary>
+					<AcademicSummary>
+						<AcademicSummaryType>UserDefined</AcademicSummaryType>
+						<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+						<GPA>
+							<GradePointAverage>3.34</GradePointAverage>
+							<NoteMessage>ANNUAL GPA</NoteMessage>
+						</GPA>
+						<Delinquencies>GoodStanding</Delinquencies>
+					</AcademicSummary>
+					<AcademicSummary>
+						<AcademicSummaryType>Cumulative</AcademicSummaryType>
+						<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+						<GPA>
+							<GradePointAverage>2.72</GradePointAverage>
+						</GPA>
+					</AcademicSummary>
+					<Course>
+						<CourseCreditBasis>Regular</CourseCreditBasis>
+						<CourseCreditUnits>Semester</CourseCreditUnits>
+						<CourseCreditValue>0.50</CourseCreditValue>
+						<CourseCreditEarned>0.50</CourseCreditEarned>
+						<CourseAcademicGrade>TR</CourseAcademicGrade>
+						<CourseAcademicGradeStatusCode>TransferNoGrade</CourseAcademicGradeStatusCode>
+						<CourseSubjectAbbreviation>LBST</CourseSubjectAbbreviation>
+						<CourseNumber>1B05</CourseNumber>
+						<CourseTitle>Global Visual and Material Cu</CourseTitle>
+					</Course>
+					<Course>
+						<CourseCreditBasis>Regular</CourseCreditBasis>
+						<CourseCreditUnits>Semester</CourseCreditUnits>
+						<CourseCreditValue>0.50</CourseCreditValue>
+						<CourseCreditEarned>0.50</CourseCreditEarned>
+						<CourseAcademicGrade>TR</CourseAcademicGrade>
+						<CourseAcademicGradeStatusCode>TransferNoGrade</CourseAcademicGradeStatusCode>
+						<CourseSubjectAbbreviation>VISC</CourseSubjectAbbreviation>
+						<CourseNumber>2TRN</CourseNumber>
+						<CourseTitle>Transfer Credit</CourseTitle>
+					</Course>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2005-09</SessionDesignator>
+							<SessionDesignatorSuffix>1</SessionDesignatorSuffix>
+							<SessionName>2005 Fall</SessionName>
+							<SessionBeginDate>2005-09-01</SessionBeginDate>
+							<SessionEndDate>2005-12-31</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>PostsecondaryBachelorPreliminaryYear</StudentLevelCode>
+							<NoteMessage>1st Year Studies in Hum &amp; Soci Sci St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Sciences</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>60</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>C-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>AST</CourseSubjectAbbreviation>
+							<CourseNumber>101H1</CourseNumber>
+							<CourseTitle>Sun &amp; its Neighbours</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ECO</CourseSubjectAbbreviation>
+							<CourseNumber>100Y1</CourseNumber>
+							<CourseTitle>Intro Economics</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ITA</CourseSubjectAbbreviation>
+							<CourseNumber>101Y1</CourseNumber>
+							<CourseTitle>Elem Italian Lang</CourseTitle>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>0.50</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>1.70</GradePointAverage>
+							</GPA>
+							<NoteMessage>SESSIONAL GPA</NoteMessage>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>1.70</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2006-01</SessionDesignator>
+							<SessionDesignatorSuffix>2</SessionDesignatorSuffix>
+							<SessionName>2006 Winter</SessionName>
+							<SessionBeginDate>2006-01-01</SessionBeginDate>
+							<SessionEndDate>2006-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>53</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>D</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ECO</CourseSubjectAbbreviation>
+							<CourseNumber>100Y1</CourseNumber>
+							<CourseTitle>Intro Economics</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C+</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>66</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>C</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ITA</CourseSubjectAbbreviation>
+							<CourseNumber>101Y1</CourseNumber>
+							<CourseTitle>Elem Italian Lang</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>50</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>D-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>MUS</CourseSubjectAbbreviation>
+							<CourseNumber>202H1</CourseNumber>
+							<CourseTitle>Beethoven</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C+</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>2.50</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>1.34</GradePointAverage>
+							</GPA>
+							<NoteMessage>SESSIONAL GPA</NoteMessage>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>1.40</GradePointAverage>
+							</GPA>
+							<NoteMessage>ANNUAL GPA</NoteMessage>
+							<NoteMessage>DECISION        Not assessed</NoteMessage>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>1.40</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2006-09</SessionDesignator>
+							<SessionDesignatorSuffix>3</SessionDesignatorSuffix>
+							<SessionName>2006 Fall</SessionName>
+							<SessionBeginDate>2006-09-01</SessionBeginDate>
+							<SessionEndDate>2006-12-31</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>PostsecondaryBachelorPreliminaryYear</StudentLevelCode>
+							<NoteMessage>1st Year Studies in Hum &amp; Soc Sci St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>71</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ARC</CourseSubjectAbbreviation>
+							<CourseNumber>131H1</CourseNumber>
+							<CourseTitle>Intr to Architecture</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>78</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B+</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>SCI</CourseSubjectAbbreviation>
+							<CourseNumber>199H1</CourseNumber>
+							<CourseTitle>1st Yr Sem: Sciences</CourseTitle>
+							<NoteMessage>COURSE SUBTITLE The Poetry of Physics and the Physics of Poetry</NoteMessage>
+							<NoteMessage>CLASS AVERAGE   B</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>65</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>C</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>VIS</CourseSubjectAbbreviation>
+							<CourseNumber>120H1</CourseNumber>
+							<CourseTitle>Visual Concepts</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>VIS</CourseSubjectAbbreviation>
+							<CourseNumber>130H1</CourseNumber>
+							<CourseTitle>Visual Strategies</CourseTitle>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>1.50</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>2.67</GradePointAverage>
+							</GPA>
+							<NoteMessage>SESSIONAL GPA</NoteMessage>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>1.82</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2007-01</SessionDesignator>
+							<SessionDesignatorSuffix>4</SessionDesignatorSuffix>
+							<SessionName>2007 Winter</SessionName>
+							<SessionBeginDate>2007-01-04</SessionBeginDate>
+							<SessionEndDate>2007-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>PostsecondaryBachelorPreliminaryYear</StudentLevelCode>
+							<NoteMessage>1st Year Studies in Hum &amp; Soc Scie St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>82</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>322H1</CourseNumber>
+							<CourseTitle>Ant of Youth Culture</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B+</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>70</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ARC</CourseSubjectAbbreviation>
+							<CourseNumber>132H1</CourseNumber>
+							<CourseTitle>Contemp Architecture</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C+</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>74</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>VIS</CourseSubjectAbbreviation>
+							<CourseNumber>130H1</CourseNumber>
+							<CourseTitle>Visual Strategies</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>1.50</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>3.13</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.90</GradePointAverage>
+								<NoteMessage>ANNUAL GPA</NoteMessage>
+							</GPA>
+							<Delinquencies>GoodStanding</Delinquencies>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.15</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2007-09</SessionDesignator>
+							<SessionDesignatorSuffix>5</SessionDesignatorSuffix>
+							<SessionName>2007 Fall</SessionName>
+							<SessionBeginDate>2007-09-04</SessionBeginDate>
+							<SessionEndDate>2007-12-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Postsecondary</StudentLevelCode>
+							<NoteMessage>Bachelor's Degree Program St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>100Y1</CourseNumber>
+							<CourseTitle>Intro Anthropology</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>204Y1</CourseNumber>
+							<CourseTitle>Social Cultural Anth</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>73</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>253H1</CourseNumber>
+							<CourseTitle>Language &amp; Society</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>77</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B+</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ARC</CourseSubjectAbbreviation>
+							<CourseNumber>232H1</CourseNumber>
+							<CourseTitle>Arch, Media, Communic</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>1.00</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>3.15</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.29</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2008-01</SessionDesignator>
+							<SessionDesignatorSuffix>6</SessionDesignatorSuffix>
+							<SessionName>2008 Winter</SessionName>
+							<SessionBeginDate>2008-01-04</SessionBeginDate>
+							<SessionEndDate>2008-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Postsecondary</StudentLevelCode>
+							<NoteMessage>Bachelor's Degree Program St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>63</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>C</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>100Y1</CourseNumber>
+							<CourseTitle>Intro Anthropology</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C-</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>63</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>C</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>204Y1</CourseNumber>
+							<CourseTitle>Social Cultural Anth</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>82</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ARC</CourseSubjectAbbreviation>
+							<CourseNumber>236H1</CourseNumber>
+							<CourseTitle>Design Cult Trans</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B+</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>70</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>FAH</CourseSubjectAbbreviation>
+							<CourseNumber>270H1</CourseNumber>
+							<CourseTitle>Architecture: Rituals</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>3.00</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>2.40</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.59</GradePointAverage>
+								<NoteMessage>ANNUAL GPA</NoteMessage>
+							</GPA>
+							<Delinquencies>GoodStanding</Delinquencies>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.33</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2008-09</SessionDesignator>
+							<SessionDesignatorSuffix>7</SessionDesignatorSuffix>
+							<SessionName>2008 Fall</SessionName>
+							<SessionBeginDate>2008-09-01</SessionBeginDate>
+							<SessionEndDate>2008-12-31</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Postsecondary</StudentLevelCode>
+							<NoteMessage>Bachelor's Degree Program St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>323Y1</CourseNumber>
+							<CourseTitle>Social Theory thr Cult</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>354Y1</CourseNumber>
+							<CourseTitle>Japan in Global Cont</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>73</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>FAH</CourseSubjectAbbreviation>
+							<CourseNumber>216H1</CourseNumber>
+							<CourseTitle>Later Medieval Art</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>INI</CourseSubjectAbbreviation>
+							<CourseNumber>235Y1</CourseNumber>
+							<CourseTitle>Interdisciplinarity</CourseTitle>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>0.50</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>3.00</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.36</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2009-01</SessionDesignator>
+							<SessionDesignatorSuffix>8</SessionDesignatorSuffix>
+							<SessionName>2009 Winter</SessionName>
+							<SessionBeginDate>2009-01-04</SessionBeginDate>
+							<SessionEndDate>2009-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Postsecondary</StudentLevelCode>
+							<NoteMessage>Bachelor's Degree Program St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>70</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>323Y1</CourseNumber>
+							<CourseTitle>Social Theory thr Cult</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C+</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>74</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>354Y1</CourseNumber>
+							<CourseTitle>Japan in Global Cont</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>NoCredit</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>68</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>C+</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>GGR</CourseSubjectAbbreviation>
+							<CourseNumber>124H1</CourseNumber>
+							<CourseTitle>Urbanization</CourseTitle>
+							<NoteMessage>ATTENDANCE STS  EXT</NoteMessage>
+							<NoteMessage>CLASS AVERAGE   C+</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>76</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>INI</CourseSubjectAbbreviation>
+							<CourseNumber>235Y1</CourseNumber>
+							<CourseTitle>Interdisciplinarity</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>3.00</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>2.90</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.91</GradePointAverage>
+								<NoteMessage>ANNUAL GPA</NoteMessage>
+							</GPA>
+							<Delinquencies>GoodStanding</Delinquencies>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.48</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2009-09</SessionDesignator>
+							<SessionDesignatorSuffix>9</SessionDesignatorSuffix>
+							<SessionName>2009 Fall</SessionName>
+							<SessionBeginDate>2009-09-01</SessionBeginDate>
+							<SessionEndDate>2009-12-31</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Postsecondary</StudentLevelCode>
+							<NoteMessage>Bachelor's Degree Program St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>364Y1</CourseNumber>
+							<CourseTitle>Environ &amp; Globaliz</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>NoCredit</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>65</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>C</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>GGR</CourseSubjectAbbreviation>
+							<CourseNumber>101H1</CourseNumber>
+							<CourseTitle>Ancient Civ Environ</CourseTitle>
+							<NoteMessage>ATTENDANCE STS  EXT</NoteMessage>
+							<NoteMessage>CLASS AVERAGE   C-</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>0.00</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeStatusCode>InProgress</CourseAcademicSupplementalGradeStatusCode>
+									<CourseAcademicSupplementalGrade>IPR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>INI</CourseSubjectAbbreviation>
+							<CourseNumber>437Y1</CourseNumber>
+							<CourseTitle>Urban Exper'l Learning</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>75</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>JGI</CourseSubjectAbbreviation>
+							<CourseNumber>346H1</CourseNumber>
+							<CourseTitle>Urbn Planning Proces</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>0.50</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>3.00</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.50</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2010-01</SessionDesignator>
+							<SessionDesignatorSuffix>10</SessionDesignatorSuffix>
+							<SessionName>2010 Winter</SessionName>
+							<SessionBeginDate>2010-01-04</SessionBeginDate>
+							<SessionEndDate>2010-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Postsecondary</StudentLevelCode>
+							<NoteMessage>Bachelor's Degree Program St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>71</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>364Y1</CourseNumber>
+							<CourseTitle>Environ &amp; Globaliz</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>76</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>GGR</CourseSubjectAbbreviation>
+							<CourseNumber>252H1</CourseNumber>
+							<CourseTitle>Marketing Geography</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>83</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>GGR</CourseSubjectAbbreviation>
+							<CourseNumber>332H1</CourseNumber>
+							<CourseTitle>Urban Waste Managmt</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>1.00</CourseCreditValue>
+							<CourseCreditEarned>1.00</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>80</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>INI</CourseSubjectAbbreviation>
+							<CourseNumber>437Y1</CourseNumber>
+							<CourseTitle>Urban Exper'l Learning</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B+</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>3.00</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>3.25</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>3.21</GradePointAverage>
+								<NoteMessage>ANNUAL GPA</NoteMessage>
+							</GPA>
+							<Delinquencies>GoodStanding</Delinquencies>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.63</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2010-09</SessionDesignator>
+							<SessionDesignatorSuffix>11</SessionDesignatorSuffix>
+							<SessionName>2010 Fall</SessionName>
+							<SessionBeginDate>2010-09-01</SessionBeginDate>
+							<SessionEndDate>2010-12-31</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Postsecondary</StudentLevelCode>
+							<NoteMessage>Bachelor's Degree Program St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>91</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A+</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>318H1</CourseNumber>
+							<CourseTitle>Preindustrial City</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>63</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>C</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>GGR</CourseSubjectAbbreviation>
+							<CourseNumber>272H1</CourseNumber>
+							<CourseTitle>Geo Info &amp; Mapping I</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   C+</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>82</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>GGR</CourseSubjectAbbreviation>
+							<CourseNumber>335H1</CourseNumber>
+							<CourseTitle>Business &amp; Env Change</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>1.50</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>3.23</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.68</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2011-01</SessionDesignator>
+							<SessionDesignatorSuffix>12</SessionDesignatorSuffix>
+							<SessionName>2011 Winter</SessionName>
+							<SessionBeginDate>2011-01-04</SessionBeginDate>
+							<SessionEndDate>2011-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Postsecondary</StudentLevelCode>
+							<NoteMessage>Bachelor's Degree Program St. Michael's College</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>Faculty of Arts and Science</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>79</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>B+</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>ANT</CourseSubjectAbbreviation>
+							<CourseNumber>371H1</CourseNumber>
+							<CourseTitle>Human Nutrition Ecol</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGrade>CR</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>GGR</CourseSubjectAbbreviation>
+							<CourseNumber>273H1</CourseNumber>
+							<CourseTitle>Ggr Info &amp; Map II</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B-</NoteMessage>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Undergraduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseAcademicGradeScaleCode>89</CourseAcademicGradeScaleCode>
+							<CourseAcademicGrade>81</CourseAcademicGrade>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>02</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>INI</CourseSubjectAbbreviation>
+							<CourseNumber>337H1</CourseNumber>
+							<CourseTitle>Urban Problems</CourseTitle>
+							<NoteMessage>CLASS AVERAGE   B+</NoteMessage>
+						</Course>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<CreditHoursEarned>1.50</CreditHoursEarned>
+								<CreditUnit>Other</CreditUnit>
+								<GradePointAverage>3.50</GradePointAverage>
+								<NoteMessage>SESSIONAL GPA</NoteMessage>
+							</GPA>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>UserDefined</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>3.34</GradePointAverage>
+								<NoteMessage>ANNUAL GPA</NoteMessage>
+							</GPA>
+							<Delinquencies>GoodStanding</Delinquencies>
+						</AcademicSummary>
+						<AcademicSummary>
+							<AcademicSummaryType>Cumulative</AcademicSummaryType>
+							<AcademicSummaryLevel>Undergraduate</AcademicSummaryLevel>
+							<GPA>
+								<GradePointAverage>2.72</GradePointAverage>
+							</GPA>
+						</AcademicSummary>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2015-09</SessionDesignator>
+							<SessionDesignatorSuffix>16</SessionDesignatorSuffix>
+							<SessionName>2015 Fall</SessionName>
+							<SessionBeginDate>2015-09-04</SessionBeginDate>
+							<SessionEndDate>2015-12-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Masters</StudentLevelCode>
+							<NoteMessage>Master of Education, Higher Education</NoteMessage>
+							<NoteMessage>PROGRAM CONT'D  Department of Leadership, Higher and Adult Education</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>School of Graduate Studies</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1803H</CourseNumber>
+							<CourseTitle>Recurring Issues in Postsecondary Education</CourseTitle>
+						</Course>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2016-01</SessionDesignator>
+							<SessionDesignatorSuffix>17</SessionDesignatorSuffix>
+							<SessionName>2016 Winter</SessionName>
+							<SessionBeginDate>2016-01-04</SessionBeginDate>
+							<SessionEndDate>2016-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Masters</StudentLevelCode>
+							<NoteMessage>Master of Education, Higher Education</NoteMessage>
+							<NoteMessage>PROGRAM CONT'D  Department of Leadership, Higher and Adult Education</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>School of Graduate Studies</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A+</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1854H</CourseNumber>
+							<CourseTitle>Student Development Theory</CourseTitle>
+						</Course>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2016-05</SessionDesignator>
+							<SessionDesignatorSuffix>18</SessionDesignatorSuffix>
+							<SessionName>2016 Summer</SessionName>
+							<SessionBeginDate>2016-05-04</SessionBeginDate>
+							<SessionEndDate>2016-08-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Masters</StudentLevelCode>
+							<NoteMessage>Master of Education, Higher Education</NoteMessage>
+							<NoteMessage>PROGRAM CONT'D  Department of Leadership, Higher and Adult Education</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>School of Graduate Studies</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A-</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1836H</CourseNumber>
+							<CourseTitle>Critical Analysis of Research in Higher Education</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1847H</CourseNumber>
+							<CourseTitle>Human Resource and Diversity Issues in Higher Education</CourseTitle>
+						</Course>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2017-01</SessionDesignator>
+							<SessionDesignatorSuffix>19</SessionDesignatorSuffix>
+							<SessionName>2017 Winter</SessionName>
+							<SessionBeginDate>2017-01-04</SessionBeginDate>
+							<SessionEndDate>2017-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Masters</StudentLevelCode>
+							<NoteMessage>Master of Education, Higher Education</NoteMessage>
+							<NoteMessage>PROGRAM CONT'D  Department of Leadership, Higher and Adult Education</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>School of Graduate Studies</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1820H</CourseNumber>
+							<CourseTitle>Special Topics in Higher Education: Master's Level</CourseTitle>
+							<NoteMessage>COURSE SUBTITLE Organizational Development</NoteMessage>
+						</Course>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2017-05</SessionDesignator>
+							<SessionDesignatorSuffix>20</SessionDesignatorSuffix>
+							<SessionName>2017 Summer</SessionName>
+							<SessionBeginDate>2017-05-04</SessionBeginDate>
+							<SessionEndDate>2017-08-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Masters</StudentLevelCode>
+							<NoteMessage>Master of Education, Higher Education</NoteMessage>
+							<NoteMessage>PROGRAM CONT'D  Department of Leadership, Higher and Adult Education</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>School of Graduate Studies</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1843H</CourseNumber>
+							<CourseTitle>Higher Education and the Law</CourseTitle>
+						</Course>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>5800H</CourseNumber>
+							<CourseTitle>Special Topics in Higher Education: Master's Level</CourseTitle>
+							<NoteMessage>COURSE SUBTITLE Innovation in Higher Education</NoteMessage>
+						</Course>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2017-09</SessionDesignator>
+							<SessionDesignatorSuffix>21</SessionDesignatorSuffix>
+							<SessionName>2017 Fall</SessionName>
+							<SessionBeginDate>2017-09-04</SessionBeginDate>
+							<SessionEndDate>2017-12-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Masters</StudentLevelCode>
+							<NoteMessage>Master of Education, Higher Education</NoteMessage>
+							<NoteMessage>PROGRAM CONT'D  Department of Leadership, Higher and Adult Education</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>School of Graduate Studies</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1835H</CourseNumber>
+							<CourseTitle>Logics and Strategies of Case Study Research</CourseTitle>
+						</Course>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2018-01</SessionDesignator>
+							<SessionDesignatorSuffix>22</SessionDesignatorSuffix>
+							<SessionName>2018 Winter</SessionName>
+							<SessionBeginDate>2018-01-04</SessionBeginDate>
+							<SessionEndDate>2018-04-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Masters</StudentLevelCode>
+							<NoteMessage>Master of Education, Higher Education</NoteMessage>
+							<NoteMessage>PROGRAM CONT'D  Department of Leadership, Higher and Adult Education</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>School of Graduate Studies</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1828H</CourseNumber>
+							<CourseTitle>Evaluation in Higher Education</CourseTitle>
+						</Course>
+					</AcademicSession>
+					<AcademicSession>
+						<AcademicSessionDetail>
+							<SessionDesignator>2018-05</SessionDesignator>
+							<SessionDesignatorSuffix>23</SessionDesignatorSuffix>
+							<SessionName>2018 Summer</SessionName>
+							<SessionBeginDate>2018-05-04</SessionBeginDate>
+							<SessionEndDate>2018-08-21</SessionEndDate>
+						</AcademicSessionDetail>
+						<StudentLevel>
+							<StudentLevelCode>Masters</StudentLevelCode>
+							<NoteMessage>Master of Education, Higher Education</NoteMessage>
+							<NoteMessage>PROGRAM CONT'D  Department of Leadership, Higher and Adult Education</NoteMessage>
+						</StudentLevel>
+						<AcademicProgram>
+							<AcademicProgramName>School of Graduate Studies</AcademicProgramName>
+						</AcademicProgram>
+						<Course>
+							<CourseCreditBasis>Regular</CourseCreditBasis>
+							<CourseCreditUnits>Other</CourseCreditUnits>
+							<CourseCreditLevel>Graduate</CourseCreditLevel>
+							<CourseCreditValue>0.50</CourseCreditValue>
+							<CourseCreditEarned>0.50</CourseCreditEarned>
+							<CourseSupplementalAcademicGrade>
+								<CourseSupplementalGrade>
+									<CourseAcademicSupplementalGradeScaleCode>15</CourseAcademicSupplementalGradeScaleCode>
+									<CourseAcademicSupplementalGrade>A+</CourseAcademicSupplementalGrade>
+								</CourseSupplementalGrade>
+							</CourseSupplementalAcademicGrade>
+							<CourseSubjectAbbreviation>LHA</CourseSubjectAbbreviation>
+							<CourseNumber>1852H</CourseNumber>
+							<CourseTitle>Individual Reading and Research in Higher Education:</CourseTitle>
+							<NoteMessage>TITLE CONTINUED Master's Level</NoteMessage>
+							<NoteMessage>COURSE SUBTITLE Exploring Internationalization</NoteMessage>
+						</Course>
+					</AcademicSession>
+				</AcademicRecord>
+			</Student>
+		</ColTrn:CollegeTranscript>
+	</BatchContent>
+</AcRecBat:AcademicRecordBatch>

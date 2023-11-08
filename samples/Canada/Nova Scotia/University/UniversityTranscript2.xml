@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CollegeTranscript>
+  <TransmissionData>
+    <DocumentID>CNS120060002019071114005</DocumentID>
+    <CreatedDateTime>2019-07-11T11:03:07-04:00</CreatedDateTime>
+    <DocumentTypeCode>StudentRequest</DocumentTypeCode>
+    <TransmissionType>Original</TransmissionType>
+    <Source>
+      <Organization>
+        <GEOCode>CA00075</GEOCode>
+        <PSIS>12006000</PSIS>
+        <OrganizationName>Mount Saint Vincent University</OrganizationName>
+        <Contacts>
+          <Address>
+            <City>Halifax</City>
+            <StateProvinceCode>NS</StateProvinceCode>
+            <PostalCode>B3M 2J6</PostalCode>
+          </Address>
+          <Phone>
+            <AreaCityCode>902</AreaCityCode>
+            <PhoneNumber>4576788</PhoneNumber>
+          </Phone>
+          <Email>
+            <EmailAddress>transcripts@msvu.ca</EmailAddress>
+          </Email>
+        </Contacts>
+      </Organization>
+    </Source>
+    <Destination>
+      <Organization>
+        <GEOCode>CA00072</GEOCode>
+        <PSIS>12001000</PSIS>
+        <OrganizationName>Acadia University</OrganizationName>
+        <Contacts>
+          <Email>
+            <EmailAddress></EmailAddress>
+          </Email>
+        </Contacts>
+      </Organization>
+    </Destination>
+    <DocumentProcessCode>TEST</DocumentProcessCode>
+    <DocumentOfficialCode>Official</DocumentOfficialCode>
+    <DocumentCompleteCode>Complete</DocumentCompleteCode>
+  </TransmissionData>
+  <Student>
+    <Person>
+      <SchoolAssignedPersonID>0455739</SchoolAssignedPersonID>
+      <Birth>
+        <BirthDate>1974-01-18</BirthDate>
+        <Birthday>01-18</Birthday>
+      </Birth>
+      <Name>
+        <FirstName>Bradley</FirstName>
+        <MiddleName>James</MiddleName>
+        <LastName>White</LastName>
+      </Name>
+      <Gender>
+        <GenderCode>Male</GenderCode>
+      </Gender>
+      <Deceased>
+        <DeceasedIndicator>false</DeceasedIndicator>
+      </Deceased>
+    </Person>
+    <AcademicRecord>
+      <AcademicAward>
+        <AcademicAwardLevel>2.4</AcademicAwardLevel>
+        <AcademicAwardDate>2004-05-01</AcademicAwardDate>
+        <AcademicAwardTitle>BED - Bachelor of Education</AcademicAwardTitle>
+        <AcademicAwardProgram>
+          <AcademicProgramType>Major</AcademicProgramType>
+          <AcademicProgramName>SECON - Secondary Education</AcademicProgramName>
+        </AcademicAwardProgram>
+        <AcademicCompletionIndicator>true</AcademicCompletionIndicator>
+        <AcademicCompletionDate>2004-05-01</AcademicCompletionDate>
+        <AcademicSummary>
+          <AcademicSummaryType>All</AcademicSummaryType>
+          <AcademicSummaryLevel></AcademicSummaryLevel>
+        </AcademicSummary>
+      </AcademicAward>
+      <AcademicSummary>
+        <AcademicSummaryType>All</AcademicSummaryType>
+        <AcademicSummaryLevel></AcademicSummaryLevel>
+        <Delinquencies>GoodStanding</Delinquencies>
+      </AcademicSummary>
+    </AcademicRecord>
+    <AcademicRecord></AcademicRecord>
+    <AcademicRecord>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2002-09</SessionDesignator>
+          <SessionName>2002/FW</SessionName>
+          <SessionBeginDate>2002-09-04</SessionBeginDate>
+          <SessionEndDate>2003-04-07</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A+</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>2.15000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5321</CourseNumber>
+          <CourseTitle>Philosophy of Education</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A+</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>2.15000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5322</CourseNumber>
+          <CourseTitle>Schooling, Gender &amp; Sexuality</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>2.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5323</CourseNumber>
+          <CourseTitle>Edu Across Soc &amp; Cultural Diff</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>2.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5340</CourseNumber>
+          <CourseTitle>Curr Prac in Jr/Sr Hgh:ENGL I</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>2.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5341</CourseNumber>
+          <CourseTitle>Curr Prac in Jr/Sr Hgh:ENGL II</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>2.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5353</CourseNumber>
+          <CourseTitle>Development &amp; Exceptionality</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>2.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5381</CourseNumber>
+          <CourseTitle>Curr Prac in Jr/Sr:  SOC ST I</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>2.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5382</CourseNumber>
+          <CourseTitle>Curr Prac in Jr/Sr:  SOC ST II</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>Undergraduate</CourseCreditLevel>
+          <CourseCreditValue>1.00</CourseCreditValue>
+          <CourseCreditEarned>1.00</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode>15</CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>P</CourseAcademicGrade>
+          <CourseAcademicGradeStatusCode>PassFailPass</CourseAcademicGradeStatusCode>
+          <CourseQualityPointsEarned>0.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5390</CourseNumber>
+          <CourseTitle>Prof Sem&amp;Practicum in Sec Sch</CourseTitle>
+          <NoteMessage>Unit Type - I</NoteMessage>
+        </Course>
+        <AcademicSummary>
+          <GPA>
+            <CreditHoursAttempted>5.00</CreditHoursAttempted>
+            <CreditHoursEarned>5.00</CreditHoursEarned>
+            <CreditUnit>Units</CreditUnit>
+            <GradePointAverage>4.075</GradePointAverage>
+            <TotalQualityPoints>16.300</TotalQualityPoints>
+            <CreditHoursforGPA>4.00</CreditHoursforGPA>
+          </GPA>
+        </AcademicSummary>
+      </AcademicSession>
+      <AcademicSession>
+        <AcademicSessionDetail>
+          <SessionDesignator>2003-09</SessionDesignator>
+          <SessionName>2003/FW</SessionName>
+          <SessionBeginDate>2003-09-03</SessionBeginDate>
+          <SessionEndDate>2004-04-08</SessionEndDate>
+        </AcademicSessionDetail>
+        <StudentLevel>
+          <StudentLevelCode>Postsecondary</StudentLevelCode>
+        </StudentLevel>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>ED</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode></CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A+</CourseAcademicGrade>
+          <CourseQualityPointsEarned>2.15000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5326</CourseNumber>
+          <CourseTitle>Adv Seminar in Educ Foundation</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>ED</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode></CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A+</CourseAcademicGrade>
+          <CourseQualityPointsEarned>2.15000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5348</CourseNumber>
+          <CourseTitle>Adv Curr Prac: Social Studies</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>ED</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode></CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>P</CourseAcademicGrade>
+          <CourseQualityPointsEarned>0.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5350</CourseNumber>
+          <CourseTitle>Technology in Education</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>ED</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode></CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A</CourseAcademicGrade>
+          <CourseQualityPointsEarned>2.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5352</CourseNumber>
+          <CourseTitle>Evaluating Learner Progress</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>ED</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode></CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A+</CourseAcademicGrade>
+          <CourseQualityPointsEarned>2.15000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5354</CourseNumber>
+          <CourseTitle>Learners with Exceptionalities</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>ED</CourseCreditLevel>
+          <CourseCreditValue>2.00</CourseCreditValue>
+          <CourseCreditEarned>2.00</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode></CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>P</CourseAcademicGrade>
+          <CourseQualityPointsEarned>0.00000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5391</CourseNumber>
+          <CourseTitle>Reflective Prac&amp;Practicum/Sec</CourseTitle>
+        </Course>
+        <Course>
+          <CourseCreditBasis>Regular</CourseCreditBasis>
+          <CourseCreditLevel>ED</CourseCreditLevel>
+          <CourseCreditValue>0.50</CourseCreditValue>
+          <CourseCreditEarned>0.50</CourseCreditEarned>
+          <CourseAcademicGradeScaleCode></CourseAcademicGradeScaleCode>
+          <CourseAcademicGrade>A+</CourseAcademicGrade>
+          <CourseQualityPointsEarned>2.15000</CourseQualityPointsEarned>
+          <CourseSubjectAbbreviation>EDUC</CourseSubjectAbbreviation>
+          <CourseNumber>5603</CourseNumber>
+          <CourseTitle>Curriculum&amp;Instruction/Sec Ed</CourseTitle>
+        </Course>
+        <AcademicSummary>
+          <GPA>
+            <CreditHoursAttempted>5.00</CreditHoursAttempted>
+            <CreditHoursEarned>5.00</CreditHoursEarned>
+            <CreditUnit>Units</CreditUnit>
+            <GradePointAverage>4.240</GradePointAverage>
+            <TotalQualityPoints>10.600</TotalQualityPoints>
+            <CreditHoursforGPA>2.50</CreditHoursforGPA>
+          </GPA>
+        </AcademicSummary>
+      </AcademicSession>
+    </AcademicRecord>
+  </Student>
+</CollegeTranscript>
