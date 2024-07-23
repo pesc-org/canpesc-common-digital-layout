@@ -17,24 +17,24 @@ Layout(s) for PESC XML Transcripts](https://nebula.wsimg.com/756901b746edc14b984
 
 - Support High School and Post-Secondary (College) transcripts
 - Be flexible to be reused for multiple versions of PESC standards
+- Provide both sample code and a lightweight tool to generate PDFs from XML transcripts
 
 ## Getting Started
 
-### Demonstrating the HTML Transformation
+### PESC Standards
 
-In order to demonstrate generating an HTML document from a transcript XML file, multiple tools can be used.  Here is a short sample of tools that could be used
+For the latest version of the PESC Standards including Schemas and Implementation guides, see the following links:
+
+- [College Transcript](https://pesc.org/college-transcript/)
+- [High School Transcript](https://pesc.org/high-school-transcript/)
 
 ### Demonstrating PDF Render
 
 This repository includes a sample command-line tool for transforming PESC XML transcripts into PDF by way of HTML.  For more details on this tool see its [README](./src/pesctranscriptconverter/Readme.md).
 
-## Roadmap and Enhancements
-
-Please see the Projects tab to see list of planned and completed enhancements to the CDL:
-
-[CDL Enhancements](https://github.com/pesc/canpesc-common-digital-layout/projects/1)
-
 ## Contribute & Feedback
+
+If you have contributions such as sample transcripts or alternative ways of implementing the CDL, please reach out.
 
 We would love to hear what you think. Complete our short questionnaire at <https://forms.gle/9PiMcy7kfCLmk8V6A>
 
@@ -42,4 +42,4 @@ Also you can start a discussion or report an issue in the respective sections he
 
 ## Contact Us
 
-To contact the CanPESC user group, please see <https://www.pesc.org/canadian-pesc-user-group.html>
+To contact the CanPESC user group, please see <https://pesc.org/canadian-pesc-user-group/>
