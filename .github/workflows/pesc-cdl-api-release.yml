@@ -34,6 +34,7 @@ jobs:
     - name: Build and push container image to registry
       uses: docker/build-push-action@v5
       with:
+        push: true
         context: ./src/pesctranscriptconverter-api/
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
