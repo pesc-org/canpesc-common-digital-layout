@@ -1,0 +1,67 @@
+name: pesc-cdl-api
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+
+    paths:
+    - .github/workflows/pesc-cdl-api.yml
+    - src/pesctranscriptconverter-api/**
+    - assets/cdl/**
+
+  pull_request:
+    branches:
+    - main
+
+    paths:
+    - .github/workflows/pesc-cdl-api.yml
+    - src/pesctranscriptconverter-api/**
+    - assets/cdl/**
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}/pesc-cdl-api
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout Github Action'
+      uses: actions/checkout@v4
+
+    - name: 'Set up .NET Core'
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Install .NET Aspire workload
+      run: dotnet workload install aspire
+
+    - name: 'Restore dependencies'
+      run: dotnet restore src/pesctranscriptconverter-api/PescTranscriptConverterApi.sln
+
+    - name: 'Build'
+      run: dotnet build src/pesctranscriptconverter-api/PescTranscriptConverterApi.sln --no-restore
+
+    - name: 'Test'
+      run: dotnet test src/pesctranscriptconverter-api/PescTranscriptConverter.Tests/PescTranscriptConverter.Tests.csproj --no-build --no-restore --logger trx
+
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v2.17.0
+      if: always()
+      with:
+        files: |
+          src/**/TestResults/**/*.xml
+          src/**/TestResults/**/*.trx
+          src/**/TestResults/**/*.json
+
+  build_docker_image:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout Github Action'
+      uses: actions/checkout@v4
+
+    - name: Build the Docker image
+      run: docker build . --file src/pesctranscriptconverter-api/PescTranscriptConverter.Api/Dockerfile
