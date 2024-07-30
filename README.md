@@ -20,13 +20,33 @@ Layout(s) for PESC XML Transcripts](https://nebula.wsimg.com/756901b746edc14b984
 
 ## Getting Started
 
-### Demonstrating the HTML Transformation
+There are 2 solutions provided for rendering a PESC transcript to HTML or PDF
 
-In order to demonstrate generating an HTML document from a transcript XML file, multiple tools can be used.  Here is a short sample of tools that could be used
+### API
 
-### Demonstrating PDF Render
+Uses docker containers to expose a simple HTTP server with 4 endpoints. 2 endpoints for high school and 2 for college transcripts. For more details on this tool see its [README](./src/pesctranscriptconverter-api/README.md).
 
-This repository includes a sample command-line tool for transforming PESC XML transcripts into PDF by way of HTML.  For more details on this tool see its [README](./src/pesctranscriptconverter/Readme.md).
+Pros:
+- uses docker containerization
+- runs on any platform
+- uses gotenberg for pdf conversion, with no limitations and scalable
+
+Cons:
+- requires skills to host and run docker infrastructure (although made easier with cloud datacentre providers)
+
+
+### CLI
+
+This was the original tool provided in this repository, and uses XSLT to transform into html, and then the Free community version of [SelectPdf](https://selectpdf.com/)
+to render a PDF. For more details on this tool see its [README](./src/pesctranscriptconverter-cli/Readme.md).
+
+Pros:
+- Ran without docker (although could be argued as a con)
+- more cost effective, ran/uses compute power only when cli is excuted
+
+Cons:
+- Runs on windows only
+- limited to community edition restructions of SelectPdf, but you could drop in a different html to pdf converter, and/or pay licence fee for no restrictions
 
 ## Roadmap and Enhancements
 

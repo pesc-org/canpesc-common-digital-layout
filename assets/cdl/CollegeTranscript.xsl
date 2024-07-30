@@ -2,24 +2,26 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="html" encoding="UTF-8"/>
 	<xsl:param name="Locale">en-CA</xsl:param>
-	<xsl:include href="./TransmissionData.xsl" />
-	<xsl:include href="./Student.xsl" />
-	<xsl:include href="./Course.xsl" />
-	<xsl:include href="./AcademicSummary.xsl" />
-	<xsl:include href="./AcademicAward.xsl" />
-	<xsl:include href="./Formatting.xsl" />
-	<xsl:include href="./Enums.xsl" />
+	<xsl:include href="./xsl/TransmissionData.xsl" />
+	<xsl:include href="./xsl/Student.xsl" />
+	<xsl:include href="./xsl/Course.xsl" />
+	<xsl:include href="./xsl/AcademicSummary.xsl" />
+	<xsl:include href="./xsl/AcademicAward.xsl" />
+	<xsl:include href="./xsl/Formatting.xsl" />
+	<xsl:include href="./xsl/Enums.xsl" />
 
 	<xsl:template match="/">
-		<xsl:variable name="Labels" select="document(concat('labels/Labels.CollegeTranscript.',$Locale,'.xml'))/Labels"/>
+        <xsl:variable name="Labels" select="document(concat('labels/Labels.CollegeTranscript.',$Locale,'.xml'))/Labels"/>
+        <xsl:variable name="Styles" select="document('styles/Styles.xml')/Styles"/>
 		<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
 		<html lang="en">
 			<head>
 				<title>
 					<xsl:call-template name="TransmissionData.SourceInstitutionName" />
 				</title>
-				<!-- Change for the appropriate stylesheet location -->
-				<link rel="stylesheet" href="file:///C:/dev/git/canpesc-common-digital-layout/styles/simple.css" type="text/css" media="all"/>
+                <style type="text/css">
+                    <xsl:value-of select="$Styles/Transcript"/>
+                </style>
 			</head>
 			<body>
 				<div id="transcript-container">

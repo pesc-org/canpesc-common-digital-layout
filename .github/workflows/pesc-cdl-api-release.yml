@@ -1,0 +1,40 @@
+name: Upload dotnet package
+
+on:
+  release:
+    types: [created]
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}/pesc-cdl-api
+
+jobs:
+  docker_publish:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+    - name: 'Checkout Github Action'
+      uses: actions/checkout@v4
+
+    - name: Extract metadata for the Docker image
+      id: meta
+      uses: docker/metadata-action@v3
+      with:
+        images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+
+    - name: Log in to GitHub container registry
+      uses: docker/login-action@v1.10.0
+      with:
+        registry: ${{ env.REGISTRY }}
+        username: ${{ github.actor }}
+        password: ${{ github.token }}
+
+    - name: Build and push container image to registry
+      uses: docker/build-push-action@v2
+      with:
+        context: ./src/pesctranscriptconverter-api/
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+        file: ./src/pesctranscriptconverter-api/PescTranscriptConverter.Api/Dockerfile
