@@ -1,0 +1,7 @@
+services:
+  cdl-api:
+    build:
+      context: .
+      dockerfile: ./src/pesctranscriptconverter-api/PescTranscriptConverter.Api/Dockerfile
+    ports:
+      - "5440:8080"

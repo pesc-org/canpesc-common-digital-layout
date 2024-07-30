@@ -9,10 +9,10 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["PescTranscriptConverter.Api/PescTranscriptConverter.Api.csproj", "PescTranscriptConverter.Api/"]
-COPY ["PescTranscriptConverter.ServiceDefaults/PescTranscriptConverter.ServiceDefaults.csproj", "PescTranscriptConverter.ServiceDefaults/"]
+COPY ["src/pesctranscriptconverter-api/PescTranscriptConverter.Api/PescTranscriptConverter.Api.csproj", "PescTranscriptConverter.Api/"]
+COPY ["src/pesctranscriptconverter-api/PescTranscriptConverter.ServiceDefaults/PescTranscriptConverter.ServiceDefaults.csproj", "PescTranscriptConverter.ServiceDefaults/"]
 RUN dotnet restore "./PescTranscriptConverter.Api/PescTranscriptConverter.Api.csproj"
-COPY . .
+COPY ./src/pesctranscriptconverter-api/ .
 WORKDIR "/src/PescTranscriptConverter.Api"
 RUN dotnet build "./PescTranscriptConverter.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
@@ -23,4 +23,5 @@ RUN dotnet publish "./PescTranscriptConverter.Api.csproj" -c $BUILD_CONFIGURATIO
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+COPY ["./assets", "."]
 ENTRYPOINT ["dotnet", "PescTranscriptConverter.Api.dll"]

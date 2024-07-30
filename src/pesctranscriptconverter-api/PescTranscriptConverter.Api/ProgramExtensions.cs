@@ -70,7 +70,7 @@ public static partial class ProgramExtensions
 
         var gotenbergConfig = builder.Configuration.GetSection(nameof(GotenbergSharpClient));
 
-        if (gotenbergConfig.Get<GotenbergSharpClientOptions>() is not null)
+        if (gotenbergConfig.Get<GotenbergSharpClientOptions>()?.ServiceUrl is not null)
         {
             builder.Services.AddOptions<GotenbergSharpClientOptions>()
                 .Bind(gotenbergConfig);

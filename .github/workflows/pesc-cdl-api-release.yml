@@ -35,7 +35,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        context: ./src/pesctranscriptconverter-api/
+        context: .
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         file: ./src/pesctranscriptconverter-api/PescTranscriptConverter.Api/Dockerfile

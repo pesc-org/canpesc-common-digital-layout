@@ -64,4 +64,4 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Build the Docker image
-      run: docker build ./src/pesctranscriptconverter-api/ --file src/pesctranscriptconverter-api/PescTranscriptConverter.Api/Dockerfile
+      run: docker build . --file src/pesctranscriptconverter-api/PescTranscriptConverter.Api/Dockerfile
