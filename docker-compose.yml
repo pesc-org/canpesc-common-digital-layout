@@ -4,4 +4,4 @@ services:
       context: .
       dockerfile: ./src/pesctranscriptconverter-api/PescTranscriptConverter.Api/Dockerfile
     ports:
-      - "5440:8080"
+      - "4000:4000"
