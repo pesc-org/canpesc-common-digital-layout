@@ -20,7 +20,7 @@ A developer friendly toolkit to help users of the PESC transcript standards gene
 Open a terminal and run the following command:
 
 ```
-docker run --rm -p 4000:4000 ghcr.io/maldworth/canpesc-common-digital-layout/pesc-cdl-api:latest
+docker run --rm -p 4000:8080 ghcr.io/maldworth/canpesc-common-digital-layout/pesc-cdl-api:latest
 ```
 
 Then navigate to <http://localhost:4000/> and try the to-html endpoints. The to-pdf endpoints need additional configuration to work. See the [docs](https://maldworth.github.io/canpesc-common-digital-layout/) for details.

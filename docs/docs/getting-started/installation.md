@@ -20,7 +20,7 @@ network.
 To start a default Docker container of pesc-cdl-api, run:
 
 ```
-docker run --rm -p 4000:4000 ghcr.io/maldworth/canpesc-common-digital-layout/pesc-cdl-api:latest
+docker run --rm -p 4000:8080 ghcr.io/maldworth/canpesc-common-digital-layout/pesc-cdl-api:latest
 ```
 
 :::info
@@ -44,8 +44,8 @@ services:
 :::info
 
 
-The API will be accessible at [pesc-cdl-api:4000](http://pesc-cdl-api:4000) within your Docker Compose network.
-This means your other services can interact with PESC CDL API using [pesc-cdl-api:4000](http://pesc-cdl-api:4000).
+The API will be accessible at [pesc-cdl-api:8080](http://pesc-cdl-api:8080) within your Docker Compose network.
+This means your other services can interact with PESC CDL API using [pesc-cdl-api:8080](http://pesc-cdl-api:8080).
 
 :::
 
@@ -60,7 +60,7 @@ services:
   pesc-cdl-api:
     image: ghcr.io/maldworth/canpesc-common-digital-layout/pesc-cdl-api:latest
     ports:
-      - "4000:4000"
+      - "4000:8080"
 ```
 
 :::info
@@ -85,5 +85,5 @@ services:
   pesc-cdl-api:
     image: ghcr.io/maldworth/canpesc-common-digital-layout/pesc-cdl-api:latest
     ports:
-      - "4000:4000"
+      - "4000:8080"
 ```
