@@ -84,6 +84,9 @@ services:
 
   pesc-cdl-api:
     image: ghcr.io/maldworth/canpesc-common-digital-layout/pesc-cdl-api:latest
+    environment:
+      - GotenbergSharpClient__ServiceUrl=http://gotenberg:3000
+      - GotenbergSharpClient__HealthCheckUrl=http://gotenberg:3000/health
     ports:
       - "4000:8080"
 ```

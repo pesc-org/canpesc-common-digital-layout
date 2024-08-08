@@ -22,6 +22,6 @@ RUN dotnet publish "./PescTranscriptConverter.Api.csproj" -c $BUILD_CONFIGURATIO
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
 COPY ["./assets", "."]
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "PescTranscriptConverter.Api.dll"]
