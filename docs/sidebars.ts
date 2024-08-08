@@ -24,7 +24,8 @@ const sidebars: SidebarsConfig = {
       collapsible: false,
       items: [
         'getting-started/installation',
-        'getting-started/configuration'
+        'getting-started/configuration',
+        'getting-started/usage',
       ],
     },
   ],

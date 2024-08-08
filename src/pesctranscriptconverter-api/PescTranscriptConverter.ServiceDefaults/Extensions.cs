@@ -103,7 +103,7 @@ public static class Extensions
 
         app.MapGet("/", context =>
         {
-            context.Response.Redirect("/swagger");
+            context.Response.Redirect("/scalar/latest");
             return Task.CompletedTask;
         });
 

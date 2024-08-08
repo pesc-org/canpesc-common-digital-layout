@@ -51,7 +51,8 @@ app.UseFastEndpoints(c =>
     c.Errors.UseProblemDetails();
     c.Serializer.Options.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
 });
-app.UseSwaggerGen();
+app.UseOpenApi();
+app.MapScalarUi();
 
 await app.GenerateClientsAndExitAsync(
         "latest", app.Configuration["NSwagGeneratorOutputPath"] ?? Directory.GetCurrentDirectory(),
