@@ -34,8 +34,8 @@ public class CollegeTranscriptToPdf : Endpoint<CollegeTranscriptToPdfRequest>
             Xslt = "CollegeTranscript"
         }.ExecuteAsync(ct);
 
-        var footerHtml = await Resolve<FetchCdlAssets.PdfFooter>().Invoke();
-        var headerHtml = await Resolve<FetchCdlAssets.PdfHeader>().Invoke();
+        var footerHtml = await Resolve<FetchPdfAssets.PdfFooter>().Invoke();
+        var headerHtml = await Resolve<FetchPdfAssets.PdfHeader>().Invoke();
 
         var builder = new HtmlRequestBuilder()
             .AddDocument(doc =>

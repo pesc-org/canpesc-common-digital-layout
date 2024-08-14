@@ -34,7 +34,8 @@ builder.Services.AddFastEndpoints()
         o.SerializerOptions.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
     });
 
-builder.AddCustomFluentStorage();
+builder.AddCustomFluentStorage("CdlStorage");
+builder.AddCustomFluentStorage("PdfStorage");
 builder.AddCustomApplicationServices();
 builder.Services.AddHostedService<XsltLoadWorker>();
 

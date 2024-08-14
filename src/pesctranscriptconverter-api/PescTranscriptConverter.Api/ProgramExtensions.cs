@@ -12,9 +12,9 @@ namespace PescTranscriptConverter.Api;
 
 public static partial class ProgramExtensions
 {
-    public static void AddCustomFluentStorage(this WebApplicationBuilder builder)
+    public static void AddCustomFluentStorage(this WebApplicationBuilder builder, string connectionStringName)
     {
-        var blobConnectionString = builder.Configuration.GetConnectionString("blobstorage");
+        var blobConnectionString = builder.Configuration.GetConnectionString(connectionStringName);
 
         if (string.IsNullOrWhiteSpace(blobConnectionString))
         {
@@ -41,7 +41,7 @@ public static partial class ProgramExtensions
                 throw new Exception("Please use a supported blob storage connection string. disk://, aws.s3://, google.storage://, azure.file://, azure.blob://");
         }
 
-        builder.Services.AddTransient(s => StorageFactory.Blobs.FromConnectionString(blobConnectionString));
+        builder.Services.AddKeyedTransient(connectionStringName, (p, _) => StorageFactory.Blobs.FromConnectionString(blobConnectionString));
     }
 
     public static void AddCustomApplicationServices(this WebApplicationBuilder builder)
@@ -81,14 +81,18 @@ public static partial class ProgramExtensions
         builder.Services.AddOptions<CdlAssetsOptions>()
             .Bind(cdlAssetsConfig);
 
-        builder.Services.AddSingleton<FetchCdlAssets.PdfFooter>(s => () =>
+        var pdfAssetsConfig = builder.Configuration.GetSection(PdfAssetsOptions.SectionName);
+        builder.Services.AddOptions<PdfAssetsOptions>()
+            .Bind(pdfAssetsConfig);
+
+        builder.Services.AddSingleton<FetchPdfAssets.PdfFooter>(s => () =>
         {
-            var opts = s.GetRequiredService<IOptions<CdlAssetsOptions>>().Value;
+            var opts = s.GetRequiredService<IOptions<PdfAssetsOptions>>().Value;
             return File.ReadAllTextAsync(Path.Combine(opts.RootDirectory, opts.PdfFooter));
         });
-        builder.Services.AddSingleton<FetchCdlAssets.PdfHeader>(s => () =>
+        builder.Services.AddSingleton<FetchPdfAssets.PdfHeader>(s => () =>
         {
-            var opts = s.GetRequiredService<IOptions<CdlAssetsOptions>>().Value;
+            var opts = s.GetRequiredService<IOptions<PdfAssetsOptions>>().Value;
             return File.ReadAllTextAsync(Path.Combine(opts.RootDirectory, opts.PdfHeader));
         });
     }

@@ -1,7 +1,18 @@
 services:
-  cdl-api:
+  gotenberg:
+    image: gotenberg/gotenberg:8
+
+  pesc-cdl-api:
     build:
       context: .
       dockerfile: ./src/pesctranscriptconverter-api/PescTranscriptConverter.Api/Dockerfile
     ports:
       - "4000:8080"
+    environment:
+      - GotenbergSharpClient__ServiceUrl=http://gotenberg:3000
+      - GotenbergSharpClient__HealthCheckUrl=http://gotenberg:3000/health
+      - ConnectionStrings__cdlStorage=disk://path=/usr/local/cdl
+      - ConnectionStrings__pdfStorage=disk://path=/usr/local/pdf
+    volumes:
+      - ./cdlassets:/usr/local/cdl
+      - ./pdfassets:/usr/local/pdf

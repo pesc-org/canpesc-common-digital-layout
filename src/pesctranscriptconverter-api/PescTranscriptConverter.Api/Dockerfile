@@ -1,6 +1,10 @@
 #See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+RUN mkdir -p /usr/local/cdl
+RUN mkdir -p /usr/local/pdf
+RUN chown app /usr/local/cdl
+RUN chown app /usr/local/pdf
 USER app
 WORKDIR /app
 EXPOSE 8080
@@ -24,4 +28,8 @@ FROM base AS final
 WORKDIR /app
 COPY ["./assets", "."]
 COPY --from=publish /app/publish .
+USER root
+RUN chown -R app /app/cdl
+RUN chown -R app /app/pdf
+USER app
 ENTRYPOINT ["dotnet", "PescTranscriptConverter.Api.dll"]
