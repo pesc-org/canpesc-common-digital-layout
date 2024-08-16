@@ -10,8 +10,8 @@ This tool is for demonstration purposes only and comes with no warranty from Can
 
 ### Prerequisites
 
-Requires .NET 6.0
-<https://dotnet.microsoft.com/en-us/download/dotnet/6.0>
+Requires .NET 8.0
+<https://dotnet.microsoft.com/en-us/download/dotnet/8.0>
 
 ### Build
 
