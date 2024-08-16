@@ -93,4 +93,4 @@ services:
       - "4000:8080"
 ```
 
-You might be wondering "where did those environment variables come from?", well head on over to the [configuration](/docs/getting-started/configuration#pdf-conversion-to-pdf) section and learn about the different possible configurations available for PESC CDL API.
+You might be wondering "where did those environment variables come from?", well head on over to the [configuration](/docs/getting-started/configuration) section and learn about the different possible configurations available for PESC CDL API.
