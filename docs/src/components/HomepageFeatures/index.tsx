@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/undraw_certification_re_ifll.svg').default,
     description: (
       <>
         PESC CDL API is a developer friendly API designed to get you up
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/undraw_website_setup_re_d4y9.svg').default,
     description: (
       <>
         Forget about styling and formatting transcripts, leave that to us. 
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Consistent Transformations',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/undraw_certificate_re_yadi.svg').default,
     description: (
       <>
         Transform from PESC XML to a consistent format, with options for HTML and PDF output.
