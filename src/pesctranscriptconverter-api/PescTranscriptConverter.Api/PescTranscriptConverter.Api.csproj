@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>a47a8ca2-429e-4cbb-ac11-10db5adc1bbe</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FastEndpoints" Version="5.30.0" />
+    <PackageReference Include="FastEndpoints.ClientGen" Version="5.30.0" />
+    <PackageReference Include="FastEndpoints.Swagger" Version="5.30.0" />
+    <PackageReference Include="FluentStorage" Version="5.5.1" />
+    <PackageReference Include="FluentStorage.AWS" Version="5.4.0" />
+    <PackageReference Include="FluentStorage.Azure.Blobs" Version="5.2.5" />
+    <PackageReference Include="FluentStorage.Azure.Files" Version="5.2.2" />
+    <PackageReference Include="FluentStorage.GCP" Version="5.3.0" />
+    <PackageReference Include="Gotenberg.Sharp.API.Client" Version="2.4.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PescTranscriptConverter.ServiceDefaults\PescTranscriptConverter.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\assets\**\*.*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="..\..\..\assets\*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

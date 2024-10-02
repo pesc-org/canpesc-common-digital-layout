@@ -1,6 +1,36 @@
 # PESC Transcript Common Digital Layout
 
-A toolkit to help users of the PESC transcript standards generate layouts (i.e. HTML, PDF) of transcripts they send/receive to facilitate an easy-to-read and easy-to-print layout.
+A developer friendly toolkit to help users of the PESC transcript standards generate layouts (i.e. HTML, PDF) of transcripts they send/receive to facilitate an easy-to-read and easy-to-print layout.
+
+
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Introduction](#introduction)
+  - [Goals](#goals)
+- [Getting Started](#getting-started)
+  - [API](#api)
+  - [CLI](#cli)
+- [Roadmap and Enhancements](#roadmap-and-enhancements)
+- [Contribute \& Feedback](#contribute--feedback)
+- [Contact Us](#contact-us)
+
+## Quick Start
+
+Open a terminal and run the following command:
+
+```
+docker run --rm -p 4000:8080 ghcr.io/pesc-org/canpesc-common-digital-layout/pesc-cdl-api:latest
+```
+
+Then navigate to <http://localhost:4000/> and try the to-html endpoints. The to-pdf endpoints need additional configuration to work. See the [docs](https://pesc-org.github.io/canpesc-common-digital-layout/) for details.
+
+---
+
+For more information, please visit the [official docs](https://pesc-org.github.io/canpesc-common-digital-layout/).
+
+---
+
 
 ## Introduction
 
@@ -21,16 +51,40 @@ Layout(s) for PESC XML Transcripts](https://nebula.wsimg.com/756901b746edc14b984
 
 ## Getting Started
 
-### PESC Standards
+There are 2 solutions provided for rendering a PESC transcript to HTML or PDF
 
-For the latest version of the PESC Standards including Schemas and Implementation guides, see the following links:
+### API
 
-- [College Transcript](https://pesc.org/college-transcript/)
-- [High School Transcript](https://pesc.org/high-school-transcript/)
+Uses docker containers to expose a simple HTTP server with 4 endpoints. 2 endpoints for high school and 2 for college transcripts.
 
-### Demonstrating PDF Render
+Pros:
+- uses docker containerization
+- runs on any platform
+- uses gotenberg for pdf conversion, with no limitations and scalable
 
-This repository includes a sample command-line tool for transforming PESC XML transcripts into PDF by way of HTML.  For more details on this tool see its [README](./src/pesctranscriptconverter/Readme.md).
+Cons:
+- requires skills to host and run docker infrastructure (although made easier with cloud datacentre providers)
+
+Head to the [documentation](https://pesc-org.github.io/canpesc-common-digital-layout/) to learn about all the features.
+
+### CLI
+
+This was the original tool provided in this repository, and uses XSLT to transform into html, and then the Free community version of [SelectPdf](https://selectpdf.com/)
+to render a PDF. For more details on this tool see its [README](./src/pesctranscriptconverter-cli/Readme.md).
+
+Pros:
+- Ran without docker (although could be argued as a con)
+- more cost effective, ran/uses compute power only when cli is excuted
+
+Cons:
+- Runs on windows only
+- limited to community edition restructions of SelectPdf, but you could drop in a different html to pdf converter, and/or pay licence fee for no restrictions
+
+## Roadmap and Enhancements
+
+Please see the Projects tab to see list of planned and completed enhancements to the CDL:
+
+[CDL Enhancements](https://github.com/pesc/canpesc-common-digital-layout/projects/1)
 
 ## Contribute & Feedback
 
