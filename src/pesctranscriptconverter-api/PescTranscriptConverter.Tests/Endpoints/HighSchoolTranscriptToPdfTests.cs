@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace PescTranscriptConverter.Tests.Endpoints;
 
-public class CollegeTranscriptToPdfTests : IAsyncLifetime
+public class HighSchoolTranscriptToPdfTests : IAsyncLifetime
 {
     private DistributedApplication? _app;
     private ResourceNotificationService? _notificationService;
@@ -26,22 +26,21 @@ public class CollegeTranscriptToPdfTests : IAsyncLifetime
     }
 
     [Theory]
-    [InlineData("Canada.Ontario.College.CollegeTranscript.xml", "en-CA")]
-    [InlineData("Canada.Ontario.University.UniversityTranscript.xml", "en-CA")]
-    [InlineData("Canada.Ontario.University.UniversityTranscript2.xml", "en-CA")]
-    [InlineData("Canada.Nova_Scotia.University.UniversityTranscript1.xml", "en-CA")]
-    [InlineData("Canada.Nova_Scotia.University.UniversityTranscript2.xml", "en-CA")]
-    public async Task Should_convert_college_pesc_to_pdf(string pescXml, string locale)
+    [InlineData("Canada.Ontario.HighSchool.HighSchoolTranscript.xml", "en-CA")]
+    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript.xml", "en-CA")]
+    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript2.xml", "en-CA")]
+    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript3.xml", "en-CA")]
+    public async Task Should_convert_highschool_pesc_to_pdf(string pescXml, string locale)
     {
         // Arrange
-        var request = new CollegeTranscriptToPdfRequest
+        var request = new HighSchoolTranscriptToPdfRequest
         {
             Pesc = SampleHelper.ReadResourceAsString(pescXml),
             Locale = locale
         };
 
         // Act
-        var response = await _apiClient!.CollegeTranscriptToPdfAsync(request);
+        var response = await _apiClient!.HighSchoolTranscriptToPdfAsync(request);
 
         // Assert
         response.Should().NotBeNull();
