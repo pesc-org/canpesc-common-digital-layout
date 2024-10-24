@@ -1,57 +1,231 @@
-<html>
+<!DOCTYPE html><html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="file:///C:/dev/git/canpesc-common-digital-layout/styles/simple.css" type="text/css" media="all">
+    <title>Demo School Board</title>
+    <style type="text/css">
+        @page {
+            size: Letter portrait;
+            margin: 10mm 0;
+        }
+
+        @media print {
+            div.pagebreak {
+                height: 0;
+                /* page-break-before: always; */
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
+        }
+
+        body, a, p, span, th, td {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1;
+            margin: 2px 0px 2px 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 2px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 0em;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            line-height: 1.8em;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            line-height: 1.8em;
+            white-space: nowrap;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            line-height: 1.5em;
+            white-space: nowrap;
+        }
+
+        h4 {
+            font-size: 1.0em;
+            font-weight: bold;
+            line-height: 1.5em;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .logo {
+            text-align: center;
+            /* content:url("https://github.com/canpesc/common-digital-layout/raw/master/assets/brand-tst1.png");  */
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .left-column {
+            flex: 25%;
+        }
+
+        .centre-column {
+            flex: 50%;
+            margin: 0 10px;
+        }
+
+        .right-column {
+            flex: 25%;
+        }
+
+        .all-columns {
+            flex: 100%;
+        }
+
+        .rounded-corners {
+            border-radius: 10px;
+            border: 1px solid #000000;
+            padding: 10px;
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+            background-color: #F9F9F9;
+        }
+
+        .grades-table {
+            width: 100%;
+        }
+
+            .grades-table th, .grades-table td {
+                border: 1px solid #999999;
+            }
+
+                .grades-table td:nth-child(1) {
+                    font-weight: bold;
+                }
+
+        .course-grade {
+            font-weight: bold;
+        }
+
+        .course-credit {
+            font-weight: bold;
+        }
+
+        .width-8 {
+            width: 8%;
+        }
+
+        .width-42 {
+            width: 42%;
+        }
+
+        .width-10 {
+            width: 10%;
+        }
+
+        @media only screen {
+            #transcript-container {
+                display: table;
+                margin: auto;
+                width: 800px;
+            }
+        }
+
+        @media only print {
+            #transcript-container {
+                display: table;
+                margin: auto;
+                width: 95vw;
+            }
+        }
+
+        #destination-institution {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        #transcript-information {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        #source-institution {
+            text-align: center;
+        }
+
+        #end-of-transcript {
+            text-align: center;
+            margin: 10px;
+            font-weight: bold;
+        }
+    </style>
   </head>
   <body>
     <div id="transcript-container">
       <div id="transmission-data" class="row">
         <div class="left-column">
           <div id="destination-institution">
-            <h2>Recipient</h2>
-            <p><span>Institution: </span></p>
-            <p><span>ID: </span></p>
+            <h2>À l'attention de : </h2>
+            <p><span>Établissement : </span></p>
+            <p><span>ID : </span></p>
           </div>
         </div>
         <div class="centre-column  rounded-corners">
-          <div id="source-institution"><img class="logo"><h1>Demo School Board</h1>
-            <h2><span>ID: </span></h2>
+          <div id="source-institution">
+            <h1>Demo School Board</h1>
+            <h2><span>ID : </span></h2>
             <p> </p>
-            <p><span>Contact: Sample note message</span></p>
-            <p><span>Reference: REF-45454545</span></p>
+            <p><span>Contacte : Sample note message</span></p>
+            <p><span>Référence : REF-45454545</span></p>
           </div>
         </div>
         <div class="right-column">
           <div id="transcript-information">
-            <h2>Transcript Issue Date</h2>
+            <h2>Émis le : </h2>
             <p><span>2019-01-01</span></p>
           </div>
         </div>
       </div>
       <div id="student-summary" class="row">
         <div id="student-information" class="left-column rounded-corners">
-          <h2>Student Information</h2>
-          <p><span>Surname: Student</span></p>
-          <p><span>First Name: Senior</span></p>
-          <p><span>Middle Name: High School</span></p>
-          <p><span>Date of Birth: 1987-05-16</span></p>
-          <p><span>Gender: Male</span></p>
-          <p><span>Student Number: 000309945335</span></p>
-          <p><span>Government Identifier: 999999999</span></p>
+          <h2>Données personnelles</h2>
+          <p><span>Nom : Student</span></p>
+          <p><span>Prénom : Senior</span></p>
+          <p><span>Autre(s) prénom(s) : High School</span></p>
+          <p><span>Date de naissance : 1987-05-16</span></p>
+          <p><span>Sexe : Male</span></p>
+          <p><span>Matricule : 000309945335</span></p>
+          <p><span>Autre identifiant : 999999999</span></p>
         </div>
         <div id="academic-awards" class="centre-column rounded-corners">
-          <h2>Academic Awards</h2>
+          <h2>Grades/diplômes/certificats : </h2>
           <div>
             <h3>Ontario Secondary School Diploma</h3>
-            <p><span>Award Date: 11 mars 2016</span></p>
-            <p><span>Award Level: </span></p>
+            <p><span>Date d'octroi : 11 mars 2016</span></p>
+            <p><span>Cycle : </span></p>
             <p></p>
           </div>
         </div>
         <div id="academic-summary" class="right-column rounded-corners">
-          <h2>School</h2>
+          <h2>École</h2>
           <h3>Sample High School</h3>
-          <p><span>School ID: 00999999</span></p>
+          <p><span>ID d'école :00999999</span></p>
         </div>
       </div>
       <div class="pagebreak"></div>
@@ -59,7 +233,7 @@
         <div id="session-summary" class="row">
           <div class="left-column"></div>
           <div class="centre-column">
-            <h3>Session: 2006-09</h3><span>Start Date: 12 September 2006</span><span>  End Date: 11 mars 2016</span></div>
+            <h3>Trimestre : 2006-09</h3><span>Date de début : 12 septembre 2006</span><span>  Date de fin : 11 mars 2016</span></div>
           <div class="right-column"></div>
         </div>
       </div>
@@ -69,823 +243,823 @@
             <div id="grades">
               <table class="grades-table">
                 <thead>
-                  <th scope="cols" width="8%">Course No</th>
-                  <th scope="cols" width="42%">Course Title</th>
-                  <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
-                  <th scope="cols" width="10%">Lang</th>
+                  <th scope="cols" width="8%">Cours</th>
+                  <th scope="cols" width="42%">Titre</th>
+                  <th scope="cols" width="10%">Cycle </th>
+                  <th scope="cols" width="10%">Obtenus</th>
+                  <th scope="cols" width="10%">Note</th>
+                  <th scope="cols" width="10%">Statut </th>
+                  <th scope="cols" width="10%">Langue </th>
                 </thead>
                 <tr>
                   <td>AVI1O1</td>
                   <td>Visual Arts</td>
                   <td>9</td>
-                  <td>1</td>
-                  <td>64</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">64</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2002-02-01</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2002-02-01</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>ENG1P1</td>
                   <td>English</td>
                   <td>9</td>
-                  <td>1</td>
-                  <td>55</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">55</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2002-02-01</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2002-02-01</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>FIF1D1</td>
                   <td>French Immersion</td>
                   <td>9</td>
-                  <td>1</td>
-                  <td>51</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">51</td>
                   <td>Réussite</td>
                   <td>FRE</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span><span></span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2002-02-01</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span><span></span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2002-02-01</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>CGC1D4</td>
                   <td>Issues in Canadian Geography</td>
                   <td>9</td>
-                  <td>1</td>
-                  <td>54</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">54</td>
                   <td>Réussite</td>
                   <td>FRE</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span><span></span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2002-06-30</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span><span></span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2002-06-30</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>PPL1O4</td>
                   <td>Healthy Active Living Education</td>
                   <td>9</td>
-                  <td>1</td>
-                  <td>68</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">68</td>
                   <td>Réussite</td>
                   <td>FRE</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span><span></span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2002-06-30</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span><span></span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2002-06-30</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>SNC1DU</td>
                   <td>Science</td>
                   <td>9</td>
-                  <td>1</td>
-                  <td>67</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">67</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2002-08-30</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2002-08-30</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>CHV2O3</td>
                   <td>Civics and Citizenship</td>
                   <td>10</td>
-                  <td>0.5</td>
-                  <td>50</td>
+                  <td class="course-credit">0.5</td>
+                  <td class="course-grade">50</td>
                   <td>Réussite</td>
                   <td>FRE</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span><span></span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2003-02-01</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span><span></span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2003-02-01</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>ENG2P1</td>
                   <td>English</td>
                   <td>10</td>
-                  <td>1</td>
-                  <td>61</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">61</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2003-02-01</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2003-02-01</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>GLC2O3</td>
                   <td>Career Studies</td>
                   <td>10</td>
-                  <td>0.5</td>
-                  <td>50</td>
+                  <td class="course-credit">0.5</td>
+                  <td class="course-grade">50</td>
                   <td>Réussite</td>
                   <td>FRE</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span><span></span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2003-02-01</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span><span></span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2003-02-01</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>SNC2P2</td>
                   <td>Science</td>
                   <td>10</td>
-                  <td>1</td>
-                  <td>50</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">50</td>
                   <td>Réussite</td>
                   <td>FRE</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span><span></span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2003-06-30</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span><span></span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2003-06-30</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>MPM1DU</td>
                   <td>Principles of Mathematics</td>
                   <td>9</td>
-                  <td>1</td>
-                  <td>51</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">51</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00980250</span><span>  Delivery: Summer</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2003-07-28</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00980250</span><span>  Prestation du cours : Summer</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2003-07-28</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>PPL3O5</td>
                   <td>Healthy Active Living Education</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>65</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">65</td>
                   <td>Réussite</td>
                   <td>FRE</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00899178</span><span>  Delivery: Day</span><br><span>Notes:</span><span></span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2004-01-29</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00899178</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span><span></span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2004-01-29</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>AVI3M1</td>
                   <td>Visual Arts</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>2</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">2</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2004-06-24</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2004-06-24</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>BTA3O1</td>
                   <td>Information and Communication Technology:  The Digital Environment</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>2</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">2</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2004-06-24</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2004-06-24</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG3U1</td>
                   <td>English</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>4</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">4</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2004-06-24</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2004-06-24</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ICS3M1</td>
                   <td>Introduction to Computer Programming</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>3</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">3</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2004-06-24</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2004-06-24</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>BMI3C1</td>
                   <td>Marketing:  Goods, Services, Events</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>8</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">8</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2005-06-30</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2005-06-30</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>BMI3C1</td>
                   <td>Marketing:  Goods, Services, Events</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>8</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">8</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2005-06-30</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2005-06-30</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG3C1</td>
                   <td>English</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>1</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">1</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2005-06-30</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2005-06-30</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG3C1</td>
                   <td>English</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>1</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">1</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2005-06-30</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2005-06-30</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG3C1</td>
                   <td>English</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>64</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">64</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00940445</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2006-06-29</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00940445</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2006-06-29</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>MFM2P1</td>
                   <td>Foundations of Mathematics</td>
                   <td>10</td>
-                  <td>1</td>
-                  <td>55</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">55</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00940445</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2006-06-29</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00940445</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2006-06-29</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>CHC2P1</td>
                   <td>Canadian History since World War I</td>
                   <td>10</td>
-                  <td>1</td>
-                  <td>70</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">70</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-02-01</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-02-01</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>EMS3O1</td>
                   <td>Media Studies</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>60</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">60</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-02-01</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-02-01</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>MBF3C1</td>
                   <td>Foundations for College Mathematics</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>50</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">50</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-02-01</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-02-01</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>SBI3C1</td>
                   <td>Biology</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>40</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">40</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-02-01</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-02-01</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG4C1</td>
                   <td>English</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>65</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">65</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-06-28</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-06-28</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>IDC4U1</td>
                   <td>Interdisciplinary Studies</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>60</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">60</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span><span></span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-06-28</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span><span></span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-06-28</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>PPL4OM</td>
                   <td>Healthy Active Living Education</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>64</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">64</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-06-28</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-06-28</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>SCH4C1</td>
                   <td>Chemistry</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>44</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">44</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-06-28</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-06-28</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG3KT</td>
                   <td>English</td>
                   <td>11</td>
-                  <td>0.5</td>
-                  <td>58</td>
+                  <td class="course-credit">0.5</td>
+                  <td class="course-grade">58</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00980250</span><span>  Delivery: Summer</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-07-27</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00980250</span><span>  Prestation du cours : Summer</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-07-27</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG3KT</td>
                   <td>English</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>58</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">58</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00980250</span><span>  Delivery: Summer</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2007-07-27</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00980250</span><span>  Prestation du cours : Summer</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2007-07-27</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>HPC3O1</td>
                   <td>Raising Healthy Children</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>51</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">51</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00995185</span><span>  Delivery: Night</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-01-17</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00995185</span><span>  Prestation du cours : Night</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-01-17</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>CGW4U1</td>
                   <td>World Issues:  A Geographic Analysis</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>56</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">56</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-01-31</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-01-31</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>CHY4U1</td>
                   <td>World History since the Fifteenth Century</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>42</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">42</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-01-31</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-01-31</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>CIA4U1</td>
                   <td>Analysing Current Economic Issues</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>50</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">50</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-01-31</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-01-31</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG4U1</td>
                   <td>English</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>63</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">63</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-01-31</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-01-31</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>SCH4C1</td>
                   <td>Chemistry</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>58</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">58</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00999741</span><span>  Delivery: Night</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-05-29</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00999741</span><span>  Prestation du cours : Night</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-05-29</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>HSB4M1</td>
                   <td>Challenge and Change in Society</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>30</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">30</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00999741</span><span>  Delivery: Night</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-06-04</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00999741</span><span>  Prestation du cours : Night</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-06-04</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>CLN4U1</td>
                   <td>Legal Studies</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>40</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">40</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-06-26</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-06-26</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>CPW4U1</td>
                   <td>Canadian and International Politics</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>54</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">54</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-06-26</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-06-26</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>EWC4U1</td>
                   <td>The Writer's Craft</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>62</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">62</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-06-26</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-06-26</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>HHS4M1</td>
                   <td>Families in Canada</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>45</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">45</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00903590</span><span>  Delivery: Day</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2008-06-26</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00903590</span><span>  Prestation du cours : Day</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2008-06-26</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>HZT4U1</td>
                   <td>Philosophy: Questions and Theories</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>42</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">42</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00999741</span><span>  Delivery: Night</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2010-01-28</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00999741</span><span>  Prestation du cours : Night</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2010-01-28</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>CHY4U1</td>
                   <td>World History since the Fifteenth Century</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>40</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">40</td>
                   <td>Échec</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00999741</span><span>  Delivery: Night</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2010-02-01</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00999741</span><span>  Prestation du cours : Night</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2010-02-01</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>HHS4UE</td>
                   <td>Families in Canada</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>83</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">83</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00998940</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2015-06-05</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00998940</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2015-06-05</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>BOH4ME</td>
                   <td>Business Leadership:  Management Fundamentals</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>83</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">83</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00998940</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2015-07-27</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00998940</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2015-07-27</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>HZT4UE</td>
                   <td>Philosophy: Questions and Theories</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>93</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">93</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00998940</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2015-08-25</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00998940</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2015-08-25</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>BBB4ME</td>
                   <td>International Business Essentials</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>50</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">50</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00998940</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2016-03-11</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00998940</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2016-03-11</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>MBF3CE</td>
                   <td>Foundations for College Mathematics</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>92</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">92</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00998940</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2016-06-15</span><span>  Required: true</span></td>
+                  <td><span>ID d'école : 00998940</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2016-06-15</span><span>  Requis : true</span></td>
                 </tr>
                 <tr>
                   <td>MCF3M1</td>
                   <td>Functions and Applications</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>77</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">77</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00991457</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2016-11-10</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00991457</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2016-11-10</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>MCR3U1</td>
                   <td>Functions</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>77</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">77</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00991457</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2017-02-01</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00991457</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2017-02-01</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>MHF4UE</td>
                   <td>Advanced Functions</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>87</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">87</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00998940</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2017-06-27</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00998940</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2017-06-27</span><span>  Requis : false</span></td>
                 </tr>
                 <tr>
                   <td>ENG4UE</td>
                   <td>English</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>98</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">98</td>
                   <td>Réussite</td>
                   <td>ENG</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td><span>School ID: 00998940</span><span>  Delivery: Other</span><br><span>Notes:</span></td>
-                  <td colspan="2"><span>Basis: Régulier</span><span>  Type: R<br></span></td>
-                  <td colspan="3"><span>Completed: 2018-02-01</span><span>  Required: false</span></td>
+                  <td><span>ID d'école : 00998940</span><span>  Prestation du cours : Other</span><br><span>Remarque :</span></td>
+                  <td colspan="2"><span>Barème : Régulier</span><span>  Type : R<br></span></td>
+                  <td colspan="3"><span>Finis : 2018-02-01</span><span>  Requis : false</span></td>
                 </tr>
               </table>
             </div>

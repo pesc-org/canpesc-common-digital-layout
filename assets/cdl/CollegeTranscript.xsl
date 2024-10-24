@@ -29,7 +29,7 @@
 						<div class="left-column">
 							<div id="destination-institution">
 								<h2 class="center"><xsl:value-of select="$Labels/Label[@key='Destination.Heading']"/></h2>
-								<h3 class="center"><xsl:value-of select="$Labels/Label[@key='Destination.InstitutionName']"/> <xsl:call-template name="TransmissionData.DestinationInstitutionName" /></h3>
+								<h3 class="center"><xsl:value-of select="$Labels/Label[@key='Destination.OrganizationName']"/> <xsl:call-template name="TransmissionData.DestinationInstitutionName" /></h3>
 								<p>&#160;</p>
 								<xsl:choose>
 									<xsl:when test="//TransmissionData/Destination/Organization/CSIS/text() != ''">

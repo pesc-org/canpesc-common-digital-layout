@@ -29,8 +29,8 @@
 						<xsl:when test="$month=6">juin</xsl:when>
 						<xsl:when test="$month=7">juillet</xsl:when>
 						<xsl:when test="$month=8">août</xsl:when>
-						<xsl:when test="$month=9">September</xsl:when>
-						<xsl:when test="$month=10">septembre</xsl:when>
+						<xsl:when test="$month=9">septembre</xsl:when>
+						<xsl:when test="$month=10">octobre</xsl:when>
 						<xsl:when test="$month=11">novembre</xsl:when>
 						<xsl:when test="$month=12">décembre</xsl:when>
 					</xsl:choose>

@@ -1,7 +1,180 @@
-<html>
+<!DOCTYPE html><html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="file:///C:/dev/git/canpesc-common-digital-layout/styles/simple.css" type="text/css" media="all">
+    <title>EECDOrgName</title>
+    <style type="text/css">
+        @page {
+            size: Letter portrait;
+            margin: 10mm 0;
+        }
+
+        @media print {
+            div.pagebreak {
+                height: 0;
+                /* page-break-before: always; */
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
+        }
+
+        body, a, p, span, th, td {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1;
+            margin: 2px 0px 2px 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 2px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 0em;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            line-height: 1.8em;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            line-height: 1.8em;
+            white-space: nowrap;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            line-height: 1.5em;
+            white-space: nowrap;
+        }
+
+        h4 {
+            font-size: 1.0em;
+            font-weight: bold;
+            line-height: 1.5em;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .logo {
+            text-align: center;
+            /* content:url("https://github.com/canpesc/common-digital-layout/raw/master/assets/brand-tst1.png");  */
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .left-column {
+            flex: 25%;
+        }
+
+        .centre-column {
+            flex: 50%;
+            margin: 0 10px;
+        }
+
+        .right-column {
+            flex: 25%;
+        }
+
+        .all-columns {
+            flex: 100%;
+        }
+
+        .rounded-corners {
+            border-radius: 10px;
+            border: 1px solid #000000;
+            padding: 10px;
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+            background-color: #F9F9F9;
+        }
+
+        .grades-table {
+            width: 100%;
+        }
+
+            .grades-table th, .grades-table td {
+                border: 1px solid #999999;
+            }
+
+                .grades-table td:nth-child(1) {
+                    font-weight: bold;
+                }
+
+        .course-grade {
+            font-weight: bold;
+        }
+
+        .course-credit {
+            font-weight: bold;
+        }
+
+        .width-8 {
+            width: 8%;
+        }
+
+        .width-42 {
+            width: 42%;
+        }
+
+        .width-10 {
+            width: 10%;
+        }
+
+        @media only screen {
+            #transcript-container {
+                display: table;
+                margin: auto;
+                width: 800px;
+            }
+        }
+
+        @media only print {
+            #transcript-container {
+                display: table;
+                margin: auto;
+                width: 95vw;
+            }
+        }
+
+        #destination-institution {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        #transcript-information {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        #source-institution {
+            text-align: center;
+        }
+
+        #end-of-transcript {
+            text-align: center;
+            margin: 10px;
+            font-weight: bold;
+        }
+    </style>
   </head>
   <body>
     <div id="transcript-container">
@@ -14,7 +187,8 @@
           </div>
         </div>
         <div class="centre-column  rounded-corners">
-          <div id="source-institution"><img class="logo"><h1>EECDOrgName</h1>
+          <div id="source-institution">
+            <h1>EECDOrgName</h1>
             <h2><span>PSIS: EECD</span></h2>
             <p> </p>
             <p><span>Contact: </span></p>
@@ -36,7 +210,7 @@
           <p><span>Date of Birth: 1999-05-11</span></p>
           <p><span>Gender: Male</span></p>
           <p><span>Student Number: NA</span></p>
-          <p><span>Government Identifier: </span></p>
+          <p><span>Other Identifier: </span></p>
           <p><span>Note: 18.00</span></p>
         </div>
         <div id="academic-awards" class="centre-column rounded-corners">
@@ -67,18 +241,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>CMT11</td>
                   <td>COMMUNICATIONS TECHNOLOGY 11</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>43</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">43</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -86,14 +260,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>OPEN;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>VISART10</td>
                   <td>VISUAL ARTS 10</td>
                   <td>10</td>
-                  <td>1</td>
-                  <td>64</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">64</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -101,14 +275,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>GEOG11</td>
                   <td>GEOGRAPHY 11</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>20</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">20</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -116,14 +290,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>ENG10</td>
                   <td>ENGLISH 10</td>
                   <td>10</td>
-                  <td>0</td>
-                  <td>40</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">40</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -131,14 +305,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>ACS11</td>
                   <td>AFRICAN CANADIAN STUDIES 11</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>62</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">62</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -146,14 +320,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>SCI10</td>
                   <td>SCIENCE 10</td>
                   <td>10</td>
-                  <td>0</td>
-                  <td>36</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">36</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -161,14 +335,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>MTHE10</td>
                   <td>MATH ESSENTIALS 10</td>
                   <td>10</td>
-                  <td>1</td>
-                  <td>56</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">56</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -176,7 +350,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>GRAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -198,18 +372,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>SCI10</td>
                   <td>SCIENCE 10</td>
                   <td>10</td>
-                  <td>1</td>
-                  <td>55</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">55</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -217,14 +391,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>VISART11</td>
                   <td>VISUAL ARTS 11</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>74</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">74</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -232,14 +406,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>MTHE11</td>
                   <td>MATH ESSENTIALS 11</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>81</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">81</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -247,14 +421,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>GRAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>ENG10</td>
                   <td>ENGLISH 10</td>
                   <td>10</td>
-                  <td>1</td>
-                  <td>79</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">79</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -262,7 +436,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -284,18 +458,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>OCNS11</td>
                   <td>OCEANS 11</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>51</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">51</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -303,14 +477,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>BTEC11</td>
                   <td>BUSINESS TECHNOLOGY 11</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>67</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">67</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -318,14 +492,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>CHLDST11</td>
                   <td>CHILD STUDIES 11</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>78</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">78</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -333,14 +507,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>OPEN;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>ECM11</td>
                   <td>ENGLISH_COMMUNICATIONS 11</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>80</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">80</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -348,7 +522,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>GRAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -370,18 +544,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>SOC12AC</td>
                   <td>SOCIOLOGY 12 ACADEMIC</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>60</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">60</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -389,14 +563,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>YOGA11</td>
                   <td>YOGA 11</td>
                   <td>11</td>
-                  <td>1</td>
-                  <td>67</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">67</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -404,14 +578,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>HSDS12</td>
                   <td>HOUSING AND DESIGN 12</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>57</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">57</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -419,7 +593,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -441,18 +615,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>GEOL12</td>
                   <td>GEOLOGY 12</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>59</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">59</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -460,14 +634,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>ECM12</td>
                   <td>ENGLISH_COMMUNICATIONS 12</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>74</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">74</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -475,14 +649,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>GRAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>COOPAC12</td>
                   <td>CO_OPERATIVE EDUCATION 12</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>94</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">94</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -490,14 +664,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;ALC </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>GGS12</td>
                   <td>GLOBAL GEOGRAPHY 12</td>
                   <td>12</td>
-                  <td>1</td>
-                  <td>69</td>
+                  <td class="course-credit">1</td>
+                  <td class="course-grade">69</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -505,7 +679,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>

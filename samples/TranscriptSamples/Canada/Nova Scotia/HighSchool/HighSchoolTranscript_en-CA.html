@@ -1,7 +1,180 @@
-<html>
+<!DOCTYPE html><html>
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="file:///C:/dev/git/canpesc-common-digital-layout/styles/simple.css" type="text/css" media="all">
+    <title>EECDOrgName</title>
+    <style type="text/css">
+        @page {
+            size: Letter portrait;
+            margin: 10mm 0;
+        }
+
+        @media print {
+            div.pagebreak {
+                height: 0;
+                /* page-break-before: always; */
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
+        }
+
+        body, a, p, span, th, td {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1;
+            margin: 2px 0px 2px 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 2px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 0em;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            line-height: 1.8em;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            line-height: 1.8em;
+            white-space: nowrap;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            line-height: 1.5em;
+            white-space: nowrap;
+        }
+
+        h4 {
+            font-size: 1.0em;
+            font-weight: bold;
+            line-height: 1.5em;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .logo {
+            text-align: center;
+            /* content:url("https://github.com/canpesc/common-digital-layout/raw/master/assets/brand-tst1.png");  */
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .left-column {
+            flex: 25%;
+        }
+
+        .centre-column {
+            flex: 50%;
+            margin: 0 10px;
+        }
+
+        .right-column {
+            flex: 25%;
+        }
+
+        .all-columns {
+            flex: 100%;
+        }
+
+        .rounded-corners {
+            border-radius: 10px;
+            border: 1px solid #000000;
+            padding: 10px;
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+            background-color: #F9F9F9;
+        }
+
+        .grades-table {
+            width: 100%;
+        }
+
+            .grades-table th, .grades-table td {
+                border: 1px solid #999999;
+            }
+
+                .grades-table td:nth-child(1) {
+                    font-weight: bold;
+                }
+
+        .course-grade {
+            font-weight: bold;
+        }
+
+        .course-credit {
+            font-weight: bold;
+        }
+
+        .width-8 {
+            width: 8%;
+        }
+
+        .width-42 {
+            width: 42%;
+        }
+
+        .width-10 {
+            width: 10%;
+        }
+
+        @media only screen {
+            #transcript-container {
+                display: table;
+                margin: auto;
+                width: 800px;
+            }
+        }
+
+        @media only print {
+            #transcript-container {
+                display: table;
+                margin: auto;
+                width: 95vw;
+            }
+        }
+
+        #destination-institution {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        #transcript-information {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+
+        #source-institution {
+            text-align: center;
+        }
+
+        #end-of-transcript {
+            text-align: center;
+            margin: 10px;
+            font-weight: bold;
+        }
+    </style>
   </head>
   <body>
     <div id="transcript-container">
@@ -14,7 +187,8 @@
           </div>
         </div>
         <div class="centre-column  rounded-corners">
-          <div id="source-institution"><img class="logo"><h1>EECDOrgName</h1>
+          <div id="source-institution">
+            <h1>EECDOrgName</h1>
             <h2><span>PSIS: EECD</span></h2>
             <p> </p>
             <p><span>Contact: </span></p>
@@ -36,7 +210,7 @@
           <p><span>Date of Birth: </span></p>
           <p><span>Gender: Female</span></p>
           <p><span>Student Number: </span></p>
-          <p><span>Government Identifier: </span></p>
+          <p><span>Other Identifier: </span></p>
           <p><span>Note: 10.50</span></p>
         </div>
         <div id="academic-awards" class="centre-column rounded-corners">
@@ -67,18 +241,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>SCI10PREBI</td>
                   <td>SCIENCES PRÉ_BI 10</td>
                   <td>10</td>
-                  <td>1.00</td>
-                  <td>95</td>
+                  <td class="course-credit">1.00</td>
+                  <td class="course-grade">95</td>
                   <td>Pass</td>
                   <td>FRA</td>
                 </tr>
@@ -86,14 +260,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;CAL </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>MA10PRBI</td>
                   <td>MATHÉMATIQUES PRÉ_BI 10</td>
                   <td>10</td>
-                  <td>2.00</td>
-                  <td>95</td>
+                  <td class="course-credit">2.00</td>
+                  <td class="course-grade">95</td>
                   <td>Pass</td>
                   <td>FRA</td>
                 </tr>
@@ -101,14 +275,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;CAL </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>ENG10PRE</td>
                   <td>ENGLISH PRE_IB 10</td>
                   <td>10</td>
-                  <td>1.00</td>
-                  <td>96</td>
+                  <td class="course-credit">1.00</td>
+                  <td class="course-grade">96</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -116,14 +290,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;ALC </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>ARTDRA10</td>
                   <td>ART DRAMATIQUE 10</td>
                   <td>10</td>
-                  <td>1.00</td>
-                  <td>96</td>
+                  <td class="course-credit">1.00</td>
+                  <td class="course-grade">96</td>
                   <td>Pass</td>
                   <td>FRA</td>
                 </tr>
@@ -131,7 +305,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -153,18 +327,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>HCS11</td>
                   <td>HISTOIRE DU CANADA 11</td>
                   <td>11</td>
-                  <td>1.00</td>
-                  <td>92</td>
+                  <td class="course-credit">1.00</td>
+                  <td class="course-grade">92</td>
                   <td>Pass</td>
                   <td>FRA</td>
                 </tr>
@@ -172,14 +346,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>FRN10PREBI</td>
                   <td>FRANCAIS PRÉ_BI 10</td>
                   <td>10</td>
-                  <td>1.00</td>
-                  <td>96</td>
+                  <td class="course-credit">1.00</td>
+                  <td class="course-grade">96</td>
                   <td>Pass</td>
                   <td>FRA</td>
                 </tr>
@@ -187,14 +361,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;CAL </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>xESP10</td>
                   <td>ESPAGNOL 10</td>
                   <td>10</td>
-                  <td>1.00</td>
-                  <td>97</td>
+                  <td class="course-credit">1.00</td>
+                  <td class="course-grade">97</td>
                   <td>Pass</td>
                   <td>ESP</td>
                 </tr>
@@ -202,7 +376,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>ACAD;CAL </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -224,18 +398,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>IBTDC12</td>
                   <td>IB THÉORIE DELA CONNAISSANCE 12</td>
                   <td>12</td>
-                  <td>1.00</td>
-                  <td>95</td>
+                  <td class="course-credit">1.00</td>
+                  <td class="course-grade">95</td>
                   <td>Pass</td>
                   <td>FRA</td>
                 </tr>
@@ -243,14 +417,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBCH11NM</td>
                   <td>IB CHIMIE NM 11</td>
                   <td>11</td>
-                  <td>0.00</td>
-                  <td>82</td>
+                  <td class="course-credit">0.00</td>
+                  <td class="course-grade">82</td>
                   <td>Fail</td>
                   <td>FRA</td>
                 </tr>
@@ -258,14 +432,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBCAS</td>
                   <td>IB CRÉATIVITÉ ACTION SERVICE</td>
                   <td>11</td>
-                  <td>0.00</td>
-                  <td>0</td>
+                  <td class="course-credit">0.00</td>
+                  <td class="course-grade">0</td>
                   <td>Fail</td>
                   <td>FRA</td>
                 </tr>
@@ -273,14 +447,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBLAL12SL</td>
                   <td>IB ENGLISH A LANGUAGE &amp; LITERATURE SL 12</td>
                   <td>12</td>
-                  <td>1.50</td>
-                  <td>96</td>
+                  <td class="course-credit">1.50</td>
+                  <td class="course-grade">96</td>
                   <td>Pass</td>
                   <td>ENG</td>
                 </tr>
@@ -288,14 +462,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>ADV;PSP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBMATNM11</td>
                   <td>IB MATHÉMATIQUES NM 11</td>
                   <td>11</td>
-                  <td>0.00</td>
-                  <td>99</td>
+                  <td class="course-credit">0.00</td>
+                  <td class="course-grade">99</td>
                   <td>Fail</td>
                   <td>FRA</td>
                 </tr>
@@ -303,14 +477,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBBI11NS</td>
                   <td>IB BIOLOGIE NS 11</td>
                   <td>11</td>
-                  <td>0.00</td>
-                  <td>93</td>
+                  <td class="course-credit">0.00</td>
+                  <td class="course-grade">93</td>
                   <td>Fail</td>
                   <td>FRA</td>
                 </tr>
@@ -318,14 +492,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBFRA111</td>
                   <td>IB FRANÇAIS A1 11</td>
                   <td>11</td>
-                  <td>0.00</td>
-                  <td>97</td>
+                  <td class="course-credit">0.00</td>
+                  <td class="course-grade">97</td>
                   <td>Fail</td>
                   <td>FRA</td>
                 </tr>
@@ -333,7 +507,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -355,18 +529,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>IBMEM11</td>
                   <td>IB LE MÉMOIRE 11</td>
                   <td>11</td>
-                  <td>0.00</td>
-                  <td>EC</td>
+                  <td class="course-credit">0.00</td>
+                  <td class="course-grade">EC</td>
                   <td>In Progress</td>
                   <td>FRA</td>
                 </tr>
@@ -374,14 +548,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBHIS11</td>
                   <td>IB HISTOIRE 11</td>
                   <td>11</td>
-                  <td>0.00</td>
-                  <td>90</td>
+                  <td class="course-credit">0.00</td>
+                  <td class="course-grade">90</td>
                   <td>Fail</td>
                   <td>FRA</td>
                 </tr>
@@ -389,7 +563,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -411,18 +585,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>IBFRNS12</td>
                   <td>IB FRANÇAIS A1 NS 12</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>IP</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">IP</td>
                   <td>In Progress</td>
                   <td>FRA</td>
                 </tr>
@@ -430,14 +604,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBHISNS12</td>
                   <td>IB HISTOIRE NS 12</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>IP</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">IP</td>
                   <td>In Progress</td>
                   <td>FRA</td>
                 </tr>
@@ -445,14 +619,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBBI12NS</td>
                   <td>IB BIOLOGIE NS 12</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>IP</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">IP</td>
                   <td>In Progress</td>
                   <td>FRA</td>
                 </tr>
@@ -460,14 +634,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBCAS</td>
                   <td>IB CRÉATIVITÉ ACTION SERVICE</td>
                   <td>11</td>
-                  <td>0</td>
-                  <td>IP</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">IP</td>
                   <td>In Progress</td>
                   <td>FRA</td>
                 </tr>
@@ -475,14 +649,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBLEME12</td>
                   <td>IB LE MÉMOIRE 12</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>IP</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">IP</td>
                   <td>In Progress</td>
                   <td>FRA</td>
                 </tr>
@@ -490,14 +664,14 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
                 <tr>
                   <td>IBTDC12</td>
                   <td>IB THÉORIE DELA CONNAISSANCE 12</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>IP</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">IP</td>
                   <td>In Progress</td>
                   <td>FRA</td>
                 </tr>
@@ -505,7 +679,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>
@@ -527,18 +701,18 @@
                 <thead>
                   <th scope="cols" width="8%">Course No</th>
                   <th scope="cols" width="42%">Course Title</th>
+                  <th scope="cols" width="10%">Level: </th>
+                  <th scope="cols" width="10%">Earned</th>
                   <th scope="cols" width="10%">Grade</th>
-                  <th scope="cols" width="10%">Credit Earned</th>
-                  <th scope="cols" width="10%">% Grade</th>
-                  <th scope="cols" width="10%">Grade Status</th>
+                  <th scope="cols" width="10%">Grade Status: </th>
                   <th scope="cols" width="10%">Lang</th>
                 </thead>
                 <tr>
                   <td>IBMATNM12</td>
                   <td>IB MATHÉMATIQUES NM 12</td>
                   <td>12</td>
-                  <td>0</td>
-                  <td>IP</td>
+                  <td class="course-credit">0</td>
+                  <td class="course-grade">IP</td>
                   <td>In Progress</td>
                   <td>FRA</td>
                 </tr>
@@ -546,7 +720,7 @@
                   <td></td>
                   <td><span>Notes:</span><span>AV;PEP </span></td>
                   <td colspan="2"><span>Basis: Regular</span><span>  Units: Other</span></td>
-                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Credit Value: 0</span></td>
+                  <td colspan="3"><span>Completed: 0001-01-01</span><span>  Value0</span></td>
                 </tr>
               </table>
             </div>

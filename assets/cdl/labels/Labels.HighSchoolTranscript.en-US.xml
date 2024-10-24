@@ -25,7 +25,12 @@
 	<Label key="Student.Gender" path="/Student/Person/Gender">Gender: </Label>
 	<Label key="Student.StudentNumber" path="/Student/Person/SchoolAssignedPersonID">Student Number: </Label>
 	<Label key="Student.GovernmentIdentifier" path="/Student/Person/AgencyIdentifier">Government Identifier: </Label>
+	<Label key="Student.Note" path="/Student/NoteMessage">Note: </Label>
 
+	<Label key="Student.AcademicRecord.School" path="/Student/AcademicRecord/School">School</Label>
+	<Label key="Student.AcademicRecord.School.ESIS" path="/Student/AcademicRecord/School/ESIS">School ID:</Label>
+	<Label key="Student.AcademicRecord.AcademicSession.School.ESIS" path="/Student/AcademicRecord/AcademicSession/School/ESIS">School ID:</Label>
+	
 	<Label key="Student.AcademicAward.Title" path="">Academic Awards</Label>
 	<Label key="Student.AcademicAward.AwardDate" path="/Student/AcademicRecord/AcademicAward/AcademicAwardDate">Date Awarded: </Label>
 	<Label key="Student.AcademicAward.AwardLevel" path="/Student/AcademicRecord/AcademicAward/AcademicAwardLevel">Level: </Label>
@@ -46,12 +51,16 @@
 	<Label key="Student.AcademicSummary.GPA" path="/Student/AcademicRecord/AcademicSummary/GPA/GradePointAverage(AcademicSummaryType!=Cumulative)">GPA: </Label>
 	<Label key="Student.AcademicSummary.GPACreditHoursEarned" path="/Student/AcademicRecord/AcademicSummary/GPA/CreditHoursEarned">Credit Hours Earned: </Label>
 	<Label key="Student.AcademicSummary.GPACreditUnit" path="/Student/AcademicRecord/AcademicSummary/GPA/CreditUnit">Credit Unit: </Label>
+	<Label key="Student.AcademicSummary.GPACredits" path="/Student/AcademicRecord/AcademicSummary/GPA/CreditHoursForGPA">Credits in GPA: </Label>
 	<Label key="Student.AcademicSummary.GPANote" path="/Student/AcademicRecord/AcademicSummary/GPA/NoteMessage">Note: </Label>
+	<Label key="Student.AcademicSummary.GPARangeMinimum" path="/Student/AcademicRecord/AcademicSummary/GPA/GPARangeMinimum">Range Minimum: </Label>
+	<Label key="Student.AcademicSummary.GPARangeMaximum" path="/Student/AcademicRecord/AcademicSummary/GPA/GPARangeMaximum">Range Maximum: </Label>
 	<Label key="Student.AcademicSummary.Note" path="/Student/AcademicRecord/AcademicSummary/NoteMessage">Note: </Label>
 
 	<Label key="Student.AcademicRecord.Course.Title" path="">Transfer Credits</Label>
 	<Label key="Student.AcademicRecord.Course.CourseNumber" path="/Student/AcademicRecord/Course/CourseNumber">Course Number</Label>
 	<Label key="Student.AcademicRecord.Course.CourseTitle" path="/Student/AcademicRecord/Course/CourseTitle">Course Title</Label>
+	<Label key="Student.AcademicRecord.Course.CourseEndDate" path="/Student/AcademicRecord/AcademicSession/Course/CourseEndDate">Completed: </Label>
 	<Label key="Student.AcademicRecord.Course.CreditValue" path="/Student/AcademicRecord/Course/CourseCreditValue">Credit Value</Label>
 	<Label key="Student.AcademicRecord.Course.CreditEarned" path="/Student/AcademicRecord/Course/CourseCreditEarned">Credit Earned</Label>
 	<Label key="Student.AcademicRecord.Course.Grade" path="/Student/AcademicRecord/Course/CourseAcademicGrade">Grade</Label>
@@ -62,6 +71,11 @@
 	<Label key="Student.AcademicRecord.Course.CourseCreditUnits" path="/Student/AcademicRecord/Course/CourseCreditUnits">Units: </Label>
 	<Label key="Student.AcademicRecord.Course.CourseCreditLevel" path="/Student/AcademicRecord/Course/CourseCreditLevel">Level: </Label>
 	<Label key="Student.AcademicRecord.Course.GradeStatus" path="/Student/AcademicRecord/Course/CourseAcademicGradeStatusCode">Grade Status: </Label>
+	<Label key="Student.AcademicRecord.Course.Language" path="/Student/AcademicRecord/Course/LanguageOfInstruction/LanguageCode">Lang</Label>
+	<Label key="Student.AcademicRecord.Course.School" path="/Student/AcademicRecord/Course/CourseOverrideSchool/ESIS">School ID: </Label>
+	<Label key="Student.AcademicRecord.Course.Delivery" path="/Student/AcademicRecord/Course/CourseInstructionSiteName">Delivery: </Label>
+	<Label key="Student.AcademicRecord.Course.CourseType" path="/Student/AcademicRecord/Course/UserDefinedExtensions/CourseType">Type: </Label>
+	<Label key="Student.AcademicRecord.Course.Required" path="/Student/AcademicRecord/Course/UserDefinedExtensions/Compulsory">Required: </Label>
 	<Label key="Student.AcademicRecord.Course.SupplementalGrade" path="/Student/AcademicRecord/Course/CourseSupplementalAcademicGrade/CourseSupplementalGrade/CourseAcademicSupplementalGrade">Supplemental Grade: </Label>
 	<Label key="Student.AcademicRecord.Course.SupplementalGradeCode" path="/Student/AcademicRecord/Course/CourseSupplementalAcademicGrade/CourseSupplementalGrade/CourseAcademicSupplementalGradeScaleCode">Code: </Label>
 
@@ -92,6 +106,7 @@
 	<Label key="Student.AcademicSession.Course.Title" path="">Course Information</Label>
 	<Label key="Student.AcademicSession.Course.CourseNumber" path="/Student/AcademicRecord/AcademicSession/Course/CourseNumber">Course Number</Label>
 	<Label key="Student.AcademicSession.Course.CourseTitle" path="/Student/AcademicRecord/AcademicSession/Course/CourseTitle">Course Title</Label>
+	<Label key="Student.AcademicSession.Course.CourseEndDate" path="/Student/AcademicRecord/AcademicSession/Course/CourseEndDate">Completed: </Label>
 	<Label key="Student.AcademicSession.Course.CreditValue" path="/Student/AcademicRecord/AcademicSession/Course/CourseCreditValue">Credit Value</Label>
 	<Label key="Student.AcademicSession.Course.CreditEarned" path="/Student/AcademicRecord/AcademicSession/Course/CourseCreditEarned">Credit Earned</Label>
 	<Label key="Student.AcademicSession.Course.Grade" path="/Student/AcademicRecord/AcademicSession/Course/CourseAcademicGrade">Grade</Label>
@@ -102,6 +117,11 @@
 	<Label key="Student.AcademicSession.Course.CourseCreditUnits" path="/Student/AcademicRecord/AcademicSession/Course/CourseCreditUnits">Units: </Label>
 	<Label key="Student.AcademicSession.Course.CourseCreditLevel" path="/Student/AcademicRecord/AcademicSession/Course/CourseCreditLevel">Level: </Label>
 	<Label key="Student.AcademicSession.Course.GradeStatus" path="/Student/AcademicRecord/AcademicSession/Course/CourseAcademicGradeStatusCode">Grade Status: </Label>
+	<Label key="Student.AcademicSession.Course.Language" path="/Student/AcademicRecord/AcademicSession/Course/LanguageOfInstruction/LanguageCode">Lang</Label>
+	<Label key="Student.AcademicSession.Course.School" path="/Student/AcademicRecord/AcademicSession/Course/CourseOverrideSchool/ESIS">School ID: </Label>
+	<Label key="Student.AcademicSession.Course.Delivery" path="/Student/AcademicRecord/AcademicSession/Course/CourseInstructionSiteName">Delivery: </Label>
+	<Label key="Student.AcademicSession.Course.CourseType" path="/Student/AcademicRecord/AcademicSession/Course/UserDefinedExtensions/CourseType">Type: </Label>
+	<Label key="Student.AcademicSession.Course.Required" path="/Student/AcademicRecord/AcademicSession/Course/UserDefinedExtensions/Compulsory">Required: </Label>
 	<Label key="Student.AcademicSession.Course.SupplementalGrade" path="/Student/AcademicRecord/AcademicSession/Course/CourseSupplementalAcademicGrade/CourseSupplementalGrade/CourseAcademicSupplementalGrade">Supplemental Grade: </Label>
 	<Label key="Student.AcademicSession.Course.SupplementalGradeCode" path="/Student/AcademicRecord/AcademicSession/Course/CourseSupplementalAcademicGrade/CourseSupplementalGrade/CourseAcademicSupplementalGradeScaleCode">Code: </Label>
 
