@@ -66,9 +66,26 @@
 									<xsl:otherwise><span><xsl:value-of select="$Labels/Label[@key='Source.MutuallyDefined']"/> <xsl:call-template name="TransmissionData.DestinationInstitutionCode" /></span></xsl:otherwise>
 								</xsl:choose></h2>
 								<p>&#160;</p>
-								<!-- TODO: Address block -->
 								<xsl:if test="count(//TransmissionData/Source/Organization/Contacts) > 0">
 									<p><span><xsl:value-of select="$Labels/Label[@key='Source.Contact.Title']"/> <xsl:call-template name="ContactInformation.Name" /></span></p>
+									<xsl:if test="string-length(//TransmissionData/Source/Organization/Contacts/Address/AddressLine/text()) != 0" >
+										<p><span><xsl:value-of select="//TransmissionData/Source/Organization/Contacts/Address/AddressLine/text()" /></span></p>
+									</xsl:if>
+									<xsl:if test="string-length(//TransmissionData/Source/Organization/Contacts/Address/City/text()) != 0" >
+										<p><span><xsl:value-of select="//TransmissionData/Source/Organization/Contacts/Address/City/text()" /></span>
+										<span>, <xsl:value-of select="//TransmissionData/Source/Organization/Contacts/Address/StateProvinceCode/text()" /></span>
+										</p>
+									</xsl:if>
+									<xsl:if test="string-length(//TransmissionData/Source/Organization/Contacts/Address/PostalCode/text()) != 0" >
+										<p>
+										<span><xsl:value-of select="//TransmissionData/Source/Organization/Contacts/Address/PostalCode/text()" /></span>
+										</p>
+									</xsl:if>
+									<xsl:if test="string-length(//TransmissionData/Source/Organization/Contacts/Email/EmailAddress/text()) != 0" >
+										<p>
+										<span><xsl:value-of select="//TransmissionData/Source/Organization/Contacts/Email/EmailAddress//text()" /></span>
+										</p>
+									</xsl:if>
 								</xsl:if>
 								<xsl:for-each select="//TransmissionData/NoteMessage">
 									<p><span><xsl:value-of select="text()"/></span></p>
