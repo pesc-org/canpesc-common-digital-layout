@@ -31,18 +31,9 @@
 								<h2 class="center"><xsl:value-of select="$Labels/Label[@key='Destination.Heading']"/></h2>
 								<h3 class="center"><xsl:value-of select="$Labels/Label[@key='Destination.OrganizationName']"/> <xsl:call-template name="TransmissionData.DestinationInstitutionName" /></h3>
 								<p>&#160;</p>
-								<xsl:choose>
-									<xsl:when test="//TransmissionData/Destination/Organization/CSIS/text() != ''">
-										<p><span><xsl:value-of select="$Labels/Label[@key='Destination.CSIS']"/> <xsl:value-of select="//TransmissionData/Destination/Organization/CSIS/text()"/></span></p>
-									</xsl:when>
-									<xsl:when test="//TransmissionData/Destination/Organization/USIS/text() != ''">
-										<p><span><xsl:value-of select="$Labels/Label[@key='Destination.USIS']"/> <xsl:value-of select="//TransmissionData/Destination/Organization/USIS/text()"/></span></p>
-									</xsl:when>
-									<xsl:when test="//TransmissionData/Destination/Organization/PSIS/text() != ''">
-										<p><span><xsl:value-of select="$Labels/Label[@key='Destination.PSIS']"/> <xsl:value-of select="//TransmissionData/Destination/Organization/PSIS/text()"/></span></p>
-									</xsl:when>
-									<xsl:otherwise><p><span><xsl:value-of select="$Labels/Label[@key='Destination.MutuallyDefined']"/> <xsl:call-template name="TransmissionData.DestinationInstitutionCode" /></span></p></xsl:otherwise>
-								</xsl:choose>
+								<xsl:for-each select="//TransmissionData/Destination/Organization/*">
+									<xsl:call-template name="TransmissionData.OrganizationID"><xsl:with-param name="showLabel" select="'true'" /><xsl:with-param name="newLine" select="'true'" /></xsl:call-template>
+								</xsl:for-each>
 								<xsl:if test="string-length(//TransmissionData/RequestTrackingID/text()) != 0" >
 									<p><span><xsl:value-of select="$Labels/Label[@key='RequestTrackingID']"/> <xsl:call-template name="TransmissionData.RequestTrackingID" /></span></p>
 								</xsl:if>
@@ -50,20 +41,10 @@
 						</div>
 						<div class="centre-column rounded-corners">
 							<div id="source-institution">
-								<!-- <img class="logo" src="" alt="" /> -->
 								<h1><xsl:call-template name="TransmissionData.SourceInstitutionName" /></h1>
-								<h3><xsl:choose>
-									<xsl:when test="//TransmissionData/Source/Organization/CSIS/text() != ''">
-										<xsl:value-of select="$Labels/Label[@key='Source.CSIS']"/> <xsl:value-of select="//TransmissionData/Source/Organization/CSIS/text()"/>
-									</xsl:when>
-									<xsl:when test="//TransmissionData/Source/Organization/USIS/text() != ''">
-										<xsl:value-of select="$Labels/Label[@key='Source.USIS']"/> <xsl:value-of select="//TransmissionData/Source/Organization/USIS/text()"/>
-									</xsl:when>
-									<xsl:when test="//TransmissionData/Source/Organization/PSIS/text() != ''">
-										<xsl:value-of select="$Labels/Label[@key='Source.PSIS']"/> <xsl:value-of select="//TransmissionData/Source/Organization/PSIS/text()"/>
-									</xsl:when>
-									<xsl:otherwise><xsl:value-of select="$Labels/Label[@key='Source.MutuallyDefined']"/> <xsl:call-template name="TransmissionData.SourceInstitutionCode" /></xsl:otherwise>
-								</xsl:choose></h3>
+								<h3><xsl:for-each select="//TransmissionData/Source/Organization/*">
+									<xsl:call-template name="TransmissionData.OrganizationID"><xsl:with-param name="showLabel" select="'true'" /><xsl:with-param name="newLine" select="'true'" /></xsl:call-template>
+								</xsl:for-each></h3>
 								<p>&#160;</p>
 								<xsl:if test="count(//TransmissionData/Source/Organization/Contacts) > 0">
 									<p><span><xsl:value-of select="$Labels/Label[@key='Source.Contact.Title']"/> <xsl:call-template name="ContactInformation.Name" /></span></p>

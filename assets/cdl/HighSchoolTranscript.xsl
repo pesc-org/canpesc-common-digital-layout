@@ -30,41 +30,17 @@
 							<div id="destination-institution">
 								<h2><xsl:value-of select="$Labels/Label[@key='Destination.Heading']"/></h2>
 								<p><span><xsl:value-of select="$Labels/Label[@key='Destination.OrganizationName']"/> <xsl:call-template name="TransmissionData.DestinationInstitutionName" /></span></p>
-								<xsl:choose>
-									<xsl:when test="//TransmissionData/Destination/Organization/CSIS/text() != ''">
-										<p><span><xsl:value-of select="$Labels/Label[@key='Destination.CSIS']"/> <xsl:value-of select="//TransmissionData/Destination/Organization/CSIS/text()"/></span></p>
-									</xsl:when>
-									<xsl:when test="//TransmissionData/Destination/Organization/USIS/text() != ''">
-										<p><span><xsl:value-of select="$Labels/Label[@key='Destination.USIS']"/> <xsl:value-of select="//TransmissionData/Destination/Organization/USIS/text()"/></span></p>
-									</xsl:when>
-									<xsl:when test="//TransmissionData/Destination/Organization/PSIS/text() != ''">
-										<p><span><xsl:value-of select="$Labels/Label[@key='Destination.PSIS']"/> <xsl:value-of select="//TransmissionData/Destination/Organization/PSIS/text()"/></span></p>
-									</xsl:when>
-                  					<xsl:when test="//TransmissionData/Destination/Organization/ESIS/text() != ''">
-										<p><span><xsl:value-of select="$Labels/Label[@key='Destination.ESIS']"/> <xsl:value-of select="//TransmissionData/Destination/Organization/ESIS/text()"/></span></p>
-									</xsl:when>
-									<xsl:otherwise><p><span><xsl:value-of select="$Labels/Label[@key='Destination.MutuallyDefined']"/> <xsl:call-template name="TransmissionData.DestinationInstitutionCode" /></span></p></xsl:otherwise>
-								</xsl:choose>
+								<xsl:for-each select="//TransmissionData/Destination/Organization/*">
+									<xsl:call-template name="TransmissionData.OrganizationID"><xsl:with-param name="showLabel" select="'true'" /><xsl:with-param name="newLine" select="'true'" /></xsl:call-template>
+								</xsl:for-each>
 							</div>
 						</div>
 						<div class="centre-column  rounded-corners">
 							<div id="source-institution">
 								<h1><xsl:call-template name="TransmissionData.SourceInstitutionName" /></h1>
-								<h2><xsl:choose>
-									<xsl:when test="//TransmissionData/Source/Organization/CSIS/text() != ''">
-										<span><xsl:value-of select="$Labels/Label[@key='Source.CSIS']"/> <xsl:value-of select="//TransmissionData/Source/Organization/CSIS/text()"/></span>
-									</xsl:when>
-									<xsl:when test="//TransmissionData/Source/Organization/USIS/text() != ''">
-										<span><xsl:value-of select="$Labels/Label[@key='Source.USIS']"/> <xsl:value-of select="//TransmissionData/Source/Organization/USIS/text()"/></span>
-									</xsl:when>
-									<xsl:when test="//TransmissionData/Source/Organization/PSIS/text() != ''">
-										<span><xsl:value-of select="$Labels/Label[@key='Source.PSIS']"/> <xsl:value-of select="//TransmissionData/Source/Organization/PSIS/text()"/></span>
-									</xsl:when>
-                  					<xsl:when test="//TransmissionData/Source/Organization/PSIS/text() != ''">
-										<span><xsl:value-of select="$Labels/Label[@key='Source.ESIS']"/> <xsl:value-of select="//TransmissionData/Source/Organization/PSIS/text()"/></span>
-									</xsl:when>
-									<xsl:otherwise><span><xsl:value-of select="$Labels/Label[@key='Source.MutuallyDefined']"/> <xsl:call-template name="TransmissionData.DestinationInstitutionCode" /></span></xsl:otherwise>
-								</xsl:choose></h2>
+								<h2><xsl:for-each select="//TransmissionData/Source/Organization/*">
+									<xsl:call-template name="TransmissionData.OrganizationID"><xsl:with-param name="showLabel" select="'true'" /><xsl:with-param name="newLine" select="'true'" /></xsl:call-template>
+								</xsl:for-each></h2>
 								<p>&#160;</p>
 								<xsl:if test="count(//TransmissionData/Source/Organization/Contacts) > 0">
 									<p><span><xsl:value-of select="$Labels/Label[@key='Source.Contact.Title']"/> <xsl:call-template name="ContactInformation.Name" /></span></p>
@@ -193,21 +169,23 @@
 							<h2><xsl:value-of select="$Labels/Label[@key='Student.AcademicRecord.School']"/></h2> 
 							<xsl:for-each select="//Student/AcademicRecord/School">
 								<xsl:if test="string-length(OrganizationName/text()) != 0">
-								   
-								<h3><xsl:value-of select="OrganizationName/text()"/></h3>
-									<xsl:if test="string-length(ESIS/text()) != 0">
-										<p><span><xsl:value-of select="$Labels/Label[@key='Student.AcademicRecord.School.ESIS']"/> <xsl:value-of select="ESIS/text()"/></span></p>
-									</xsl:if>
+									<h3><xsl:value-of select="OrganizationName/text()"/></h3>
 								</xsl:if>
 							</xsl:for-each>
 							<xsl:for-each select="//Student/AcademicRecord/AcademicSession/School">
 								<xsl:if test="string-length(OrganizationName/text()) != 0">
-								<h3><xsl:value-of select="OrganizationName/text()"/></h3>
-								<xsl:if test="string-length(ESIS/text()) != 0">
-									<p><span><xsl:value-of select="$Labels/Label[@key='Student.AcademicRecord.AcademicSession.School.ESIS']"/> <xsl:value-of select="ESIS/text()"/></span></p>
-								</xsl:if>
+									<h3><xsl:value-of select="OrganizationName/text()"/></h3>
 								</xsl:if>
 							</xsl:for-each>
+							<span>
+								<xsl:value-of select="$Labels/Label[@key='Student.AcademicRecord.School.ID']"/>
+								<xsl:for-each select="//Student/AcademicRecord/School/*">
+									<xsl:call-template name="TransmissionData.OrganizationID"><xsl:with-param name="showLabel" select="'false'" /><xsl:with-param name="newLine" select="'false'" /></xsl:call-template>
+								</xsl:for-each>
+								<xsl:for-each select="//Student/AcademicRecord/AcademicSession/School/*">
+									<xsl:call-template name="TransmissionData.OrganizationID"><xsl:with-param name="showLabel" select="'false'" /><xsl:with-param name="newLine" select="'false'" /></xsl:call-template>
+								</xsl:for-each>
+							</span>
 						</div>
 					</div>
 					<xsl:for-each select="//Student/AcademicRecord/AcademicSession">
@@ -321,8 +299,10 @@
 													<tr>
 														<td></td>
 														<td>
-															<xsl:if test="CourseOverrideSchool/ESIS/text() != ''">
-																<span><xsl:value-of select="$Labels/Label[@key='Student.AcademicSession.Course.School']"/> <xsl:value-of select="CourseOverrideSchool/ESIS/text()" /></span>
+															<xsl:if test="CourseOverrideSchool/*/text() != ''">
+																<span><xsl:value-of select="$Labels/Label[@key='Student.AcademicSession.Course.School']"/> 
+																<xsl:for-each select="CourseOverrideSchool/*"><xsl:call-template name="TransmissionData.OrganizationID"><xsl:with-param name="showLabel" select="'false'" /><xsl:with-param name="newLine" select="'false'" /></xsl:call-template></xsl:for-each>
+																</span>
 															</xsl:if>
 															<xsl:if test="CourseInstructionSiteName/text() != ''">
 																<span>&#160;&#160;<xsl:value-of select="$Labels/Label[@key='Student.AcademicSession.Course.Delivery']"/> <xsl:value-of select="CourseInstructionSiteName/text()" /></span><br />
@@ -412,8 +392,10 @@
 												<tr>
 													<td></td>
 													<td>
-														<xsl:if test="CourseOverrideSchool/ESIS/text() != ''">
-															<span><xsl:value-of select="$Labels/Label[@key='Student.AcademicRecord.Course.School']"/> <xsl:value-of select="CourseOverrideSchool/ESIS/text()" /></span>
+														<xsl:if test="CourseOverrideSchool/*/text() != ''">
+															<span><xsl:value-of select="$Labels/Label[@key='Student.AcademicRecord.Course.School']"/> 
+															<xsl:for-each select="CourseOverrideSchool/*"><xsl:call-template name="TransmissionData.OrganizationID"><xsl:with-param name="showLabel" select="'false'" /><xsl:with-param name="newLine" select="'false'" /></xsl:call-template></xsl:for-each>
+															</span>
 														</xsl:if>
 														<xsl:if test="CourseInstructionSiteName/text() != ''">
 															<span>&#160;&#160;<xsl:value-of select="$Labels/Label[@key='Student.AcademicRecord.Course.Delivery']"/> <xsl:value-of select="CourseInstructionSiteName/text()" /></span><br />

@@ -28,8 +28,8 @@
 	<Label key="Student.Note" path="/Student/NoteMessage">Note: </Label>
 
 	<Label key="Student.AcademicRecord.School" path="/Student/AcademicRecord/School">School</Label>
-	<Label key="Student.AcademicRecord.School.ESIS" path="/Student/AcademicRecord/School/ESIS">School ID:</Label>
-	<Label key="Student.AcademicRecord.AcademicSession.School.ESIS" path="/Student/AcademicRecord/AcademicSession/School/ESIS">School ID:</Label>
+	<Label key="Student.AcademicRecord.School.ID" path="/Student/AcademicRecord/School">School ID:</Label>
+	<Label key="Student.AcademicRecord.AcademicSession.School.ID" path="/Student/AcademicRecord/AcademicSession/School">School ID:</Label>
 	
 	<Label key="Student.AcademicAward.Title" path="">Academic Awards</Label>
 	<Label key="Student.AcademicAward.AwardDate" path="/Student/AcademicRecord/AcademicAward/AcademicAwardDate">Date Awarded: </Label>
