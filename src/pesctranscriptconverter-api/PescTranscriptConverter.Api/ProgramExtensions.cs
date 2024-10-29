@@ -121,7 +121,7 @@ public static partial class ProgramExtensions
                   document.getElementById('api-reference').dataset.configuration =
                       JSON.stringify(configuration)
                   </script>
-                  <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@v1.25.7"></script>
               </body>
               </html>
               """, "text/html")).ExcludeFromDescription();
