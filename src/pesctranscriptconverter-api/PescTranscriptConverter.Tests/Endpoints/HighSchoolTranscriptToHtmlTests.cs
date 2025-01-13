@@ -1,51 +1,40 @@
-using Microsoft.Extensions.DependencyInjection;
+﻿namespace PescTranscriptConverter.Tests.Endpoints;
 
-namespace PescTranscriptConverter.Tests.Endpoints;
-
-public class HighSchoolTranscriptToHtmlTests : IAsyncLifetime
+[ParallelLimiter<DafParallelLimit>]
+[ClassDataSource<Daf>(Shared = SharedType.None)]
+public class HighSchoolTranscriptToHtmlTests
 {
-    private DistributedApplication? _app;
-    private ResourceNotificationService? _notificationService;
-    private PescTranscriptConverterClient? _apiClient;
+    private readonly Daf _daf;
 
-    public async Task InitializeAsync()
+    public HighSchoolTranscriptToHtmlTests(Daf daf)
     {
-        var appHost = await DistributedApplicationTestingBuilder.CreateAsync<Projects.PescTranscriptConverter_AppHost>();
-
-        _app = await appHost.BuildAsync();
-        _notificationService = _app.Services.GetRequiredService<ResourceNotificationService>();
-        await _app.StartAsync();
-        _apiClient = new PescTranscriptConverterClient(_app.CreateHttpClient("api"));
+        _daf = daf;
     }
 
-    public Task DisposeAsync()
-    {
-        _app?.Dispose();
-
-        return Task.CompletedTask;
-    }
-
-    [Theory]
-    [InlineData("Canada.Ontario.HighSchool.HighSchoolTranscript.xml", "en-CA", "<html")]
-    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript.xml", "en-CA", "<html")]
-    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript2.xml", "en-CA", "<html")]
-    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript3.xml", "en-CA", "<html")]
+    [Test]
+    [Arguments("Canada.Ontario.HighSchool.HighSchoolTranscript.xml", "en-CA", "<html")]
+    [Arguments("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript.xml", "en-CA", "<html")]
+    [Arguments("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript2.xml", "en-CA", "<html")]
+    [Arguments("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript3.xml", "en-CA", "<html")]
     public async Task Should_convert_highschool_pesc_to_html(string pescXml, string locale, string assertContains)
     {
         // Arrange
+        var apiClient = _daf.GetApiClient();
+        var notificationService = _daf.GetNotificationService();
+
         var request = new HighSchoolTranscriptToHtmlRequest
         {
             Pesc = SampleHelper.ReadResourceAsString(pescXml),
             Locale = locale
         };
 
-        await _notificationService.WaitForResourceAsync("api", KnownResourceStates.Running).WaitAsync(TimeSpan.FromSeconds(30));
+        await notificationService.WaitForResourceAsync("api", KnownResourceStates.Running).WaitAsync(TimeSpan.FromSeconds(30));
 
         // Act
-        var response = await _apiClient!.HighSchoolTranscriptToHtmlAsync(request);
+        var response = await apiClient!.HighSchoolTranscriptToHtmlAsync(request);
 
         // Assert
-        response.Should().NotBeNull();
-        response.Html.Should().Contain(assertContains);
+        await Assert.That(response).IsNotNull();
+        await Assert.That(response.Html).Contains(assertContains);
     }
 }

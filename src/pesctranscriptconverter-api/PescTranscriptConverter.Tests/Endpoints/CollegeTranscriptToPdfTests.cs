@@ -1,53 +1,44 @@
-using Microsoft.Extensions.DependencyInjection;
+﻿namespace PescTranscriptConverter.Tests.Endpoints;
 
-namespace PescTranscriptConverter.Tests.Endpoints;
-
-public class CollegeTranscriptToPdfTests : IAsyncLifetime
+[ParallelLimiter<DafParallelLimit>]
+[ClassDataSource<Daf>(Shared = SharedType.None)]
+public class CollegeTranscriptToPdfTests
 {
-    private DistributedApplication? _app;
-    private ResourceNotificationService? _notificationService;
-    private PescTranscriptConverterClient? _apiClient;
+    private readonly Daf _daf;
 
-    public async Task InitializeAsync()
+    public CollegeTranscriptToPdfTests(Daf daf)
     {
-        var appHost = await DistributedApplicationTestingBuilder.CreateAsync<Projects.PescTranscriptConverter_AppHost>();
-
-        _app = await appHost.BuildAsync();
-        _notificationService = _app.Services.GetRequiredService<ResourceNotificationService>();
-        await _app.StartAsync();
-        _apiClient = new PescTranscriptConverterClient(_app.CreateHttpClient("api"));
+        _daf = daf;
     }
 
-    public Task DisposeAsync()
-    {
-        _app?.Dispose();
-
-        return Task.CompletedTask;
-    }
-
-    [Theory]
-    [InlineData("Canada.Ontario.College.CollegeTranscript.xml", "en-CA")]
-    [InlineData("Canada.Ontario.University.UniversityTranscript.xml", "en-CA")]
-    [InlineData("Canada.Ontario.University.UniversityTranscript2.xml", "en-CA")]
-    [InlineData("Canada.Nova_Scotia.University.UniversityTranscript1.xml", "en-CA")]
-    [InlineData("Canada.Nova_Scotia.University.UniversityTranscript2.xml", "en-CA")]
+    [Test]
+    [Arguments("Canada.Ontario.College.CollegeTranscript.xml", "en-CA")]
+    [Arguments("Canada.Ontario.University.UniversityTranscript.xml", "en-CA")]
+    [Arguments("Canada.Ontario.University.UniversityTranscript2.xml", "en-CA")]
+    [Arguments("Canada.Nova_Scotia.University.UniversityTranscript1.xml", "en-CA")]
+    [Arguments("Canada.Nova_Scotia.University.UniversityTranscript2.xml", "en-CA")]
     public async Task Should_convert_college_pesc_to_pdf(string pescXml, string locale)
     {
         // Arrange
+        var apiClient = _daf.GetApiClient();
+        var notificationService = _daf.GetNotificationService();
+
         var request = new CollegeTranscriptToPdfRequest
         {
             Pesc = SampleHelper.ReadResourceAsString(pescXml),
             Locale = locale
         };
 
+        await notificationService.WaitForResourceAsync("api", KnownResourceStates.Running).WaitAsync(TimeSpan.FromSeconds(30));
+
         // Act
-        var response = await _apiClient!.CollegeTranscriptToPdfAsync(request);
+        var response = await apiClient!.CollegeTranscriptToPdfAsync(request);
 
         // Assert
-        response.Should().NotBeNull();
-        var headersLength = Convert.ToInt32(response.Headers["Content-Length"].First());
+        await Assert.That(response).IsNotNull();
+        var headersLength = Convert.ToInt64(response.Headers["Content-Length"].First());
         using var memStream = new MemoryStream();
         await response.Stream.CopyToAsync(memStream);
-        memStream.Length.Should().Be(headersLength);
+        await Assert.That(memStream.Length).IsEqualTo(headersLength);
     }
 }

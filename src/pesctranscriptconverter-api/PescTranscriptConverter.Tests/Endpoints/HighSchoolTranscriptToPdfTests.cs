@@ -1,52 +1,43 @@
-using Microsoft.Extensions.DependencyInjection;
+﻿namespace PescTranscriptConverter.Tests.Endpoints;
 
-namespace PescTranscriptConverter.Tests.Endpoints;
-
-public class HighSchoolTranscriptToPdfTests : IAsyncLifetime
+[ParallelLimiter<DafParallelLimit>]
+[ClassDataSource<Daf>(Shared = SharedType.None)]
+public class HighSchoolTranscriptToPdfTests
 {
-    private DistributedApplication? _app;
-    private ResourceNotificationService? _notificationService;
-    private PescTranscriptConverterClient? _apiClient;
+    private readonly Daf _daf;
 
-    public async Task InitializeAsync()
+    public HighSchoolTranscriptToPdfTests(Daf daf)
     {
-        var appHost = await DistributedApplicationTestingBuilder.CreateAsync<Projects.PescTranscriptConverter_AppHost>();
-
-        _app = await appHost.BuildAsync();
-        _notificationService = _app.Services.GetRequiredService<ResourceNotificationService>();
-        await _app.StartAsync();
-        _apiClient = new PescTranscriptConverterClient(_app.CreateHttpClient("api"));
+        _daf = daf;
     }
 
-    public Task DisposeAsync()
-    {
-        _app?.Dispose();
-
-        return Task.CompletedTask;
-    }
-
-    [Theory]
-    [InlineData("Canada.Ontario.HighSchool.HighSchoolTranscript.xml", "en-CA")]
-    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript.xml", "en-CA")]
-    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript2.xml", "en-CA")]
-    [InlineData("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript3.xml", "en-CA")]
+    [Test]
+    [Arguments("Canada.Ontario.HighSchool.HighSchoolTranscript.xml", "en-CA")]
+    [Arguments("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript.xml", "en-CA")]
+    [Arguments("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript2.xml", "en-CA")]
+    [Arguments("Canada.Nova_Scotia.HighSchool.HighSchoolTranscript3.xml", "en-CA")]
     public async Task Should_convert_highschool_pesc_to_pdf(string pescXml, string locale)
     {
         // Arrange
+        var apiClient = _daf.GetApiClient();
+        var notificationService = _daf.GetNotificationService();
+
         var request = new HighSchoolTranscriptToPdfRequest
         {
             Pesc = SampleHelper.ReadResourceAsString(pescXml),
             Locale = locale
         };
 
+        await notificationService.WaitForResourceAsync("api", KnownResourceStates.Running).WaitAsync(TimeSpan.FromSeconds(30));
+
         // Act
-        var response = await _apiClient!.HighSchoolTranscriptToPdfAsync(request);
+        var response = await apiClient!.HighSchoolTranscriptToPdfAsync(request);
 
         // Assert
-        response.Should().NotBeNull();
+        await Assert.That(response).IsNotNull();
         var headersLength = Convert.ToInt32(response.Headers["Content-Length"].First());
         using var memStream = new MemoryStream();
         await response.Stream.CopyToAsync(memStream);
-        memStream.Length.Should().Be(headersLength);
+        await Assert.That(memStream.Length).IsEqualTo(headersLength);
     }
 }

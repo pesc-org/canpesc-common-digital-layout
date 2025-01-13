@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FastEndpoints" Version="5.30.0" />
-    <PackageReference Include="FastEndpoints.ClientGen" Version="5.30.0" />
-    <PackageReference Include="FastEndpoints.Swagger" Version="5.30.0" />
-    <PackageReference Include="FluentStorage" Version="5.5.1" />
-    <PackageReference Include="FluentStorage.AWS" Version="5.4.0" />
-    <PackageReference Include="FluentStorage.Azure.Blobs" Version="5.2.5" />
+    <PackageReference Include="FastEndpoints" Version="5.33.0" />
+    <PackageReference Include="FastEndpoints.ClientGen" Version="5.33.0" />
+    <PackageReference Include="FastEndpoints.Swagger" Version="5.33.0" />
+    <PackageReference Include="FluentStorage" Version="5.6.0" />
+    <PackageReference Include="FluentStorage.AWS" Version="5.5.0" />
+    <PackageReference Include="FluentStorage.Azure.Blobs" Version="5.3.0" />
     <PackageReference Include="FluentStorage.Azure.Files" Version="5.2.2" />
     <PackageReference Include="FluentStorage.GCP" Version="5.3.0" />
     <PackageReference Include="Gotenberg.Sharp.API.Client" Version="2.4.0" />
