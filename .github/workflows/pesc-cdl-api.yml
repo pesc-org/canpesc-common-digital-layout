@@ -46,7 +46,7 @@ jobs:
       run: dotnet build src/pesctranscriptconverter-api/PescTranscriptConverterApi.sln --no-restore
 
     - name: 'Test'
-      run: dotnet test src/pesctranscriptconverter-api/PescTranscriptConverter.Tests/PescTranscriptConverter.Tests.csproj --no-build --no-restore --logger trx
+      run: dotnet test src/pesctranscriptconverter-api/PescTranscriptConverter.Tests/PescTranscriptConverter.Tests.csproj -- --report-trx
 
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v2.17.0

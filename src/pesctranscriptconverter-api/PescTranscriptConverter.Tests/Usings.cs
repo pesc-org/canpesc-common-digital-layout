@@ -1,4 +1,12 @@
 ﻿global using Aspire.Hosting;
 global using Aspire.Hosting.ApplicationModel;
-global using FastEndpoints.Testing;
-global using FluentAssertions;
+global using Aspire.Hosting.Testing;
+global using Microsoft.AspNetCore.Hosting;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc.Testing;
+global using Microsoft.AspNetCore.TestHost;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using Microsoft.Extensions.Logging;
+global using TUnit.Core.Interfaces;
