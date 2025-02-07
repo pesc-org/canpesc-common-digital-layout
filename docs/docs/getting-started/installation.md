@@ -17,10 +17,10 @@ network.
 
 ## Docker
 
-To start a default Docker container of pesc-cdl-api, run:
+To start a default Docker container of cdl, run:
 
 ```
-docker run --rm -p 4000:8080 ghcr.io/pesc-org/canpesc-common-digital-layout/pesc-cdl-api:latest
+docker run --rm -p 4000:8080 canpesc/cdl:latest
 ```
 
 :::info
@@ -37,15 +37,15 @@ Incorporating PESC CDL API into your Docker Compose services stack is as straigh
 services:
   # Your other services.
 
-  pesc-cdl-api:
-    image: ghcr.io/pesc-org/canpesc-common-digital-layout/pesc-cdl-api:latest
+  cdl:
+    image: canpesc/cdl:latest
 ```
 
 :::info
 
 
-The API will be accessible at http://pesc-cdl-api:8080 within your Docker Compose network.
-This means your other services can interact with PESC CDL API using http://pesc-cdl-api:8080.
+The API will be accessible at http://cdl:8080 within your Docker Compose network.
+This means your other services can interact with PESC CDL API using http://cdl:8080.
 
 :::
 
@@ -57,8 +57,8 @@ If you want to expose the API to your *localhost*, consider adding a `ports` sec
 services:
   # Your other services.
 
-  pesc-cdl-api:
-    image: ghcr.io/pesc-org/canpesc-common-digital-layout/pesc-cdl-api:latest
+  cdl:
+    image: canpesc/cdl:latest
     ports:
       - "4000:8080"
 ```
@@ -84,8 +84,8 @@ services:
   gotenberg:
     image: gotenberg/gotenberg:8
 
-  pesc-cdl-api:
-    image: ghcr.io/pesc-org/canpesc-common-digital-layout/pesc-cdl-api:latest
+  cdl:
+    image: canpesc/cdl:latest
     environment:
       - GotenbergSharpClient__ServiceUrl=http://gotenberg:3000
       - GotenbergSharpClient__HealthCheckUrl=http://gotenberg:3000/health

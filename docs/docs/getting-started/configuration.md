@@ -76,8 +76,8 @@ services:
   gotenberg:
     image: gotenberg/gotenberg:8
 
-  pesc-cdl-api:
-    image: ghcr.io/pesc-org/canpesc-common-digital-layout/pesc-cdl-api:latest
+  cdl:
+    image: canpesc/cdl:latest
     environment:
       - GotenbergSharpClient__ServiceUrl=http://gotenberg:3000
       - GotenbergSharpClient__HealthCheckUrl=http://gotenberg:3000/health
@@ -188,8 +188,8 @@ services:
   gotenberg:
     image: gotenberg/gotenberg:8
 
-  pesc-cdl-api:
-    image: ghcr.io/pesc-org/canpesc-common-digital-layout/pesc-cdl-api:latest
+  cdl:
+    image: canpesc/cdl:latest
     environment:
       - GotenbergSharpClient__ServiceUrl=http://gotenberg:3000
       - GotenbergSharpClient__HealthCheckUrl=http://gotenberg:3000/health
