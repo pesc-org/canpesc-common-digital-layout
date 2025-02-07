@@ -1,26 +1,18 @@
-﻿using PescTranscriptConverter.Api.Commands;
+﻿using Microsoft.Extensions.DependencyInjection;
+using PescTranscriptConverter.Api.Commands;
 
 namespace PescTranscriptConverter.Tests.Commands;
 
-[ClassDataSource<Waf>(Shared = SharedType.None)]
-public class TransformToHtmlTests
+public class TransformToHtmlHandlerTest(Fixture App) : TestBase<Fixture>
 {
-    private readonly Waf _waf;
-
-    public TransformToHtmlTests(Waf waf)
-    {
-        _waf = waf;
-    }
-
-    [Test]
-    [Arguments("Canada.Ontario.College.CollegeTranscript.xml", "CollegeTranscript", "en-CA", "Last Name:")]
-    [Arguments("Canada.Ontario.College.CollegeTranscript.xml", "CollegeTranscript", "en-US", "Surname:")]
-    [Arguments("Canada.Ontario.College.CollegeTranscript.xml", "CollegeTranscript", "fr-CA", "Nom :")]
+    [Theory]
+    [InlineData("Canada.Ontario.College.CollegeTranscript.xml", "CollegeTranscript", "en-CA", "Last Name:")]
+    [InlineData("Canada.Ontario.College.CollegeTranscript.xml", "CollegeTranscript", "en-US", "Surname:")]
+    [InlineData("Canada.Ontario.College.CollegeTranscript.xml", "CollegeTranscript", "fr-CA", "Nom :")]
     public async Task Should_localize_conversion(string pescXml, string xslt, string locale, string assertContains)
     {
         // Arrange
-        using var scope = _waf.Services.CreateScope();
-        var handler = scope.ServiceProvider.GetRequiredService<TransformToHtmlHandler>();
+        var handler = App.Services.GetRequiredService<TransformToHtmlHandler>();
         var request = new TransformToHtml
         {
             Locale = locale,
@@ -32,30 +24,6 @@ public class TransformToHtmlTests
         var html = await handler.ExecuteAsync(request, CancellationToken.None);
 
         // Assert
-        await Assert.That(html).Contains(assertContains);
-    }
-
-    public class Waf : IDisposable
-    {
-        private WebApplicationFactory<Api.Program> _app;
-
-        public IServiceProvider Services => _app.Services;
-
-        public Waf()
-        {
-            _app = new WebApplicationFactory<Api.Program>().WithWebHostBuilder(
-                b =>
-                {
-                    b.UseEnvironment("Testing");
-                    b.ConfigureServices(s =>
-                    {
-                        s.AddTransient<TransformToHtmlHandler>();
-                    });
-                });
-        }
-
-        public HttpClient CreateClient() => _app.CreateClient();
-
-        public void Dispose() => _app.Dispose();
+        html.Should().Contain(assertContains);
     }
 }

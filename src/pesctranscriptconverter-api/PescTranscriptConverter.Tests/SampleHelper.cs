@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Reflection;
+using System.Text;
 
 namespace PescTranscriptConverter.Tests;
 public static class SampleHelper
@@ -6,7 +7,7 @@ public static class SampleHelper
     // Reads the embedded resource as a string.
     public static string ReadResourceAsString(string resourceName)
     {
-        var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+        var assembly = Assembly.GetExecutingAssembly();
         var resourcePath = $"PescTranscriptConverter.Tests.TranscriptSamples.{resourceName}";
         var a = assembly.GetManifestResourceNames();
         using (var stream = assembly.GetManifestResourceStream(resourcePath))
@@ -23,7 +24,7 @@ public static class SampleHelper
     // Reads the embedded resource as a byte array.
     public static byte[] ReadResourceAsBytes(string resourceName)
     {
-        var assembly = System.Reflection.Assembly.GetExecutingAssembly();
+        var assembly = Assembly.GetExecutingAssembly();
         var resourcePath = $"PescTranscriptConverter.Tests.TranscriptSamples.{resourceName}";
 
         using (var stream = assembly.GetManifestResourceStream(resourcePath))
