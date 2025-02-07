@@ -1,44 +1,41 @@
 ﻿namespace PescTranscriptConverter.Tests.Endpoints;
 
-[ParallelLimiter<DafParallelLimit>]
-[ClassDataSource<Daf>(Shared = SharedType.None)]
+[CollectionDefinition(nameof(CollegeTranscriptToPdfTests))]
+public class CollegeTranscriptToPdfTestsCollection : ICollectionFixture<Fixture>;
+
+[Collection(nameof(CollegeTranscriptToPdfTests))]
 public class CollegeTranscriptToPdfTests
 {
-    private readonly Daf _daf;
+    private PescTranscriptConverterClient? _apiClient;
 
-    public CollegeTranscriptToPdfTests(Daf daf)
+    public CollegeTranscriptToPdfTests(Fixture fixture)
     {
-        _daf = daf;
+        _apiClient = fixture.GetApiClient();
     }
 
-    [Test]
-    [Arguments("Canada.Ontario.College.CollegeTranscript.xml", "en-CA")]
-    [Arguments("Canada.Ontario.University.UniversityTranscript.xml", "en-CA")]
-    [Arguments("Canada.Ontario.University.UniversityTranscript2.xml", "en-CA")]
-    [Arguments("Canada.Nova_Scotia.University.UniversityTranscript1.xml", "en-CA")]
-    [Arguments("Canada.Nova_Scotia.University.UniversityTranscript2.xml", "en-CA")]
+    [Theory]
+    [InlineData("Canada.Ontario.College.CollegeTranscript.xml", "en-CA")]
+    [InlineData("Canada.Ontario.University.UniversityTranscript.xml", "en-CA")]
+    [InlineData("Canada.Ontario.University.UniversityTranscript2.xml", "en-CA")]
+    [InlineData("Canada.Nova_Scotia.University.UniversityTranscript1.xml", "en-CA")]
+    [InlineData("Canada.Nova_Scotia.University.UniversityTranscript2.xml", "en-CA")]
     public async Task Should_convert_college_pesc_to_pdf(string pescXml, string locale)
     {
         // Arrange
-        var apiClient = _daf.GetApiClient();
-        var notificationService = _daf.GetNotificationService();
-
         var request = new CollegeTranscriptToPdfRequest
         {
             Pesc = SampleHelper.ReadResourceAsString(pescXml),
             Locale = locale
         };
 
-        await notificationService.WaitForResourceAsync("api", KnownResourceStates.Running).WaitAsync(TimeSpan.FromSeconds(30));
-
         // Act
-        var response = await apiClient!.CollegeTranscriptToPdfAsync(request);
+        var response = await _apiClient!.CollegeTranscriptToPdfAsync(request);
 
         // Assert
-        await Assert.That(response).IsNotNull();
-        var headersLength = Convert.ToInt64(response.Headers["Content-Length"].First());
+        response.Should().NotBeNull();
+        var headersLength = Convert.ToInt32(response.Headers["Content-Length"].First());
         using var memStream = new MemoryStream();
         await response.Stream.CopyToAsync(memStream);
-        await Assert.That(memStream.Length).IsEqualTo(headersLength);
+        memStream.Length.Should().Be(headersLength);
     }
 }
