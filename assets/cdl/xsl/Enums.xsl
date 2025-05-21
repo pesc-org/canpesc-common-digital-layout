@@ -69,8 +69,28 @@
     <xsl:param name="v_enum"/>
     <xsl:choose>
       <xsl:when test="$Locale='fr-CA'">
+        <xsl:if test="$v_enum='B17'">Non diplômé de l'école secondaire</xsl:if>
+        <xsl:if test="$v_enum='B18'">Diplôme d'études secondaires standard qui peut ou non inclure un test de sortie</xsl:if>
+        <xsl:if test="$v_enum='B19'">Diplôme avancé ou avec mention</xsl:if>
+        <xsl:if test="$v_enum='B20'">Diplôme professionnel</xsl:if>
+        <xsl:if test="$v_enum='B21'">Diplôme d'éducation spécialisée normalement pour les étudiants ayant un handicap</xsl:if>
+        <xsl:if test="$v_enum='B22'">Certificat d'achèvement ou de présence</xsl:if>
+        <xsl:if test="$v_enum='B23'">Certificat spécial d'achèvement ou de présence</xsl:if>
+        <xsl:if test="$v_enum='B24'">Diplôme du Test de développement de l'éducation générale (TDG)</xsl:if>
+        <xsl:if test="$v_enum='B25'">Autre diplôme d'équivalence de l'école secondaire</xsl:if>
+        <xsl:if test="$v_enum='B26'">Diplôme ou certificat international (tel que le baccalauréat international)</xsl:if>
+        <xsl:if test="$v_enum='B27'">Diplôme d'études secondaires standard avec seulement un programme de 3 ans</xsl:if>
+        <xsl:if test="$v_enum='B28'">A rempli toutes les exigences de graduation sauf le test de sortie requis</xsl:if>
+        <xsl:if test="$v_enum='B58'">B58</xsl:if>
+        <xsl:if test="$v_enum='B59'">B59</xsl:if>
+        <xsl:if test="$v_enum='B60'">B60</xsl:if>
         <xsl:if test="$v_enum='0.0'">Autre</xsl:if>
-        <xsl:if test="$v_enum='2.0'">Non-Diplôme de premier cycle</xsl:if>
+        <xsl:if test="$v_enum='1.1'">Certificat d'achèvement</xsl:if>
+        <xsl:if test="$v_enum='1.2'">Certificat de compétence</xsl:if>
+        <xsl:if test="$v_enum='1.3'">Attestation de participation</xsl:if>
+        <xsl:if test="$v_enum='1.4'">Attestation d'achèvement</xsl:if>
+        <xsl:if test="$v_enum='1.5'">Attestation de réussite</xsl:if>
+        <xsl:if test="$v_enum='2.0'">Certificat</xsl:if>
         <xsl:if test="$v_enum='2.1'">Certificat ou diplôme postsecondaire (moins d'un an)</xsl:if>
         <xsl:if test="$v_enum='2.2'">Certificat ou diplôme postsecondaire (un an ou plus mais moins de quatre ans)</xsl:if>
         <xsl:if test="$v_enum='2.3'">Diplôme d'associé</xsl:if>
@@ -78,22 +98,56 @@
         <xsl:if test="$v_enum='2.5'">Diplôme de baccalauréat (avec distinction)</xsl:if>
         <xsl:if test="$v_enum='2.6'">Certificat ou diplôme postsecondaire (un an ou plus mais moins de deux ans)</xsl:if>
         <xsl:if test="$v_enum='2.7'">Certificat ou diplôme postsecondaire (deux ans ou plus mais moins de quatre ans)</xsl:if>
-        <xsl:if test="$v_enum='3.0'">Diplôme professionnel d'études supérieures</xsl:if>
+        <xsl:if test="$v_enum='2.8'">Non-Diplôme de premier cycle</xsl:if>
         <xsl:if test="$v_enum='3.1'">Premier diplôme professionnel</xsl:if>
         <xsl:if test="$v_enum='3.2'">Diplôme post-professionnel</xsl:if>
+        <xsl:if test="$v_enum='3.3'">Diplôme d'études supérieures professionnel</xsl:if>
         <xsl:if test="$v_enum='4.0'">Non-Diplôme d'études supérieures</xsl:if>
         <xsl:if test="$v_enum='4.1'">Certificat d'études supérieures</xsl:if>
         <xsl:if test="$v_enum='4.2'">Diplôme de maîtrise</xsl:if>
         <xsl:if test="$v_enum='4.3'">Diplôme d'études supérieures intermédiaire</xsl:if>
         <xsl:if test="$v_enum='4.4'">Diplôme de doctorat</xsl:if>
         <xsl:if test="$v_enum='4.5'">Diplôme post-doctoral</xsl:if>
-        <xsl:if test="$v_enum='B35'">Mention très honorable</xsl:if>
-        <xsl:if test="$v_enum='B36'">Deuxième mention très honorable</xsl:if>
-        <xsl:if test="$v_enum='B37'">Troisième mention très honorable</xsl:if>
+        <xsl:if test="$v_enum='FrenchBaccalaureate'">Baccalauréat français</xsl:if>
+        <xsl:if test="$v_enum='CEGEP'">Collège d'enseignement général et professionnel</xsl:if>
+        <xsl:if test="$v_enum='1'">Certificat, diplôme ou attestation de moins d'un an (moins de 900 heures de contact ou d'horloge)</xsl:if>
+        <xsl:if test="$v_enum='2'">Certificat</xsl:if>
+        <xsl:if test="$v_enum='3'">Diplôme d'associé</xsl:if>
+        <xsl:if test="$v_enum='4'">Certificat, diplôme ou attestation d'au moins deux mais moins de quatre ans (au moins 1800 heures de contact ou d'horloge)</xsl:if>
+        <xsl:if test="$v_enum='5'">Diplôme de baccalauréat ou équivalent</xsl:if>
+        <xsl:if test="$v_enum='6'">Certificat post-baccalauréat</xsl:if>
+        <xsl:if test="$v_enum='7'">Diplôme de maîtrise</xsl:if>
+        <xsl:if test="$v_enum='8'">Certificat post-maîtrise</xsl:if>
+        <xsl:if test="$v_enum='9'">Diplôme de doctorat</xsl:if>
+        <xsl:if test="$v_enum='10'">Premier diplôme professionnel</xsl:if>
+        <xsl:if test="$v_enum='11'">Certificat professionnel de premier cycle (post-diplôme)</xsl:if>
+        <xsl:if test="$v_enum='17'">Diplôme de doctorat - recherche/bourse</xsl:if>
+        <xsl:if test="$v_enum='18'">Diplôme de doctorat - pratique professionnelle</xsl:if>
+        <xsl:if test="$v_enum='19'">Diplôme de doctorat - autre niveau de diplôme</xsl:if>
       </xsl:when>
       <xsl:otherwise>
+        <xsl:if test="$v_enum='B17'">Did not complete secondary school</xsl:if>
+        <xsl:if test="$v_enum='B18'">Standard High School Diploma which may or may not include an exit test</xsl:if>
+        <xsl:if test="$v_enum='B19'">Advanced or honors diploma</xsl:if>
+        <xsl:if test="$v_enum='B20'">Vocational diploma</xsl:if>
+        <xsl:if test="$v_enum='B21'">Special Education Diploma normally for students with a disability</xsl:if>
+        <xsl:if test="$v_enum='B22'">Certificate of completion or attendance</xsl:if>
+        <xsl:if test="$v_enum='B23'">Special certificate of completion or attendance</xsl:if>
+        <xsl:if test="$v_enum='B24'">General Education Development Test Diploma (GED)</xsl:if>
+        <xsl:if test="$v_enum='B25'">Other high school equivalency diploma</xsl:if>
+        <xsl:if test="$v_enum='B26'">International diploma or certificate (such as International Baccalaureate)</xsl:if>
+        <xsl:if test="$v_enum='B27'">Standard High School Diploma with only 3 year curriculum</xsl:if>
+        <xsl:if test="$v_enum='B28'">Met all graduation requirements except for required exit test</xsl:if>
+        <xsl:if test="$v_enum='B58'">B58</xsl:if>
+        <xsl:if test="$v_enum='B59'">B59</xsl:if>
+        <xsl:if test="$v_enum='B60'">B60</xsl:if>  
         <xsl:if test="$v_enum='0.0'">Other</xsl:if>
-        <xsl:if test="$v_enum='2.0'">Undergraduate Non-Degree</xsl:if>
+        <xsl:if test="$v_enum='1.1'">Certificate of completion</xsl:if>
+        <xsl:if test="$v_enum='1.2'">Certificate of proficiency</xsl:if>
+        <xsl:if test="$v_enum='1.3'">Statement of participation</xsl:if>
+        <xsl:if test="$v_enum='1.4'">Statement of completion</xsl:if>
+        <xsl:if test="$v_enum='1.5'">Statement of achievement</xsl:if>
+        <xsl:if test="$v_enum='2.0'">Certificate</xsl:if>
         <xsl:if test="$v_enum='2.1'">Postsecondary Certificate or Diploma (less than one year)</xsl:if>
         <xsl:if test="$v_enum='2.2'">Postsecondary Certificate or Diploma (one year or more but less than four years)</xsl:if>
         <xsl:if test="$v_enum='2.3'">Associate Degree</xsl:if>
@@ -101,18 +155,32 @@
         <xsl:if test="$v_enum='2.5'">Baccalaureate (Honours) Degree</xsl:if>
         <xsl:if test="$v_enum='2.6'">Postsecondary Certificate or Diploma (one year or more but less than two years)</xsl:if>
         <xsl:if test="$v_enum='2.7'">Postsecondary Certificate or Diploma (two year or more but less than four years)</xsl:if>
-        <xsl:if test="$v_enum='3.0'">Graduate Professional</xsl:if>
+        <xsl:if test="$v_enum='2.8'">Undergraduate non-degree</xsl:if>
         <xsl:if test="$v_enum='3.1'">First Professional Degree</xsl:if>
         <xsl:if test="$v_enum='3.2'">Post-Professional Degree</xsl:if>
+        <xsl:if test="$v_enum='3.3'">Graduate Professional</xsl:if>
         <xsl:if test="$v_enum='4.0'">Graduate Non-Degree</xsl:if>
         <xsl:if test="$v_enum='4.1'">Graduate Certificate</xsl:if>
         <xsl:if test="$v_enum='4.2'">Master's Degree</xsl:if>
         <xsl:if test="$v_enum='4.3'">Intermediate Graduate Degree</xsl:if>
         <xsl:if test="$v_enum='4.4'">Doctoral Degree</xsl:if>
         <xsl:if test="$v_enum='4.5'">Post-Doctoral Degree</xsl:if>
-        <xsl:if test="$v_enum='B35'">Highest Honors</xsl:if>
-        <xsl:if test="$v_enum='B36'">Second Highest Honors</xsl:if>
-        <xsl:if test="$v_enum='B37'">Third Highest Honors</xsl:if>
+        <xsl:if test="$v_enum='FrenchBaccalaureate'">French Baccalaureate</xsl:if>
+        <xsl:if test="$v_enum='CEGEP'">Collège d'enseignement général et professionnel</xsl:if>
+        <xsl:if test="$v_enum='1'">Postsecondary award, certificate or diploma of less than one academic year (less than 900 contact or clock hours)</xsl:if>
+        <xsl:if test="$v_enum='2'">Certificate</xsl:if>
+        <xsl:if test="$v_enum='3'">Associate's Degree</xsl:if>
+        <xsl:if test="$v_enum='4'">Postsecondary award, certificate, or diploma of at least two but less than four academic years (at least 1800 contact or clock hours)</xsl:if>
+        <xsl:if test="$v_enum='5'">Bachelor's Degree or equivalent</xsl:if>
+        <xsl:if test="$v_enum='6'">Postbaccalaureate Certificate</xsl:if>
+        <xsl:if test="$v_enum='7'">Master's Degree</xsl:if>
+        <xsl:if test="$v_enum='8'">Post Masters Certificate</xsl:if>
+        <xsl:if test="$v_enum='9'">Doctor's Degree</xsl:if>
+        <xsl:if test="$v_enum='10'">First-Professional Degree</xsl:if>
+        <xsl:if test="$v_enum='11'">First-Professional Certificate (Post-Degree)</xsl:if>
+        <xsl:if test="$v_enum='17'">Doctor's degree - research/scholarship</xsl:if>
+        <xsl:if test="$v_enum='18'">Doctor's degree - professional practice</xsl:if>
+        <xsl:if test="$v_enum='19'">Doctor's degree - otherAward Levels.</xsl:if>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
