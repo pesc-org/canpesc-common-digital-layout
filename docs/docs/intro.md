@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# What is PESC CDL API?
+# What is PESC CDL?
 
 A fully-functional, self-contained service for converting PESC XML transcripts (for College/University and High School) into a standardized, localizable, human-readable PDF format.
 
@@ -24,7 +24,7 @@ And render it into a human-readable PDF format such as this:
 For more information about the origin of the Working Group and the CDL, please see the whitepaper hosted on pesc.org.
 
 [Electronic Transcript Data Exchange: Building Common Digital
-Layout(s) for PESC XML Transcripts](https://nebula.wsimg.com/756901b746edc14b984e33cd7f067efd?AccessKeyId=4CF7FAE11697F99C9E6B&disposition=0&alloworigin=1)
+Layout(s) for PESC XML Transcripts](https://pesc.org/wp-content/uploads/2025/05/Building-CDL-for-XML-Transcripts.pdf)
 
 ## Containerization
 
