@@ -83,6 +83,7 @@
 	<Label key="Student.AcademicSession.AcademicSummary.GPACreditHoursEarned" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/CreditHoursEarned">Credits obtenus : </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPACreditUnit" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/CreditUnit">Crédits : </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPACredits" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/CreditHoursForGPA">Crédits contributoires : </Label>
+	<Label key="Student.AcademicSession.AcademicSummary.GPAQualityPoints" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/TotalQualityPoints">Unités cumulées : </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPARangeMinimum" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/GPARangeMinimum">Seuil minimal : </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPARangeMaximum" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/GPARangeMaximum">Seuil maximal : </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPANote" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/NoteMessage">Remarque : </Label>
@@ -96,7 +97,7 @@
 	<Label key="Student.AcademicSession.Course.CreditEarned" path="/Student/AcademicRecord/AcademicSession/Course/CourseCreditEarned">Obtenus</Label>
 	<Label key="Student.AcademicSession.Course.Grade" path="/Student/AcademicRecord/AcademicSession/Course/CourseAcademicGrade">Note</Label>
 	<Label key="Student.AcademicSession.Course.GradeScaleCode" path="/Student/AcademicRecord/AcademicSession/Course/CourseAcademicGradeScaleCode">Échelle de notation</Label>
-	<Label key="Student.AcademicSession.Course.CourseQualityPointsEarned" path="/Student/AcademicRecord/AcademicSession/Course/CourseQualityPointsEarned">Unités</Label>
+	<Label key="Student.AcademicSession.Course.CourseQualityPointsEarned" path="/Student/AcademicRecord/AcademicSession/Course/CourseQualityPointsEarned">Unités cumulées</Label>
 	<Label key="Student.AcademicSession.Course.Note" path="/Student/AcademicRecord/AcademicSession/Course/NoteMessage">Remarque :</Label>
 	<Label key="Student.AcademicSession.Course.CourseCreditBasis" path="/Student/AcademicRecord/AcademicSession/Course/CourseCreditBasis">Barème : </Label>
 	<Label key="Student.AcademicSession.Course.CourseCreditUnits" path="/Student/AcademicRecord/AcademicSession/Course/CourseCreditUnits">Unités : </Label>

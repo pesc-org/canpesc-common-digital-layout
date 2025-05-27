@@ -83,6 +83,7 @@
 	<Label key="Student.AcademicSession.AcademicSummary.GPACreditHoursEarned" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/CreditHoursEarned">Credit Hours Earned: </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPACreditUnit" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/CreditUnit">Credit Unit: </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPACredits" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/CreditHoursForGPA">Credits in GPA: </Label>
+	<Label key="Student.AcademicSession.AcademicSummary.GPAQualityPoints" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/TotalQualityPoints">Quality Points: </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPARangeMinimum" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/GPARangeMinimum">Range Minimum: </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPARangeMaximum" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/GPARangeMaximum">Range Maximum: </Label>
 	<Label key="Student.AcademicSession.AcademicSummary.GPANote" path="/Student/AcademicRecord/AcademicSession/AcademicSummary/GPA/NoteMessage">Note: </Label>
