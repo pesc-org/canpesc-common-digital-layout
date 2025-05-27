@@ -41,7 +41,7 @@ This repository demonstrates primarily taking an XML file and generating HTML us
 See our whitepaper on the PESC.org website:
 
 [Electronic Transcript Data Exchange: Building Common Digital
-Layout(s) for PESC XML Transcripts](https://nebula.wsimg.com/756901b746edc14b984e33cd7f067efd?AccessKeyId=4CF7FAE11697F99C9E6B&disposition=0&alloworigin=1)
+Layout(s) for PESC XML Transcripts](https://pesc.org/wp-content/uploads/2025/05/Building-CDL-for-XML-Transcripts.pdf)
 
 ### Goals
 
@@ -66,6 +66,8 @@ Cons:
 - requires skills to host and run docker infrastructure (although made easier with cloud datacentre providers)
 
 Head to the [documentation](https://pesc-org.github.io/canpesc-common-digital-layout/) to learn about all the features.
+
+[Now Published on Docker Hub!](https://hub.docker.com/r/canpesc/cdl)
 
 ### CLI
 
