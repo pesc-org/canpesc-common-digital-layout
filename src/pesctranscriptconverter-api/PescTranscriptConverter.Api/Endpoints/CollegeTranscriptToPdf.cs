@@ -42,9 +42,9 @@ public class CollegeTranscriptToPdf : Endpoint<CollegeTranscriptToPdfRequest>
                 doc.SetBody(html)
                     .SetHeader(headerHtml)
                     .SetFooter(footerHtml)
-            ).WithDimensions(dims =>
+            ).WithPageProperties(page =>
             {
-                dims.SetPaperSize(PaperSizes.Letter)
+                page.SetPaperSize(PaperSizes.Letter)
                     .SetMargins(Margins.None)
                     .SetScale(.99);
             });
@@ -53,7 +53,7 @@ public class CollegeTranscriptToPdf : Endpoint<CollegeTranscriptToPdfRequest>
 
         var result = await gotenbergClient.HtmlToPdfAsync(request, ct);
 
-        await SendStreamAsync(stream: result, fileLengthBytes: result.Length, contentType: "application/pdf", fileName: $"CollegeTranscript_{DateTime.Now.ToString("yyyyMMdd_hhMMss")}.pdf", cancellation: ct);
+        await Send.StreamAsync(stream: result, fileLengthBytes: result.Length, contentType: "application/pdf", fileName: $"CollegeTranscript_{DateTime.Now.ToString("yyyyMMdd_hhMMss")}.pdf", cancellation: ct);
     }
 }
 

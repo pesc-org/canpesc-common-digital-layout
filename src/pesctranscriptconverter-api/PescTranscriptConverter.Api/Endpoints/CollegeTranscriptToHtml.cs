@@ -20,8 +20,8 @@ public class CollegeTranscriptToHtml : Endpoint<CollegeTranscriptToHtmlRequest, 
             Locale = req.Locale,
             Xslt = "CollegeTranscript"
         }.ExecuteAsync(ct);
-
-        await SendAsync(new CollegeTranscriptToHtmlResponse { Html = html }, cancellation: ct);
+        
+        await Send.OkAsync(new CollegeTranscriptToHtmlResponse { Html = html }, cancellation: ct);
     }
 }
 

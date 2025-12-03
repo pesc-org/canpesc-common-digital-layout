@@ -21,7 +21,7 @@ public class HighSchoolTranscriptToHtml : Endpoint<HighSchoolTranscriptToHtmlReq
             Xslt = "HighSchoolTranscript"
         }.ExecuteAsync(ct);
 
-        await SendAsync(new HighSchoolTranscriptToHtmlResponse { Html = html }, cancellation: ct);
+        await Send.OkAsync(new HighSchoolTranscriptToHtmlResponse { Html = html }, cancellation: ct);
     }
 }
 

@@ -9,16 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FastEndpoints" Version="5.30.0" />
-    <PackageReference Include="FastEndpoints.ClientGen" Version="5.30.0" />
-    <PackageReference Include="FastEndpoints.Swagger" Version="5.30.0" />
-    <PackageReference Include="FluentStorage" Version="5.6.0" />
-    <PackageReference Include="FluentStorage.AWS" Version="5.5.0" />
-    <PackageReference Include="FluentStorage.Azure.Blobs" Version="5.3.0" />
-    <PackageReference Include="FluentStorage.Azure.Files" Version="5.2.2" />
-    <PackageReference Include="FluentStorage.GCP" Version="5.3.0" />
-    <PackageReference Include="Gotenberg.Sharp.API.Client" Version="2.4.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="FastEndpoints" Version="7.1.1" />
+    <PackageReference Include="FastEndpoints.ClientGen" Version="7.1.1" />
+    <PackageReference Include="FastEndpoints.Swagger" Version="7.1.1" />
+    <PackageReference Include="FluentStorage" Version="6.0.0" />
+    <PackageReference Include="FluentStorage.AWS" Version="6.0.1" />
+    <PackageReference Include="FluentStorage.Azure.Blobs" Version="6.0.0" />
+    <PackageReference Include="FluentStorage.Azure.Files" Version="6.0.0" />
+    <PackageReference Include="FluentStorage.GCP" Version="6.0.0" />
+    <PackageReference Include="Gotenberg.Sharp.API.Client" Version="2.8.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
   </ItemGroup>
 
   <ItemGroup>
