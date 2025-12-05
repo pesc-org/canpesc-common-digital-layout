@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace PescTranscriptConverter.Tests.Endpoints;
+﻿namespace PescTranscriptConverter.Tests.Endpoints;
 
 [CollectionDefinition(nameof(HighSchoolTranscriptToPdfTests))]
 public class HighSchoolTranscriptToPdfTestsCollection: ICollectionFixture<Fixture>;
@@ -30,13 +28,13 @@ public class HighSchoolTranscriptToPdfTests
         };
 
         // Act
-        var response = await _apiClient!.HighSchoolTranscriptToPdfAsync(request);
+        var response = await _apiClient!.HighSchoolTranscriptToPdfAsync(request, TestContext.Current.CancellationToken);
 
         // Assert
         response.Should().NotBeNull();
         var headersLength = Convert.ToInt32(response.Headers["Content-Length"].First());
         using var memStream = new MemoryStream();
-        await response.Stream.CopyToAsync(memStream);
+        await response.Stream.CopyToAsync(memStream, TestContext.Current.CancellationToken);
         memStream.Length.Should().Be(headersLength);
     }
 }

@@ -34,22 +34,22 @@ jobs:
     - name: 'Set up .NET Core'
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 8.0.x
-
-    - name: Install .NET Aspire workload
-      run: dotnet workload install aspire
+        dotnet-version: 10.0.x
 
     - name: 'Restore dependencies'
-      run: dotnet restore src/pesctranscriptconverter-api/PescTranscriptConverterApi.sln
+      run: dotnet restore
+      working-directory: src/pesctranscriptconverter-api
 
     - name: 'Build'
-      run: dotnet build src/pesctranscriptconverter-api/PescTranscriptConverterApi.sln --no-restore
+      run: dotnet build --no-restore
+      working-directory: src/pesctranscriptconverter-api
 
     - name: 'Test'
-      run: dotnet test src/pesctranscriptconverter-api/PescTranscriptConverter.Tests/PescTranscriptConverter.Tests.csproj --no-build --no-restore --logger trx
+      run: dotnet test --no-build --no-restore --report-xunit-trx
+      working-directory: src/pesctranscriptconverter-api
 
     - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v2.17.0
+      uses: EnricoMi/publish-unit-test-result-action@v2.21.0
       if: always()
       with:
         files: |
