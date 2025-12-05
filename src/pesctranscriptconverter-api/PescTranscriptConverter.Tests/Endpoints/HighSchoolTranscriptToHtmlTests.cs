@@ -30,7 +30,7 @@ public class HighSchoolTranscriptToHtmlTests
         };
 
         // Act
-        var response = await _apiClient!.HighSchoolTranscriptToHtmlAsync(request);
+        var response = await _apiClient!.HighSchoolTranscriptToHtmlAsync(request, TestContext.Current.CancellationToken);
 
         // Assert
         response.Should().NotBeNull();

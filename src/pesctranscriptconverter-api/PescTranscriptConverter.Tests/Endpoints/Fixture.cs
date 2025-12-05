@@ -7,14 +7,14 @@ public class Fixture : IAsyncLifetime
     private DistributedApplication? _app;
     private ResourceNotificationService? _notificationService;
 
-    public Task DisposeAsync()
+    public ValueTask DisposeAsync()
     {
         _app?.Dispose();
 
-        return Task.CompletedTask;
+        return ValueTask.CompletedTask;
     }
 
-    public async Task InitializeAsync()
+    public async ValueTask InitializeAsync()
     {
         var appHost = await DistributedApplicationTestingBuilder.CreateAsync<Projects.PescTranscriptConverter_AppHost>();
 

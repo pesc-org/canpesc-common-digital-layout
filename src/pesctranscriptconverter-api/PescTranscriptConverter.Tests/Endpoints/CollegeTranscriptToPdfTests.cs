@@ -29,13 +29,13 @@ public class CollegeTranscriptToPdfTests
         };
 
         // Act
-        var response = await _apiClient!.CollegeTranscriptToPdfAsync(request);
+        var response = await _apiClient!.CollegeTranscriptToPdfAsync(request, TestContext.Current.CancellationToken);
 
         // Assert
         response.Should().NotBeNull();
         var headersLength = Convert.ToInt32(response.Headers["Content-Length"].First());
         using var memStream = new MemoryStream();
-        await response.Stream.CopyToAsync(memStream);
+        await response.Stream.CopyToAsync(memStream, TestContext.Current.CancellationToken);
         memStream.Length.Should().Be(headersLength);
     }
 }

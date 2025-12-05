@@ -21,7 +21,7 @@ public class TransformToHtmlHandlerTest(Fixture App) : TestBase<Fixture>
         };
 
         // Act
-        var html = await handler.ExecuteAsync(request, CancellationToken.None);
+        var html = await handler.ExecuteAsync(request, TestContext.Current.CancellationToken);
 
         // Assert
         html.Should().Contain(assertContains);

@@ -42,10 +42,10 @@ public class HighSchoolTranscriptToPdf : Endpoint<HighSchoolTranscriptToPdfReque
                 doc.SetBody(html)
                     .SetHeader(headerHtml)
                     .SetFooter(footerHtml)
-            ).WithDimensions(dims =>
+            ).WithPageProperties(page =>
             {
-                dims.SetPaperSize(PaperSizes.Letter)
-                    .LandScape()
+                page.SetLandscape()
+                    .SetPaperSize(PaperSizes.Letter)
                     .SetMargins(Margins.Normal)
                     .SetScale(.99);
             });
@@ -54,7 +54,7 @@ public class HighSchoolTranscriptToPdf : Endpoint<HighSchoolTranscriptToPdfReque
 
         var result = await gotenbergClient.HtmlToPdfAsync(request, ct);
 
-        await SendStreamAsync(stream: result, fileLengthBytes: result.Length, contentType: "application/pdf", fileName: $"HighSchoolTranscript_{DateTime.Now.ToString("yyyyMMdd_hhMMss")}.pdf", cancellation: ct);
+        await Send.StreamAsync(stream: result, fileLengthBytes: result.Length, contentType: "application/pdf", fileName: $"HighSchoolTranscript_{DateTime.Now.ToString("yyyyMMdd_hhMMss")}.pdf", cancellation: ct);
     }
 }
 

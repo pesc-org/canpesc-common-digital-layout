@@ -30,7 +30,7 @@ public class CollegeTranscriptToHtmlTests
 
 
         // Act
-        var response = await _apiClient!.CollegeTranscriptToHtmlAsync(request);
+        var response = await _apiClient!.CollegeTranscriptToHtmlAsync(request, TestContext.Current.CancellationToken);
 
         // Assert
         response.Should().NotBeNull();
